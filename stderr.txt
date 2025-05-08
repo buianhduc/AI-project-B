@@ -1,0 +1,11 @@
+Testing: I am playing as BLUE
+[32m*[0m [31mR[0m [31mR[0m [31mR[0m [31mR[0m [31mR[0m [31mR[0m [32m*[0m 
+. [32m*[0m [32m*[0m [32m*[0m [32m*[0m [32m*[0m [32m*[0m . 
+. . . . . . . . 
+. . . . . . . . 
+. . . . . . . . 
+. . . . . . . . 
+. [32m*[0m [32m*[0m [32m*[0m [32m*[0m [32m*[0m [32m*[0m . 
+[32m*[0m [34mB[0m [34mB[0m [34mB[0m [34mB[0m [34mB[0m [34mB[0m [32m*[0m 
+
+./run.sh: line 2: 46465 Killed: 9               python -m referee -d -l "log.txt" agent agent
