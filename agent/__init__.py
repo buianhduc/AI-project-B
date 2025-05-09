@@ -3,3 +3,5 @@
 
 from .program import Agent
 from .minimaxAgent import MinimaxAgent
+from .mctsAgent import MCTSAgent
+from .combinedAgent import CombinedAgent

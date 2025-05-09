@@ -76,7 +76,8 @@ class Board:
     def __init__(
             self,
             initial_state: dict[Coord, CellState] = {},
-            initial_player: PlayerColor = PlayerColor.RED
+            initial_player: PlayerColor = PlayerColor.RED,
+            turn_count: int = 0
     ):
         """
         Create a new board. It is optionally possible to specify an initial
@@ -104,6 +105,7 @@ class Board:
 
         self._turn_color: PlayerColor = initial_player
         self._history: list[BoardMutation] = []
+        self.turn_count = turn_count
 
     def __getitem__(self, cell: Coord) -> CellState:
         """
@@ -132,6 +134,7 @@ class Board:
 
         self._history.append(mutation)
         self._turn_color = self._turn_color.opponent
+        self.turn_count += 1
 
         return mutation
 
@@ -149,7 +152,7 @@ class Board:
 
         for cell_mutation in mutation.cell_mutations:
             self._state[cell_mutation.cell] = cell_mutation.prev
-
+        self.turn_count -= 1
         return mutation
 
     def render(self, use_color: bool = False, use_unicode: bool = False) -> str:
@@ -190,13 +193,6 @@ class Board:
                 output += " "
             output += "\n"
         return output
-
-    @property
-    def turn_count(self) -> int:
-        """
-        The number of actions that have been played so far.
-        """
-        return len(self._history)
 
     @property
     def turn_limit_reached(self) -> bool:
@@ -454,3 +450,132 @@ class Board:
     def set_turn_color(self, color: PlayerColor):
         self._turn_color = color
 
+    def get_next_possible_configurations(self) -> list[tuple[Action, 'Board']] | None:
+        """
+            The function attempts to simulate the next possible configurations
+            by trying to grow the board and then checking if it has changed, 
+            and each frog can move in all directions if it has legal moves.
+        """
+        if (self.turn_count >= MAX_TURNS):
+            return None
+        # Try grow action
+        grow_action = GrowAction()
+        board = Board(initial_state=self._state, initial_player=self._turn_color)
+        board.turn_count = self.turn_count
+        board.apply_action(grow_action)
+        possible_configs = [(grow_action, board)]
+
+        # Acquire all respective colored frogs
+        position_of_frogs: set[Coord] = set(
+            coord for coord, cell in self._state.items()
+            if cell.state == self._turn_color
+        )
+        # Try to move all of the frogs
+        for cell in position_of_frogs:
+            if (cell.r != (7 if self._turn_color == PlayerColor.RED else 0)):
+                board = Board(self._state, initial_player=self._turn_color)
+                board.turn_count = self.turn_count
+                neighbors = self.get_neighbors_and_distance(
+                    self._turn_color, board, cell,  [], [])
+                possible_configs += neighbors
+        # Try to find possible paths if each of them do move action
+
+        return possible_configs if len(possible_configs) != 0 else None
+    
+    def determine_winner(self, color: PlayerColor, turn_number: int | None = None) -> int:
+        
+        if turn_number is None:
+            turn_number = self.turn_count
+        
+        position_of_frogs: set[Coord] = set(
+            coord for coord, cell in self._state.items()
+            if cell.state == color
+        )
+        count = 0
+        for cell in position_of_frogs:
+            if cell.r == (7 if color == PlayerColor.RED else 0):
+                count += 1
+        count_rev = 0
+        position_of_frogs: set[Coord] = set(
+            coord for coord, cell in self._state.items()
+            if cell.state == color.opponent
+        )
+        for cell in position_of_frogs:
+            if cell.r == (7 if color.opponent == PlayerColor.RED else 0):
+                count_rev += 1
+        if turn_number == 150:
+            if count > count_rev:
+                return 1
+            if count < count_rev:
+                return -1
+            return 0
+
+        if count == 6:
+            return 1
+        if count_rev == 6:
+            return -1
+        return None
+    def get_neighbors_and_distance(
+            self,
+            player_color: PlayerColor,
+            init_board: 'Board',
+            current_node: Coord,
+            current_direction: list[Direction],
+            visited: list[Coord] = [],
+            can_jump_to_lilypad=True) -> list[tuple[Action, 'Board']]:
+        """Get the neighbors and their distance from the current_node
+        Args:
+        boards: Dictionary with Coord instance key
+        current_node: Current position
+        current_direction: Tracking the direction to get to the node.
+        visited: Tracking visited node. But set it default an empty list
+        can_jump_to_lilypad: internal variable.
+
+        Returns:
+            neighbors: list of tuples of action and board
+        """
+
+        neighbors = []
+        for direction in Direction:
+
+            if self._is_valid_move(player_color, direction):
+
+                # Try if it's a valid move, if not continue to the next directio
+                try: new_coord = current_node + direction
+                except ValueError: continue
+                # If that new coord has already been visited
+                if new_coord in visited:
+                    continue
+                visited.append(new_coord)
+                board = Board(init_board._state, player_color)
+                # If the next node is a lilypad, and was not over another frog in the previous move
+                if (init_board[new_coord] == CellState("LilyPad") and
+                        can_jump_to_lilypad):
+                    new_dir = current_direction.copy()
+                    new_dir.append(direction)
+
+                    board.apply_action(MoveAction(current_node, *new_dir))
+                    neighbors.append((MoveAction(current_node, *new_dir),board))
+                # If the next node is a frog, check if it can be jumped over
+                elif (init_board[new_coord] == CellState(PlayerColor.BLUE) or
+                      init_board[new_coord] == CellState(PlayerColor.RED)):
+
+                    try:
+                        new_coord += direction
+                        if init_board[new_coord] == CellState("LilyPad"):
+                            new_dir = current_direction.copy()
+                            new_dir.append(direction)
+                            neighbors += self.get_neighbors_and_distance(
+                                player_color, board, new_coord, new_dir,
+                                visited, False)
+                    except ValueError:
+                        continue
+        return neighbors
+    
+    def _is_valid_move(self, color: PlayerColor, direction: Direction):
+        if color == PlayerColor.RED:
+            return direction not in ILLEGAL_RED_DIRECTIONS
+        return direction not in ILLEGAL_BLUE_DIRECTIONS
+    def has_game_ended(self):
+        return self.game_over or self.turn_limit_reached
+    

@@ -1,11 +1,23 @@
-Testing: I am playing as BLUE
-[32m*[0m [31mR[0m [31mR[0m [31mR[0m [31mR[0m [31mR[0m [31mR[0m [32m*[0m 
-. [32m*[0m [32m*[0m [32m*[0m [32m*[0m [32m*[0m [32m*[0m . 
-. . . . . . . . 
-. . . . . . . . 
-. . . . . . . . 
-. . . . . . . . 
-. [32m*[0m [32m*[0m [32m*[0m [32m*[0m [32m*[0m [32m*[0m . 
-[32m*[0m [34mB[0m [34mB[0m [34mB[0m [34mB[0m [34mB[0m [34mB[0m [32m*[0m 
-
-./run.sh: line 2: 46465 Killed: 9               python -m referee -d -l "log.txt" agent agent
+Executing <Task pending name='Task-2' coro=<main.<locals>._run() running at /workspaces/part_b/referee/main.py:146> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/lib/python3.12/asyncio/base_events.py:448> cb=[gather.<locals>._done_callback() at /usr/lib/python3.12/asyncio/tasks.py:767] created at /usr/lib/python3.12/asyncio/tasks.py:695> took 0.776 seconds
+Traceback (most recent call last):
+  File "<frozen runpy>", line 189, in _run_module_as_main
+  File "<frozen runpy>", line 112, in _get_module_details
+  File "/workspaces/part_b/referee/__init__.py", line 4, in <module>
+    from .main import main as referee
+  File "/workspaces/part_b/referee/main.py", line 14, in <module>
+    import asyncio
+  File "/usr/lib/python3.12/asyncio/__init__.py", line 8, in <module>
+    from .base_events import *
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 34, in <module>
+    import ssl
+  File "/usr/lib/python3.12/ssl.py", line 143, in <module>
+    _IntFlag._convert_(
+  File "/usr/lib/python3.12/enum.py", line 943, in _convert_
+    cls = _simple_enum(etype=cls, boundary=boundary or KEEP)(tmp_cls)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/enum.py", line 1794, in convert_class
+    setattr(enum_class, name, redirect)
+  File "/usr/lib/python3.12/enum.py", line 855, in __setattr__
+    super().__setattr__(name, value)
+KeyboardInterrupt
+Killed

@@ -2,7 +2,7 @@
 # Project Part B: Game Playing Agent
 from typing import Any
 
-from agent.game.board import Board, BoardMutation, BoardState, CellState, \
+from .game.board import Board, BoardMutation, BoardState, CellState, \
     ILLEGAL_RED_DIRECTIONS, ILLEGAL_BLUE_DIRECTIONS
 from referee.game import (PlayerColor, Coord, Direction, Action, MoveAction,
                           GrowAction, IllegalActionException)
@@ -14,7 +14,7 @@ class Agent:
     respond to various Freckers game events.
     """
 
-    def __init__(self, color: PlayerColor, **referee: dict):
+    def __init__(self, color: PlayerColor,board:Board=None, **referee: dict):
         """
         This constructor method runs when the referee instantiates the agent.
         Any setup and/or precomputation should be done here.
@@ -26,7 +26,7 @@ class Agent:
             case PlayerColor.BLUE:
                 print("Testing: I am playing as BLUE")
                 self._color = PlayerColor.BLUE
-        self.board = Board()
+        self.board = Board() if board is None else board
 
     @property
     def opponent_color(self):

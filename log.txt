@@ -1,454 +1,274 @@
 T0000.000	referee	game_begin
 T0000.003	RED	initialising
-T0000.552	BLUE	initialising
-T0001.107	RED	turn_begin	1
-T0002.463	RED	turn_end	1	GROW
-T0002.464	referee	board_update
-T0002.477	BLUE	turn_begin	2
-T0002.562	BLUE	turn_end	2	MOVE(7-4, [[↑]])
-T0002.563	referee	board_update
-T0002.576	RED	turn_begin	3
-T0003.803	RED	turn_end	3	MOVE(0-1, [[↓]])
-T0003.804	referee	board_update
-T0003.825	BLUE	turn_begin	4
-T0003.958	BLUE	turn_end	4	MOVE(7-1, [[↑]])
-T0003.960	referee	board_update
-T0004.008	RED	turn_begin	5
-T0005.012	RED	turn_end	5	GROW
-T0005.013	referee	board_update
-T0005.023	BLUE	turn_begin	6
-T0005.090	BLUE	turn_end	6	MOVE(7-3, [[↑]])
-T0005.091	referee	board_update
-T0005.102	RED	turn_begin	7
-T0006.090	RED	turn_end	7	MOVE(0-4, [[↓]])
-T0006.091	referee	board_update
-T0006.101	BLUE	turn_begin	8
-T0006.154	BLUE	turn_end	8	MOVE(7-6, [[↑]])
-T0006.155	referee	board_update
-T0006.164	RED	turn_begin	9
-T0006.833	RED	turn_end	9	GROW
-T0006.834	referee	board_update
-T0006.844	BLUE	turn_begin	10
-T0006.898	BLUE	turn_end	10	MOVE(7-2, [[↑]])
-T0006.899	referee	board_update
-T0006.909	RED	turn_begin	11
-T0007.500	RED	turn_end	11	MOVE(1-1, [[↓]])
-T0007.500	referee	board_update
-T0007.510	BLUE	turn_begin	12
-T0007.542	BLUE	turn_end	12	MOVE(7-5, [[↑]])
-T0007.542	referee	board_update
-T0007.552	RED	turn_begin	13
-T0007.741	RED	turn_end	13	GROW
-T0007.742	referee	board_update
-T0007.753	BLUE	turn_begin	14
-T0007.774	BLUE	turn_end	14	GROW
-T0007.775	referee	board_update
-T0007.798	RED	turn_begin	15
-T0010.969	RED	turn_end	15	MOVE(2-1, [[↓]])
-T0010.970	referee	board_update
-T0011.016	BLUE	turn_begin	16
-T0011.144	BLUE	turn_end	16	MOVE(6-2, [[↑]])
-T0011.145	referee	board_update
-T0011.157	RED	turn_begin	17
-T0013.251	RED	turn_end	17	GROW
-T0013.252	referee	board_update
-T0013.261	BLUE	turn_begin	18
-T0013.389	BLUE	turn_end	18	MOVE(6-5, [[↑]])
-T0013.389	referee	board_update
-T0013.399	RED	turn_begin	19
-T0015.880	RED	turn_end	19	MOVE(3-1, [[↓]])
-T0015.881	referee	board_update
-T0015.891	BLUE	turn_begin	20
-T0015.997	BLUE	turn_end	20	MOVE(6-1, [[↑]])
-T0015.998	referee	board_update
-T0016.009	RED	turn_begin	21
-T0017.861	RED	turn_end	21	GROW
-T0017.862	referee	board_update
-T0017.872	BLUE	turn_begin	22
-T0017.989	BLUE	turn_end	22	MOVE(6-4, [[↑]])
-T0017.989	referee	board_update
-T0018.003	RED	turn_begin	23
-T0019.735	RED	turn_end	23	MOVE(0-3, [[↓]])
-T0019.736	referee	board_update
-T0019.747	BLUE	turn_begin	24
-T0019.826	BLUE	turn_end	24	MOVE(5-1, [[↖]])
-T0019.826	referee	board_update
-T0019.836	RED	turn_begin	25
-T0021.217	RED	turn_end	25	GROW
-T0021.218	referee	board_update
-T0021.233	BLUE	turn_begin	26
-T0021.327	BLUE	turn_end	26	MOVE(4-0, [[↑]])
-T0021.328	referee	board_update
-T0021.340	RED	turn_begin	27
-T0023.017	RED	turn_end	27	GROW
-T0023.018	referee	board_update
-T0023.032	BLUE	turn_begin	28
-T0023.123	BLUE	turn_end	28	MOVE(3-0, [[↑]])
-T0023.123	referee	board_update
-T0023.133	RED	turn_begin	29
-T0024.816	RED	turn_end	29	GROW
-T0024.817	referee	board_update
-T0024.829	BLUE	turn_begin	30
-T0024.924	BLUE	turn_end	30	MOVE(2-0, [[↑]])
-T0024.925	referee	board_update
-T0024.936	RED	turn_begin	31
-T0026.579	RED	turn_end	31	MOVE(4-1, [[↓]])
-T0026.579	referee	board_update
-T0026.590	BLUE	turn_begin	32
-T0026.671	BLUE	turn_end	32	MOVE(6-6, [[↑]])
-T0026.671	referee	board_update
-T0026.682	RED	turn_begin	33
-T0027.891	RED	turn_end	33	GROW
-T0027.892	referee	board_update
-T0027.909	BLUE	turn_begin	34
-T0028.036	BLUE	turn_end	34	MOVE(1-0, [[↑]])
-T0028.037	referee	board_update
-T0028.057	RED	turn_begin	35
-T0029.379	RED	turn_end	35	MOVE(5-1, [[↓]])
-T0029.380	referee	board_update
-T0029.389	BLUE	turn_begin	36
-T0029.452	BLUE	turn_end	36	MOVE(6-3, [[↑]])
-T0029.453	referee	board_update
-T0029.465	RED	turn_begin	37
-T0030.308	RED	turn_end	37	GROW
-T0030.308	referee	board_update
-T0030.318	BLUE	turn_begin	38
-T0030.366	BLUE	turn_end	38	MOVE(5-3, [[↖]])
-T0030.367	referee	board_update
-T0030.377	RED	turn_begin	39
-T0031.458	RED	turn_end	39	MOVE(6-1, [[↓]])
-T0031.459	referee	board_update
-T0031.468	BLUE	turn_begin	40
-T0031.521	BLUE	turn_end	40	MOVE(4-2, [[↑]])
-T0031.522	referee	board_update
-T0031.532	RED	turn_begin	41
-T0032.609	RED	turn_end	41	GROW
-T0032.609	referee	board_update
-T0032.619	BLUE	turn_begin	42
-T0032.680	BLUE	turn_end	42	MOVE(3-2, [[↑]])
-T0032.681	referee	board_update
-T0032.691	RED	turn_begin	43
-T0033.608	RED	turn_end	43	MOVE(7-1, [[←]])
-T0033.609	referee	board_update
-T0033.619	BLUE	turn_begin	44
-T0033.679	BLUE	turn_end	44	MOVE(2-2, [[↑]])
-T0033.680	referee	board_update
-T0033.691	RED	turn_begin	45
-T0034.336	RED	turn_end	45	GROW
-T0034.337	referee	board_update
-T0034.348	BLUE	turn_begin	46
-T0034.401	BLUE	turn_end	46	MOVE(1-2, [[↖]])
-T0034.402	referee	board_update
-T0034.412	RED	turn_begin	47
-T0034.788	RED	turn_end	47	GROW
-T0034.789	referee	board_update
-T0034.799	BLUE	turn_begin	48
-T0034.831	BLUE	turn_end	48	MOVE(5-2, [[↖]])
-T0034.831	referee	board_update
-T0034.841	RED	turn_begin	49
-T0035.331	RED	turn_end	49	MOVE(7-0, [[→]])
-T0035.332	referee	board_update
-T0035.342	BLUE	turn_begin	50
-T0035.378	BLUE	turn_end	50	MOVE(4-1, [[↑]])
-T0035.379	referee	board_update
-T0035.389	RED	turn_begin	51
-T0035.933	RED	turn_end	51	GROW
-T0035.934	referee	board_update
-T0035.944	BLUE	turn_begin	52
-T0035.991	BLUE	turn_end	52	MOVE(3-1, [[↑]])
-T0035.991	referee	board_update
-T0036.001	RED	turn_begin	53
-T0036.522	RED	turn_end	53	MOVE(7-1, [[←]])
-T0036.522	referee	board_update
-T0036.532	BLUE	turn_begin	54
-T0036.571	BLUE	turn_end	54	MOVE(2-1, [[↑]])
-T0036.571	referee	board_update
-T0036.581	RED	turn_begin	55
-T0036.877	RED	turn_end	55	GROW
-T0036.878	referee	board_update
-T0036.887	BLUE	turn_begin	56
-T0036.911	BLUE	turn_end	56	GROW
-T0036.912	referee	board_update
-T0036.922	RED	turn_begin	57
-T0038.365	RED	turn_end	57	MOVE(7-0, [[→]])
-T0038.366	referee	board_update
-T0038.383	BLUE	turn_begin	58
-T0038.467	BLUE	turn_end	58	MOVE(5-5, [[↑]])
-T0038.467	referee	board_update
-T0038.478	RED	turn_begin	59
-T0039.532	RED	turn_end	59	GROW
-T0039.533	referee	board_update
-T0039.543	BLUE	turn_begin	60
-T0039.614	BLUE	turn_end	60	MOVE(5-4, [[↑]])
-T0039.615	referee	board_update
-T0039.626	RED	turn_begin	61
-T0040.424	RED	turn_end	61	MOVE(7-1, [[←]])
-T0040.426	referee	board_update
-T0040.441	BLUE	turn_begin	62
-T0040.496	BLUE	turn_end	62	MOVE(5-6, [[↑]])
-T0040.497	referee	board_update
-T0040.515	RED	turn_begin	63
-T0041.047	RED	turn_end	63	GROW
-T0041.048	referee	board_update
-T0041.096	BLUE	turn_begin	64
-T0041.146	BLUE	turn_end	64	GROW
-T0041.147	referee	board_update
-T0041.157	RED	turn_begin	65
-T0042.365	RED	turn_end	65	MOVE(7-0, [[→]])
-T0042.366	referee	board_update
-T0042.376	BLUE	turn_begin	66
-T0042.463	BLUE	turn_end	66	MOVE(4-4, [[↑]])
-T0042.464	referee	board_update
-T0042.474	RED	turn_begin	67
-T0043.862	RED	turn_end	67	GROW
-T0043.862	referee	board_update
-T0043.872	BLUE	turn_begin	68
-T0043.967	BLUE	turn_end	68	MOVE(3-4, [[↑]])
-T0043.967	referee	board_update
-T0043.977	RED	turn_begin	69
-T0045.046	RED	turn_end	69	MOVE(7-1, [[←]])
-T0045.047	referee	board_update
-T0045.057	BLUE	turn_begin	70
-T0045.133	BLUE	turn_end	70	MOVE(2-4, [[↗]])
-T0045.134	referee	board_update
-T0045.144	RED	turn_begin	71
-T0045.837	RED	turn_end	71	GROW
-T0045.837	referee	board_update
-T0045.847	BLUE	turn_begin	72
-T0045.918	BLUE	turn_end	72	MOVE(1-5, [[↖]])
-T0045.918	referee	board_update
-T0045.931	RED	turn_begin	73
-T0046.632	RED	turn_end	73	GROW
-T0046.632	referee	board_update
-T0046.646	BLUE	turn_begin	74
-T0046.716	BLUE	turn_end	74	MOVE(4-6, [[↑]])
-T0046.717	referee	board_update
-T0046.734	RED	turn_begin	75
-T0047.547	RED	turn_end	75	MOVE(7-0, [[→]])
-T0047.548	referee	board_update
-T0047.557	BLUE	turn_begin	76
-T0047.605	BLUE	turn_end	76	MOVE(4-5, [[↑]])
-T0047.606	referee	board_update
-T0047.616	RED	turn_begin	77
-T0048.310	RED	turn_end	77	GROW
-T0048.311	referee	board_update
-T0048.320	BLUE	turn_begin	78
-T0048.370	BLUE	turn_end	78	MOVE(3-6, [[↖]])
-T0048.371	referee	board_update
-T0048.381	RED	turn_begin	79
-T0049.013	RED	turn_end	79	MOVE(7-1, [[←]])
-T0049.014	referee	board_update
-T0049.024	BLUE	turn_begin	80
-T0049.071	BLUE	turn_end	80	MOVE(2-5, [[↑]])
-T0049.072	referee	board_update
-T0049.082	RED	turn_begin	81
-T0049.447	RED	turn_end	81	GROW
-T0049.452	referee	board_update
-T0049.463	BLUE	turn_begin	82
-T0049.509	BLUE	turn_end	82	MOVE(3-5, [[↑]])
-T0049.510	referee	board_update
-T0049.519	RED	turn_begin	83
-T0049.923	RED	turn_end	83	MOVE(7-0, [[→]])
-T0049.924	referee	board_update
-T0049.934	BLUE	turn_begin	84
-T0049.977	BLUE	turn_end	84	MOVE(2-5, [[↗]])
-T0049.978	referee	board_update
-T0049.987	RED	turn_begin	85
-T0050.340	RED	turn_end	85	GROW
-T0050.341	referee	board_update
-T0050.351	BLUE	turn_begin	86
-T0050.392	BLUE	turn_end	86	MOVE(1-6, [[↗]])
-T0050.392	referee	board_update
-T0050.403	RED	turn_begin	87
-T0050.693	RED	turn_end	87	GROW
-T0050.695	referee	board_update
-T0050.710	BLUE	turn_begin	88
-T0050.752	BLUE	turn_end	88	GROW
-T0050.752	referee	board_update
-T0050.763	RED	turn_begin	89
-T0051.099	RED	turn_end	89	MOVE(7-1, [[←]])
-T0051.100	referee	board_update
-T0051.110	BLUE	turn_begin	90
-T0051.139	BLUE	turn_end	90	MOVE(0-4, [[←]])
-T0051.140	referee	board_update
-T0051.150	RED	turn_begin	91
-T0051.392	RED	turn_end	91	GROW
-T0051.393	referee	board_update
-T0051.402	BLUE	turn_begin	92
-T0051.439	BLUE	turn_end	92	MOVE(1-5, [[↖]])
-T0051.440	referee	board_update
-T0051.450	RED	turn_begin	93
-T0051.620	RED	turn_end	93	GROW
-T0051.621	referee	board_update
-T0051.631	BLUE	turn_begin	94
-T0051.647	BLUE	turn_end	94	MOVE(1-1, [[←]])
-T0051.648	referee	board_update
-T0051.658	RED	turn_begin	95
-T0051.810	RED	turn_end	95	GROW
-T0051.815	referee	board_update
-T0051.847	BLUE	turn_begin	96
-T0051.867	BLUE	turn_end	96	MOVE(1-0, [[→]])
-T0051.869	referee	board_update
-T0051.912	RED	turn_begin	97
-T0052.108	RED	turn_end	97	MOVE(7-0, [[→]])
-T0052.108	referee	board_update
-T0052.124	BLUE	turn_begin	98
-T0052.145	BLUE	turn_end	98	GROW
-T0052.146	referee	board_update
-T0052.166	RED	turn_begin	99
-T0052.463	RED	turn_end	99	GROW
-T0052.464	referee	board_update
-T0052.480	BLUE	turn_begin	100
-T0052.500	BLUE	turn_end	100	MOVE(1-1, [[←]])
-T0052.512	referee	board_update
-T0052.535	RED	turn_begin	101
-T0052.650	RED	turn_end	101	GROW
-T0052.651	referee	board_update
-T0052.662	BLUE	turn_begin	102
-T0052.674	BLUE	turn_end	102	MOVE(1-0, [[→]])
-T0052.676	referee	board_update
-T0052.688	RED	turn_begin	103
-T0052.858	RED	turn_end	103	MOVE(7-1, [[←]])
-T0052.859	referee	board_update
-T0052.869	BLUE	turn_begin	104
-T0052.886	BLUE	turn_end	104	GROW
-T0052.887	referee	board_update
-T0052.897	RED	turn_begin	105
-T0053.100	RED	turn_end	105	GROW
-T0053.100	referee	board_update
-T0053.110	BLUE	turn_begin	106
-T0053.126	BLUE	turn_end	106	MOVE(1-1, [[←]])
-T0053.127	referee	board_update
-T0053.139	RED	turn_begin	107
-T0053.241	RED	turn_end	107	GROW
-T0053.242	referee	board_update
-T0053.252	BLUE	turn_begin	108
-T0053.265	BLUE	turn_end	108	MOVE(1-0, [[→]])
-T0053.266	referee	board_update
-T0053.277	RED	turn_begin	109
-T0053.426	RED	turn_end	109	MOVE(7-0, [[→]])
-T0053.427	referee	board_update
-T0053.438	BLUE	turn_begin	110
-T0053.457	BLUE	turn_end	110	GROW
-T0053.457	referee	board_update
-T0053.468	RED	turn_begin	111
-T0053.696	RED	turn_end	111	GROW
-T0053.697	referee	board_update
-T0053.707	BLUE	turn_begin	112
-T0053.724	BLUE	turn_end	112	MOVE(1-1, [[←]])
-T0053.725	referee	board_update
-T0053.740	RED	turn_begin	113
-T0053.855	RED	turn_end	113	GROW
-T0053.856	referee	board_update
-T0053.868	BLUE	turn_begin	114
-T0053.887	BLUE	turn_end	114	MOVE(1-0, [[→]])
-T0053.888	referee	board_update
-T0053.900	RED	turn_begin	115
-T0054.072	RED	turn_end	115	MOVE(7-1, [[←]])
-T0054.072	referee	board_update
-T0054.082	BLUE	turn_begin	116
-T0054.099	BLUE	turn_end	116	GROW
-T0054.099	referee	board_update
-T0054.110	RED	turn_begin	117
-T0054.312	RED	turn_end	117	GROW
-T0054.313	referee	board_update
-T0054.322	BLUE	turn_begin	118
-T0054.339	BLUE	turn_end	118	MOVE(1-1, [[←]])
-T0054.340	referee	board_update
-T0054.351	RED	turn_begin	119
-T0054.526	RED	turn_end	119	GROW
-T0054.527	referee	board_update
-T0054.540	BLUE	turn_begin	120
-T0054.554	BLUE	turn_end	120	MOVE(1-0, [[→]])
-T0054.555	referee	board_update
-T0054.573	RED	turn_begin	121
-T0054.733	RED	turn_end	121	MOVE(7-0, [[→]])
-T0054.735	referee	board_update
-T0054.746	BLUE	turn_begin	122
-T0054.765	BLUE	turn_end	122	GROW
-T0054.766	referee	board_update
-T0054.779	RED	turn_begin	123
-T0054.998	RED	turn_end	123	GROW
-T0055.000	referee	board_update
-T0055.013	BLUE	turn_begin	124
-T0055.032	BLUE	turn_end	124	MOVE(1-1, [[←]])
-T0055.033	referee	board_update
-T0055.043	RED	turn_begin	125
-T0055.153	RED	turn_end	125	GROW
-T0055.153	referee	board_update
-T0055.165	BLUE	turn_begin	126
-T0055.177	BLUE	turn_end	126	MOVE(1-0, [[→]])
-T0055.178	referee	board_update
-T0055.194	RED	turn_begin	127
-T0055.362	RED	turn_end	127	MOVE(7-1, [[←]])
-T0055.363	referee	board_update
-T0055.373	BLUE	turn_begin	128
-T0055.390	BLUE	turn_end	128	GROW
-T0055.391	referee	board_update
-T0055.401	RED	turn_begin	129
-T0055.627	RED	turn_end	129	GROW
-T0055.630	referee	board_update
-T0055.650	BLUE	turn_begin	130
-T0055.677	BLUE	turn_end	130	MOVE(1-1, [[←]])
-T0055.678	referee	board_update
-T0055.689	RED	turn_begin	131
-T0055.798	RED	turn_end	131	GROW
-T0055.799	referee	board_update
-T0055.809	BLUE	turn_begin	132
-T0055.821	BLUE	turn_end	132	MOVE(1-0, [[→]])
-T0055.821	referee	board_update
-T0055.833	RED	turn_begin	133
-T0056.021	RED	turn_end	133	MOVE(7-0, [[→]])
-T0056.022	referee	board_update
-T0056.036	BLUE	turn_begin	134
-T0056.065	BLUE	turn_end	134	GROW
-T0056.066	referee	board_update
-T0056.083	RED	turn_begin	135
-T0056.391	RED	turn_end	135	GROW
-T0056.394	referee	board_update
-T0056.431	BLUE	turn_begin	136
-T0056.457	BLUE	turn_end	136	MOVE(1-1, [[←]])
-T0056.458	referee	board_update
-T0056.481	RED	turn_begin	137
-T0056.643	RED	turn_end	137	GROW
-T0056.645	referee	board_update
-T0056.662	BLUE	turn_begin	138
-T0056.682	BLUE	turn_end	138	MOVE(1-0, [[→]])
-T0056.683	referee	board_update
-T0056.700	RED	turn_begin	139
-T0056.962	RED	turn_end	139	MOVE(7-1, [[←]])
-T0056.964	referee	board_update
-T0056.983	BLUE	turn_begin	140
-T0057.008	BLUE	turn_end	140	GROW
-T0057.009	referee	board_update
-T0057.023	RED	turn_begin	141
-T0057.260	RED	turn_end	141	GROW
-T0057.260	referee	board_update
-T0057.273	BLUE	turn_begin	142
-T0057.291	BLUE	turn_end	142	MOVE(1-1, [[←]])
-T0057.293	referee	board_update
-T0057.308	RED	turn_begin	143
-T0057.414	RED	turn_end	143	GROW
-T0057.414	referee	board_update
-T0057.424	BLUE	turn_begin	144
-T0057.438	BLUE	turn_end	144	MOVE(1-0, [[→]])
-T0057.438	referee	board_update
-T0057.451	RED	turn_begin	145
-T0057.617	RED	turn_end	145	MOVE(7-0, [[→]])
-T0057.617	referee	board_update
-T0057.629	BLUE	turn_begin	146
-T0057.649	BLUE	turn_end	146	GROW
-T0057.650	referee	board_update
-T0057.661	RED	turn_begin	147
-T0057.904	RED	turn_end	147	GROW
-T0057.904	referee	board_update
-T0057.915	BLUE	turn_begin	148
-T0057.933	BLUE	turn_end	148	MOVE(1-1, [[←]])
-T0057.934	referee	board_update
-T0057.946	RED	turn_begin	149
-T0058.059	RED	turn_end	149	GROW
-T0058.059	referee	board_update
-T0058.070	BLUE	turn_begin	150
-T0058.082	BLUE	turn_end	150	MOVE(1-0, [[→]])
-T0058.083	referee	board_update
-T0058.248	referee	game_end	winner:BLUE
+T0000.912	BLUE	initialising
+T0001.907	RED	turn_begin	1
+T0002.033	RED	turn_end	1	MOVE(0-1, [[↓]])
+T0002.034	referee	board_update
+T0002.051	BLUE	turn_begin	2
+T0002.152	BLUE	turn_end	2	MOVE(7-4, [[↑]])
+T0002.153	referee	board_update
+T0002.166	RED	turn_begin	3
+T0002.248	RED	turn_end	3	MOVE(0-4, [[↓]])
+T0002.249	referee	board_update
+T0002.261	BLUE	turn_begin	4
+T0002.337	BLUE	turn_end	4	MOVE(7-1, [[↑]])
+T0002.338	referee	board_update
+T0002.349	RED	turn_begin	5
+T0002.421	RED	turn_end	5	MOVE(0-3, [[↓]])
+T0002.423	referee	board_update
+T0002.440	BLUE	turn_begin	6
+T0002.518	BLUE	turn_end	6	MOVE(7-3, [[↑]])
+T0002.521	referee	board_update
+T0002.542	RED	turn_begin	7
+T0002.612	RED	turn_end	7	MOVE(0-6, [[↓]])
+T0002.620	referee	board_update
+T0002.639	BLUE	turn_begin	8
+T0002.707	BLUE	turn_end	8	MOVE(7-6, [[↑]])
+T0002.710	referee	board_update
+T0002.731	RED	turn_begin	9
+T0002.775	RED	turn_end	9	MOVE(0-2, [[↓]])
+T0002.776	referee	board_update
+T0002.798	BLUE	turn_begin	10
+T0002.840	BLUE	turn_end	10	MOVE(7-2, [[↑]])
+T0002.842	referee	board_update
+T0002.864	RED	turn_begin	11
+T0002.896	RED	turn_end	11	MOVE(0-5, [[↓]])
+T0002.897	referee	board_update
+T0002.915	BLUE	turn_begin	12
+T0002.945	BLUE	turn_end	12	MOVE(7-5, [[↑]])
+T0002.946	referee	board_update
+T0002.961	RED	turn_begin	13
+T0002.978	RED	turn_end	13	GROW
+T0002.980	referee	board_update
+T0002.996	BLUE	turn_begin	14
+T0003.011	BLUE	turn_end	14	GROW
+T0003.012	referee	board_update
+T0003.027	RED	turn_begin	15
+T0003.126	RED	turn_end	15	MOVE(1-2, [[↓]])
+T0003.127	referee	board_update
+T0003.138	BLUE	turn_begin	16
+T0003.236	BLUE	turn_end	16	MOVE(6-2, [[↑]])
+T0003.237	referee	board_update
+T0003.249	RED	turn_begin	17
+T0003.369	RED	turn_end	17	MOVE(1-5, [[↓]])
+T0003.370	referee	board_update
+T0003.388	BLUE	turn_begin	18
+T0003.471	BLUE	turn_end	18	MOVE(6-5, [[↑]])
+T0003.472	referee	board_update
+T0003.483	RED	turn_begin	19
+T0003.552	RED	turn_end	19	MOVE(1-1, [[↓]])
+T0003.552	referee	board_update
+T0003.566	BLUE	turn_begin	20
+T0003.637	BLUE	turn_end	20	MOVE(6-1, [[↑]])
+T0003.638	referee	board_update
+T0003.650	RED	turn_begin	21
+T0003.708	RED	turn_end	21	MOVE(1-4, [[↓]])
+T0003.708	referee	board_update
+T0003.721	BLUE	turn_begin	22
+T0003.790	BLUE	turn_end	22	MOVE(6-4, [[↑]])
+T0003.791	referee	board_update
+T0003.804	RED	turn_begin	23
+T0003.858	RED	turn_end	23	MOVE(1-6, [[↓]])
+T0003.859	referee	board_update
+T0003.873	BLUE	turn_begin	24
+T0003.926	BLUE	turn_end	24	MOVE(6-6, [[↑]])
+T0003.927	referee	board_update
+T0003.948	RED	turn_begin	25
+T0004.003	RED	turn_end	25	MOVE(1-3, [[↓]])
+T0004.004	referee	board_update
+T0004.080	BLUE	turn_begin	26
+T0004.155	BLUE	turn_end	26	MOVE(6-3, [[↑]])
+T0004.157	referee	board_update
+T0004.191	RED	turn_begin	27
+T0004.219	RED	turn_end	27	GROW
+T0004.220	referee	board_update
+T0004.238	BLUE	turn_begin	28
+T0004.267	BLUE	turn_end	28	GROW
+T0004.268	referee	board_update
+T0004.284	RED	turn_begin	29
+T0004.383	RED	turn_end	29	MOVE(2-4, [[↓]])
+T0004.384	referee	board_update
+T0004.396	BLUE	turn_begin	30
+T0004.555	BLUE	turn_end	30	MOVE(5-5, [[↑]])
+T0004.556	referee	board_update
+T0004.570	RED	turn_begin	31
+T0004.687	RED	turn_end	31	MOVE(2-1, [[↓]])
+T0004.688	referee	board_update
+T0004.701	BLUE	turn_begin	32
+T0004.843	BLUE	turn_end	32	MOVE(5-4, [[↑]])
+T0004.843	referee	board_update
+T0004.857	RED	turn_begin	33
+T0005.053	RED	turn_end	33	MOVE(3-4, [[↙]])
+T0005.064	referee	board_update
+T0005.080	BLUE	turn_begin	34
+T0005.182	BLUE	turn_end	34	MOVE(4-4, [[↖]])
+T0005.184	referee	board_update
+T0005.197	RED	turn_begin	35
+T0005.293	RED	turn_end	35	MOVE(3-1, [[↓]])
+T0005.294	referee	board_update
+T0005.309	BLUE	turn_begin	36
+T0005.405	BLUE	turn_end	36	MOVE(5-1, [[↖]])
+T0005.413	referee	board_update
+T0005.425	RED	turn_begin	37
+T0005.501	RED	turn_end	37	MOVE(2-3, [[↙]])
+T0005.502	referee	board_update
+T0005.515	BLUE	turn_begin	38
+T0005.594	BLUE	turn_end	38	MOVE(4-0, [[↑]])
+T0005.595	referee	board_update
+T0005.605	RED	turn_begin	39
+T0005.658	RED	turn_end	39	MOVE(2-6, [[↓]])
+T0005.658	referee	board_update
+T0005.669	BLUE	turn_begin	40
+T0005.733	BLUE	turn_end	40	MOVE(3-0, [[↑]])
+T0005.734	referee	board_update
+T0005.744	RED	turn_begin	41
+T0005.795	RED	turn_end	41	MOVE(3-6, [[↓]])
+T0005.795	referee	board_update
+T0005.805	BLUE	turn_begin	42
+T0005.861	BLUE	turn_end	42	MOVE(2-0, [[↑]])
+T0005.861	referee	board_update
+T0005.871	RED	turn_begin	43
+T0005.915	RED	turn_end	43	MOVE(4-6, [[↘]])
+T0005.916	referee	board_update
+T0005.926	BLUE	turn_begin	44
+T0005.979	BLUE	turn_end	44	MOVE(5-3, [[↖]])
+T0005.980	referee	board_update
+T0005.989	RED	turn_begin	45
+T0006.021	RED	turn_end	45	MOVE(5-7, [[↓]])
+T0006.021	referee	board_update
+T0006.032	BLUE	turn_begin	46
+T0006.069	BLUE	turn_end	46	MOVE(4-5, [[↑]])
+T0006.070	referee	board_update
+T0006.082	RED	turn_begin	47
+T0006.114	RED	turn_end	47	MOVE(6-7, [[↓]])
+T0006.114	referee	board_update
+T0006.124	BLUE	turn_begin	48
+T0006.158	BLUE	turn_end	48	MOVE(5-6, [[↗]])
+T0006.159	referee	board_update
+T0006.169	RED	turn_begin	49
+T0006.194	RED	turn_end	49	MOVE(4-1, [[↙]])
+T0006.195	referee	board_update
+T0006.206	BLUE	turn_begin	50
+T0006.236	BLUE	turn_end	50	MOVE(1-0, [[↑]])
+T0006.237	referee	board_update
+T0006.248	RED	turn_begin	51
+T0006.274	RED	turn_end	51	MOVE(5-0, [[↓]])
+T0006.275	referee	board_update
+T0006.285	BLUE	turn_begin	52
+T0006.308	BLUE	turn_end	52	MOVE(4-7, [[↑]])
+T0006.308	referee	board_update
+T0006.319	RED	turn_begin	53
+T0006.349	RED	turn_end	53	MOVE(6-0, [[↓]])
+T0006.350	referee	board_update
+T0006.360	BLUE	turn_begin	54
+T0006.382	BLUE	turn_end	54	MOVE(3-7, [[↑]])
+T0006.383	referee	board_update
+T0006.394	RED	turn_begin	55
+T0006.417	RED	turn_end	55	GROW
+T0006.417	referee	board_update
+T0006.428	BLUE	turn_begin	56
+T0006.514	BLUE	turn_end	56	MOVE(2-7, [[↑]])
+T0006.514	referee	board_update
+T0006.524	RED	turn_begin	57
+T0006.614	RED	turn_end	57	MOVE(4-3, [[↓]])
+T0006.619	referee	board_update
+T0006.629	BLUE	turn_begin	58
+T0006.710	BLUE	turn_end	58	MOVE(4-2, [[↖]])
+T0006.711	referee	board_update
+T0006.723	RED	turn_begin	59
+T0006.798	RED	turn_end	59	MOVE(5-3, [[↓]])
+T0006.798	referee	board_update
+T0006.811	BLUE	turn_begin	60
+T0006.881	BLUE	turn_end	60	MOVE(3-1, [[↑]])
+T0006.881	referee	board_update
+T0006.896	RED	turn_begin	61
+T0006.969	RED	turn_end	61	MOVE(2-5, [[↙]])
+T0006.970	referee	board_update
+T0006.988	BLUE	turn_begin	62
+T0007.050	BLUE	turn_end	62	MOVE(2-1, [[↑]])
+T0007.051	referee	board_update
+T0007.065	RED	turn_begin	63
+T0007.111	RED	turn_end	63	MOVE(3-4, [[↓]])
+T0007.112	referee	board_update
+T0007.122	BLUE	turn_begin	64
+T0007.174	BLUE	turn_end	64	MOVE(1-1, [[↑]])
+T0007.174	referee	board_update
+T0007.184	RED	turn_begin	65
+T0007.224	RED	turn_end	65	MOVE(4-4, [[↓]])
+T0007.225	referee	board_update
+T0007.234	BLUE	turn_begin	66
+T0007.277	BLUE	turn_end	66	MOVE(1-7, [[↑]])
+T0007.278	referee	board_update
+T0007.287	RED	turn_begin	67
+T0007.328	RED	turn_end	67	MOVE(5-4, [[↓]])
+T0007.328	referee	board_update
+T0007.338	BLUE	turn_begin	68
+T0007.379	BLUE	turn_end	68	MOVE(3-3, [[↑]])
+T0007.379	referee	board_update
+T0007.389	RED	turn_begin	69
+T0007.430	RED	turn_end	69	MOVE(6-4, [[↓]])
+T0007.431	referee	board_update
+T0007.441	BLUE	turn_begin	70
+T0007.480	BLUE	turn_end	70	MOVE(2-3, [[↑]])
+T0007.481	referee	board_update
+T0007.491	RED	turn_begin	71
+T0007.524	RED	turn_end	71	MOVE(3-2, [[↙]])
+T0007.525	referee	board_update
+T0007.535	BLUE	turn_begin	72
+T0007.572	BLUE	turn_end	72	MOVE(1-3, [[↑]])
+T0007.573	referee	board_update
+T0007.583	RED	turn_begin	73
+T0007.613	RED	turn_end	73	MOVE(6-3, [[↓]])
+T0007.613	referee	board_update
+T0007.625	BLUE	turn_begin	74
+T0007.716	BLUE	turn_end	74	MOVE(3-5, [[↖]])
+T0007.718	referee	board_update
+T0007.734	RED	turn_begin	75
+T0007.761	RED	turn_end	75	GROW
+T0007.762	referee	board_update
+T0007.782	BLUE	turn_begin	76
+T0007.829	BLUE	turn_end	76	MOVE(2-4, [[↑]])
+T0007.830	referee	board_update
+T0007.845	RED	turn_begin	77
+T0007.894	RED	turn_end	77	MOVE(2-2, [[↓]])
+T0007.895	referee	board_update
+T0007.906	BLUE	turn_begin	78
+T0007.955	BLUE	turn_end	78	MOVE(1-4, [[↑]])
+T0007.955	referee	board_update
+T0007.968	RED	turn_begin	79
+T0008.011	RED	turn_end	79	MOVE(3-2, [[↓]])
+T0008.011	referee	board_update
+T0008.022	BLUE	turn_begin	80
+T0008.057	BLUE	turn_end	80	GROW
+T0008.058	referee	board_update
+T0008.073	RED	turn_begin	81
+T0008.113	RED	turn_end	81	MOVE(4-2, [[↙]])
+T0008.113	referee	board_update
+T0008.125	BLUE	turn_begin	82
+T0008.161	BLUE	turn_end	82	MOVE(5-2, [[↗]])
+T0008.162	referee	board_update
+T0008.174	RED	turn_begin	83
+T0008.211	RED	turn_end	83	MOVE(5-1, [[↓]])
+T0008.211	referee	board_update
+T0008.222	BLUE	turn_begin	84
+T0008.248	BLUE	turn_end	84	MOVE(4-3, [[↑]])
+T0008.249	referee	board_update
+T0008.260	RED	turn_begin	85
+T0008.296	RED	turn_end	85	MOVE(6-1, [[↓]])
+T0008.297	referee	board_update
+T0008.314	BLUE	turn_begin	86
+T0008.338	BLUE	turn_end	86	MOVE(3-3, [[↑]])
+T0008.339	referee	board_update
+T0008.350	RED	turn_begin	87
+T0008.376	RED	turn_end	87	MOVE(4-1, [[↙]])
+T0008.376	referee	board_update
+T0008.387	BLUE	turn_begin	88
+T0008.413	BLUE	turn_end	88	MOVE(2-3, [[↑]])
+T0008.414	referee	board_update
+T0008.425	RED	turn_begin	89
+T0008.449	RED	turn_end	89	MOVE(5-0, [[↓]])
+T0008.450	referee	board_update
+T0008.463	BLUE	turn_begin	90
+T0008.495	BLUE	turn_end	90	MOVE(1-3, [[↖]])
+T0008.495	referee	board_update
+T0008.814	referee	game_end	winner:BLUE
