@@ -89,7 +89,7 @@ class ABAgent:
                                                        tuple[int | Any, list[
                                                            Any]]:
         # If the node is the leaf (at terminal state) or the maximum lookahead depth
-        if curDepth == targetDepth: # or self.board.get_next_possible_configurations(init_board_state=current_state, player_turn=self._color if maxTurn else self.opponent_color()) == None:
+        if curDepth == targetDepth or self.get_next_possible_configurations(init_board=current_state, player_turn=self._color if maxTurn else self._color.opponent) is None:
             return self.eval(current_state), board_mutations
 
         if maxTurn:
@@ -100,12 +100,13 @@ class ABAgent:
                     init_board=current_state, player_turn=self._color):
                 prev_action = action
                 score,_ = self.minimax(board_state, curDepth+1, False, targetDepth, alpha, beta, prev_action)
+                # Get maximum score
                 if value < score:
                     max_set_action = action
                     value = score
-                alpha = max(alpha, value) 
-                if alpha >= beta:
+                if value >= beta:
                     break
+                alpha = max(alpha, value) 
             return value, max_set_action
 
         value = float("inf")
@@ -119,13 +120,12 @@ class ABAgent:
             if value > score:
                 min_set_action = action
                 value = score
-            beta = min(beta, value)
-            if alpha >= beta:
+            if value <= alpha:
                 break
         return value, min_set_action
             
     def eval(self, board: Board):
-        return self.get_score(board, self._color) + self.get_score(board, self.opponent_color)
+        return self.get_score(board, self._color.opponent) + self.get_score(board, self._color)
 
     def _is_valid_move(self, color: PlayerColor, direction: Direction):
         if color == PlayerColor.RED:
@@ -264,4 +264,13 @@ class ABAgent:
                 except ValueError:
                     continue
         return count
-    
+    # def get_score(self, board: Board, player_color: PlayerColor) -> int:
+    #     position_of_frogs: set[Coord] = set(
+    #         coord for coord, cell in board._state.items()
+    #         if cell.state == player_color
+    #     )
+    #     count = 0
+    #     for cell in position_of_frogs:
+    #             from_cell = 7 if player_color == PlayerColor.RED else 0
+    #             count += abs(from_cell - cell.r)
+    #     return count/len(position_of_frogs)
