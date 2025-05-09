@@ -1,8 +1,8 @@
 
 from referee.game.actions import Action
 from referee.game.player import PlayerColor
-from agent.program import Agent
-from agent.mctsAgent import MCTSAgent
+from .program import Agent
+from .mctsAgent import MCTSAgent
 
 class CombinedAgent(Agent):
     def __init__(self, color: PlayerColor, **referee: dict):
@@ -11,7 +11,7 @@ class CombinedAgent(Agent):
         self.minimax_agent = Agent(color, **referee)
 
     def action(self, **referee: dict) -> Action:
-        if self.board.turn_count < 10:
+        if self.board.turn_count < 20:
             return self.mcts_agent.action(**referee)
             
         else:

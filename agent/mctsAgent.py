@@ -1,6 +1,6 @@
 from dataclasses import dataclass
-from agent.game.board import ILLEGAL_BLUE_DIRECTIONS, Board, CellState
-from agent.program import Agent
+from .game.board import ILLEGAL_BLUE_DIRECTIONS, Board, CellState
+from .program import Agent
 from referee.game import PlayerColor, Action
 import math
 
@@ -27,7 +27,7 @@ class MCTSNode:
         if self.visits == 0 or self.parent is None:
             return float('inf')
         return self.value / self.visits + c * math.sqrt((2*math.log(self.parent.visits)) / self.visits)
-
+    
     @property
     def unexplored_actions(self):
         if self._unexplored_actions is None:
@@ -44,6 +44,7 @@ class MCTSNode:
         return len(self.children) == 0
     
     def backpropagate(self, result: int):
+        result = (result - (-1))/2
         self.value += result
         self.visits += 1
         if self.parent is not None:
@@ -103,10 +104,10 @@ class MCTSAgent(Agent):
                 print("rollout turn:", state.turn_count)
                 return state.determine_winner(self._color)
             
-            action, _ = self.rollout_policy(state)
+            action = self.rollout_policy(state)
             state.apply_action(action)
             
-    def rollout_policy(self, state: Board):
+    def rollout_policy(self, state: Board) -> Action:
         return random.choice(state.get_next_possible_configurations())
     
     def tree_policy(self, root: MCTSNode) -> MCTSNode:
@@ -120,9 +121,10 @@ class MCTSAgent(Agent):
 
     def expand(self, node: MCTSNode):
         if len(node.unexplored_actions) > 0:
-            action, board = node.unexplored_actions.pop()
-            board.turn_count = node.board.turn_count + 1
-            child = MCTSNode(action=action, board=board)
+            action = node.unexplored_actions.pop()
+            new_board = Board(initial_state=node.board._state, initial_player=self._color, turn_count=node.board.turn_count + 1)
+            new_board.apply_action(action)
+            child = MCTSNode(action=action, board=new_board)
             child.parent = node
             node.children.append(child)
             return child

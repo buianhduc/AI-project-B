@@ -450,7 +450,7 @@ class Board:
     def set_turn_color(self, color: PlayerColor):
         self._turn_color = color
 
-    def get_next_possible_configurations(self) -> list[tuple[Action, 'Board']] | None:
+    def get_next_possible_configurations(self) -> list[Action] | None:
         """
             The function attempts to simulate the next possible configurations
             by trying to grow the board and then checking if it has changed, 
@@ -462,8 +462,7 @@ class Board:
         grow_action = GrowAction()
         board = Board(initial_state=self._state, initial_player=self._turn_color)
         board.turn_count = self.turn_count
-        board.apply_action(grow_action)
-        possible_configs = [(grow_action, board)]
+        possible_configs = [grow_action]
 
         # Acquire all respective colored frogs
         position_of_frogs: set[Coord] = set(
@@ -522,7 +521,7 @@ class Board:
             current_node: Coord,
             current_direction: list[Direction],
             visited: list[Coord] = [],
-            can_jump_to_lilypad=True) -> list[tuple[Action, 'Board']]:
+            can_jump_to_lilypad=True) -> list[Action]:
         """Get the neighbors and their distance from the current_node
         Args:
         boards: Dictionary with Coord instance key
@@ -555,7 +554,7 @@ class Board:
                     new_dir.append(direction)
 
                     board.apply_action(MoveAction(current_node, *new_dir))
-                    neighbors.append((MoveAction(current_node, *new_dir),board))
+                    neighbors.append(MoveAction(current_node, *new_dir))
                 # If the next node is a frog, check if it can be jumped over
                 elif (init_board[new_coord] == CellState(PlayerColor.BLUE) or
                       init_board[new_coord] == CellState(PlayerColor.RED)):
