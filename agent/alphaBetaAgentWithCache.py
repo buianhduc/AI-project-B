@@ -111,6 +111,7 @@ class ABAgentWithCache:
         depth = 1
         end_time = time.time() + time_limit
         score = 0
+        cutoff_depth = 150 - current_state.turn_count
         while True:
             if time.time() > end_time:
                 break
@@ -121,7 +122,8 @@ class ABAgentWithCache:
                                 targetDepth=depth,
                                 alpha=-float("inf"),
                                 beta=float("inf"))
-        print("Depth: ", depth)
+            if depth > cutoff_depth:
+                break 
         # print(self.transposition_table.hash_table)
         return score
     def minimax(self, current_state: Board,
@@ -168,7 +170,7 @@ class ABAgentWithCache:
         return value
             
     def eval(self, board: Board):
-        return self.get_score(board, self._color.opponent) + self.get_score(board, self._color)
+        return - self.get_score(board, self._color.opponent) + self.get_score(board, self._color)
 
     def _is_valid_move(self, color: PlayerColor, direction: Direction):
         if color == PlayerColor.RED:

@@ -2,6 +2,8 @@
 # Project Part B: Game Playing Agent
 from typing import Any
 
+from referee.game.constants import MAX_TURNS
+
 from .game.board import Board, BoardMutation, BoardState, CellState, \
     ILLEGAL_RED_DIRECTIONS, ILLEGAL_BLUE_DIRECTIONS
 from referee.game import (PlayerColor, Coord, Direction, Action, MoveAction,
@@ -36,16 +38,22 @@ class MinimaxAgent:
         This method is called by the referee each time it is the agent's turn
         to take an action. It must always return an action object. 
         """
-
+        
         copy = Board(self.board._state, initial_player=self._color)
-        print(copy.render(use_color=True))
-        score, action  = self.minimax(current_state=copy,
-                     curDepth=0,
-                     maxTurn=True,
-                     targetDepth=3)
-        print(action)
+        best_action = None
+        best_score = -float("inf")
+        for action in copy.get_next_possible_configurations():
+            copy.apply_action(action)
+            score  = self.minimax(current_state=copy,
+                        curDepth=0,
+                        maxTurn=False,
+                        targetDepth=2)
+            copy.undo_action()
+            if best_score < score:
+                best_action = action
+                best_score = score
         # Reconstruct
-        return action
+        return best_action
         
 
     def update(self, color: PlayerColor, action: Action, **referee: dict):
@@ -78,50 +86,38 @@ class MinimaxAgent:
     def minimax(self, current_state: Board,
                 curDepth: int,
                 maxTurn: bool,
-                targetDepth: int,
-                board_mutations: Action = None) -> tuple[float, list[
-                                                                        Any] | None] | \
-                                                       tuple[int | Any, list[
-                                                           Any]]:
+                targetDepth: int) -> int:
         # If the node is the leaf (at terminal state) or the maximum lookahead depth
-        if curDepth == targetDepth: # or self.board.get_next_possible_configurations(init_board_state=current_state, player_turn=self._color if maxTurn else self.opponent_color()) == None:
-            return self.eval(current_state), board_mutations
+        if curDepth == targetDepth or current_state.has_game_ended():
+            return self.eval(current_state)
 
         if maxTurn:
             value = -float("inf")
-            max_set_action = None
 
-            for action, board_state in self.get_next_possible_configurations(
+            for action in self.get_next_possible_configurations(
                     init_board=current_state, player_turn=self._color):
-                prev_action = action
-                score, actions = self.minimax(board_state, curDepth+1, False, targetDepth, prev_action)
-                # print(actions)
-                # print(board_state.render())
+                
+                current_state.apply_action(action)
+                score = self.minimax(current_state, curDepth+1, False,
+                                            targetDepth)
+                current_state.undo_action()
                 if value < score:
-                    max_set_action = action
                     value = score
 
-            return value, max_set_action
+            return value
 
         value = float("inf")
-        max_set_action = None
-        for action, board_state in self.get_next_possible_configurations(
+        for action in self.get_next_possible_configurations(
                 init_board=current_state, player_turn=self.opponent_color):
 
-            new_board_mutations = action
-            score, actions = self.minimax(board_state, curDepth+1, True,
-                                          targetDepth, new_board_mutations)
+            current_state.apply_action(action)
+            score = self.minimax(current_state, curDepth+1, True,
+                                          targetDepth)
+            current_state.undo_action()
             if value > score:
-                max_set_action = action
                 value = score
-        return value, max_set_action
+        return value
             
-    def eval(self, board: Board):
-        winner = self.determine_winner(board)
-        if winner is None:
-            return 0
-        return 1 if winner == self._color else -1
-
     def _is_valid_move(self, color: PlayerColor, direction: Direction):
         if color == PlayerColor.RED:
             return direction in {Direction.Down, Direction.DownLeft, Direction.DownRight, Direction.Left,
@@ -130,7 +126,9 @@ class MinimaxAgent:
      # self implementation served for agent
 
     def get_next_possible_configurations(self, init_board: Board,
-                                         player_turn: PlayerColor) -> list[tuple[Action, Board]]:
+                                         player_turn: PlayerColor) -> list[Action]:
+        if init_board.turn_count >= MAX_TURNS:
+            return None
         # Try grow action
         grow_action = GrowAction()
         board = Board(initial_state=init_board._state, initial_player=player_turn)
@@ -142,7 +140,7 @@ class MinimaxAgent:
                 check_change = True
                 break
         if check_change:
-            possible_configs = [(grow_action, board)]
+            possible_configs = [grow_action]
         else:
             possible_configs = []
 
@@ -155,9 +153,10 @@ class MinimaxAgent:
         # Try to move all of the frogs
         for cell in position_of_frogs:
             board = Board(init_board._state, initial_player=player_turn)
-            neighbors = self.get_neighbors_and_distance(
+            neighbors = init_board.get_neighbors_and_distance(
                 player_turn, board, cell,  [], [])
-            possible_configs += neighbors
+
+            possible_configs += [MoveAction(cell, directions) for directions in neighbors]
         # Try to find possible paths if each of them do move action
 
         return possible_configs if len(possible_configs) != 0 else None
@@ -218,26 +217,17 @@ class MinimaxAgent:
                     except ValueError:
                         continue
         return neighbors
-
-    def determine_winner(self, board: Board) -> PlayerColor | None:
+    
+    def eval(self, board: Board):
+        return self.get_score(board, self._color) - self.get_score(board, self.opponent_color)
+    
+    def get_score(self, board: Board, player_color: PlayerColor) -> int:
         position_of_frogs: set[Coord] = set(
             coord for coord, cell in board._state.items()
-            if cell.state == self._color
+            if cell.state == player_color
         )
         count = 0
         for cell in position_of_frogs:
-            if cell.r == (7 if self._color == PlayerColor.RED else 0):
-                count += 1
-        count_rev = 0
-        position_of_frogs: set[Coord] = set(
-            coord for coord, cell in board._state.items()
-            if cell.state == self.opponent_color
-        )
-        for cell in position_of_frogs:
-            if cell.r == (7 if self.opponent_color == PlayerColor.RED else 0):
-                count_rev += 1
-        if count == 6:
-            return self._color
-        if count_rev == 6:
-            return self.opponent_color
-        return None
+                from_cell = 7 if player_color == PlayerColor.RED else 0
+                count -= abs(from_cell - cell.r)
+        return count

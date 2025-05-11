@@ -29,7 +29,7 @@ class MCTSNode:
     def ubc_score(self, c: float)->float:
         if self.visits == 0 or self.parent is None:
             return float('inf')
-        return (self.value / self.visits)+ c * math.sqrt((2*math.log(self.parent.visits)) / self.visits)
+        return (self.value / self.visits)+ c * math.sqrt((math.log(self.parent.visits)) / self.visits)
     @property
     def value(self):
         return self.result[1] + self.result[0] - self.result[-1]

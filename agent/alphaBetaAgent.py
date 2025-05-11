@@ -39,16 +39,23 @@ class ABAgent:
         to take an action. It must always return an action object. 
         """
 
-        copy = Board(self.board._state, initial_player=self._color, turn_count=self.board.turn_count)
-        score, action  = self.minimax(current_state=copy,
-                     curDepth=0,
-                     maxTurn=True,
-                     targetDepth=2,
-                     alpha=-float("inf"),
-                     beta=float("inf"))
-        print(action)
+        copy = Board(self.board._state, initial_player=self._color)
+        best_action = None
+        best_score = -float("inf")
+        for action in copy.get_next_possible_configurations():
+            copy.apply_action(action)
+            score  = self.minimax(current_state=copy,
+                        curDepth=0,
+                        maxTurn=False,
+                        targetDepth=3,
+                        alpha=-float("inf"),
+                        beta=float("inf"))
+            copy.undo_action()
+            if best_score < score:
+                best_action = action
+                best_score = score
         # Reconstruct
-        return action
+        return best_action
         
 
     def update(self, color: PlayerColor, action: Action, **referee: dict):
@@ -84,50 +91,41 @@ class ABAgent:
                 targetDepth: int,
                 alpha : float,
                 beta : float,
-                board_mutations: Action = None) -> tuple[float, list[
-                                                                        Any] | None] | \
-                                                       tuple[int | Any, list[
-                                                           Any]]:
+                board_mutations: Action = None) -> Action:
         # If the node is the leaf (at terminal state) or the maximum lookahead depth
-        if curDepth == targetDepth or self.get_next_possible_configurations(init_board=current_state, player_turn=self._color if maxTurn else self._color.opponent) is None:
-            return self.eval(current_state), board_mutations
+        if curDepth == targetDepth or current_state.has_game_ended():
+            eval_score = self.eval(current_state)
+            return eval_score
 
         if maxTurn:
             value = -float("inf")
-            max_set_action = None
-
-            for action, board_state in self.get_next_possible_configurations(
+            for action in self.get_next_possible_configurations(
                     init_board=current_state, player_turn=self._color):
-                prev_action = action
-                score,_ = self.minimax(board_state, curDepth+1, False, targetDepth, alpha, beta, prev_action)
+                current_state.apply_action(action)
+                score = self.minimax(current_state, curDepth+1, False, targetDepth, alpha, beta)
+                current_state.undo_action()
                 # Get maximum score
-                if value < score:
-                    max_set_action = action
-                    value = score
+                value = max(value, score)
                 alpha = max(alpha, value) 
                 if beta <= alpha:
                     break
                 
-            return value, max_set_action
+            return value
 
         value = float("inf")
-        min_set_action = None
-        for action, board_state in self.get_next_possible_configurations(
+        for action in self.get_next_possible_configurations(
                 init_board=current_state, player_turn=self.opponent_color):
-
-            new_board_mutations = action
-            score,_ = self.minimax(board_state, curDepth+1, True,
-                                          targetDepth, alpha, beta, new_board_mutations)
-            if value > score:
-                min_set_action = action
-                value = score
+            current_state.apply_action(action)
+            score = self.minimax(current_state, curDepth+1, True, targetDepth, alpha, beta)
+            current_state.undo_action()
+            value = min(value, score)
             beta = min(beta, value)
             if beta <= alpha:
                 break
-        return value, min_set_action
+        return value
             
     def eval(self, board: Board):
-        return self.get_score(board, self._color.opponent) + self.get_score(board, self._color)
+        return - self.get_score(board, self._color.opponent) + self.get_score(board, self._color)
 
     def _is_valid_move(self, color: PlayerColor, direction: Direction):
         if color == PlayerColor.RED:
@@ -137,7 +135,7 @@ class ABAgent:
      # self implementation served for agent
 
     def get_next_possible_configurations(self, init_board: Board,
-                                         player_turn: PlayerColor) -> list[tuple[Action, Board]]:
+                                         player_turn: PlayerColor) -> list[Action]:
         if init_board.turn_count >= MAX_TURNS:
             return None
         # Try grow action
@@ -151,7 +149,7 @@ class ABAgent:
                 check_change = True
                 break
         if check_change:
-            possible_configs = [(grow_action, board)]
+            possible_configs = [grow_action]
         else:
             possible_configs = []
 
@@ -228,6 +226,10 @@ class ABAgent:
                     except ValueError:
                         continue
         return neighbors
+    
+    def eval(self, board: Board):
+        return self.get_score(board, self._color) - self.get_score(board, self.opponent_color)
+    
     def get_score(self, board: Board, player_color: PlayerColor) -> int:
         position_of_frogs: set[Coord] = set(
             coord for coord, cell in board._state.items()
@@ -237,4 +239,4 @@ class ABAgent:
         for cell in position_of_frogs:
                 from_cell = 7 if player_color == PlayerColor.RED else 0
                 count -= abs(from_cell - cell.r)
-        return count / len(position_of_frogs)
+        return count
