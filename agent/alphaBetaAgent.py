@@ -1,20 +1,22 @@
 # COMP30024 Artificial Intelligence, Semester 1 2025
 # Project Part B: Game Playing Agent
 from typing import Any
+import numpy as np
 
-from .game.board import Board, BoardMutation, BoardState, CellState, \
+from agent.game.board import Board, BoardMutation, BoardState, CellState, \
     ILLEGAL_RED_DIRECTIONS, ILLEGAL_BLUE_DIRECTIONS
 from referee.game import (PlayerColor, Coord, Direction, Action, MoveAction,
                           GrowAction, IllegalActionException)
+from referee.game.constants import MAX_TURNS
 
 
-class Agent:
+class ABAgent:
     """
     This class is the "entry point" for your agent, providing an interface to
     respond to various Freckers game events.
     """
 
-    def __init__(self, color: PlayerColor,board:Board=None, **referee: dict):
+    def __init__(self, color: PlayerColor, **referee: dict):
         """
         This constructor method runs when the referee instantiates the agent.
         Any setup and/or precomputation should be done here.
@@ -26,7 +28,7 @@ class Agent:
             case PlayerColor.BLUE:
                 print("Testing: I am playing as BLUE")
                 self._color = PlayerColor.BLUE
-        self.board = Board() if board is None else board
+        self.board = Board()
 
     @property
     def opponent_color(self):
@@ -37,12 +39,13 @@ class Agent:
         to take an action. It must always return an action object. 
         """
 
-        copy = Board(self.board._state, initial_player=self._color)
-        print(copy.render(use_color=True))
+        copy = Board(self.board._state, initial_player=self._color, turn_count=self.board.turn_count)
         score, action  = self.minimax(current_state=copy,
                      curDepth=0,
                      maxTurn=True,
-                     targetDepth=3)
+                     targetDepth=2,
+                     alpha=-float("inf"),
+                     beta=float("inf"))
         print(action)
         # Reconstruct
         return action
@@ -79,12 +82,14 @@ class Agent:
                 curDepth: int,
                 maxTurn: bool,
                 targetDepth: int,
+                alpha : float,
+                beta : float,
                 board_mutations: Action = None) -> tuple[float, list[
                                                                         Any] | None] | \
                                                        tuple[int | Any, list[
                                                            Any]]:
         # If the node is the leaf (at terminal state) or the maximum lookahead depth
-        if curDepth == targetDepth: # or self.board.get_next_possible_configurations(init_board_state=current_state, player_turn=self._color if maxTurn else self.opponent_color()) == None:
+        if curDepth == targetDepth or self.get_next_possible_configurations(init_board=current_state, player_turn=self._color if maxTurn else self._color.opponent) is None:
             return self.eval(current_state), board_mutations
 
         if maxTurn:
@@ -94,28 +99,35 @@ class Agent:
             for action, board_state in self.get_next_possible_configurations(
                     init_board=current_state, player_turn=self._color):
                 prev_action = action
-                score, actions = self.minimax(board_state, curDepth+1, False, targetDepth, prev_action)
+                score,_ = self.minimax(board_state, curDepth+1, False, targetDepth, alpha, beta, prev_action)
+                # Get maximum score
                 if value < score:
                     max_set_action = action
                     value = score
-
+                alpha = max(alpha, value) 
+                if beta <= alpha:
+                    break
+                
             return value, max_set_action
 
         value = float("inf")
-        max_set_action = None
+        min_set_action = None
         for action, board_state in self.get_next_possible_configurations(
                 init_board=current_state, player_turn=self.opponent_color):
 
             new_board_mutations = action
-            score, actions = self.minimax(board_state, curDepth+1, True,
-                                          targetDepth, new_board_mutations)
+            score,_ = self.minimax(board_state, curDepth+1, True,
+                                          targetDepth, alpha, beta, new_board_mutations)
             if value > score:
-                max_set_action = action
+                min_set_action = action
                 value = score
-        return value, max_set_action
+            beta = min(beta, value)
+            if beta <= alpha:
+                break
+        return value, min_set_action
             
     def eval(self, board: Board):
-        return self.get_score(board, self._color) + self.get_score(board, self.opponent_color)
+        return self.get_score(board, self._color.opponent) + self.get_score(board, self._color)
 
     def _is_valid_move(self, color: PlayerColor, direction: Direction):
         if color == PlayerColor.RED:
@@ -126,6 +138,8 @@ class Agent:
 
     def get_next_possible_configurations(self, init_board: Board,
                                          player_turn: PlayerColor) -> list[tuple[Action, Board]]:
+        if init_board.turn_count >= MAX_TURNS:
+            return None
         # Try grow action
         grow_action = GrowAction()
         board = Board(initial_state=init_board._state, initial_player=player_turn)
@@ -150,9 +164,10 @@ class Agent:
         # Try to move all of the frogs
         for cell in position_of_frogs:
             board = Board(init_board._state, initial_player=player_turn)
-            neighbors = self.get_neighbors_and_distance(
+            neighbors = init_board.get_neighbors_and_distance(
                 player_turn, board, cell,  [], [])
-            possible_configs += neighbors
+
+            possible_configs += [MoveAction(cell, directions) for directions in neighbors]
         # Try to find possible paths if each of them do move action
 
         return possible_configs if len(possible_configs) != 0 else None
@@ -213,7 +228,6 @@ class Agent:
                     except ValueError:
                         continue
         return neighbors
-
     def get_score(self, board: Board, player_color: PlayerColor) -> int:
         position_of_frogs: set[Coord] = set(
             coord for coord, cell in board._state.items()
@@ -223,4 +237,4 @@ class Agent:
         for cell in position_of_frogs:
                 from_cell = 7 if player_color == PlayerColor.RED else 0
                 count -= abs(from_cell - cell.r)
-        return count
+        return count / len(position_of_frogs)

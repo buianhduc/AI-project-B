@@ -11,9 +11,11 @@ class CombinedAgent(Agent):
         self.minimax_agent = Agent(color, **referee)
 
     def action(self, **referee: dict) -> Action:
-        if self.board.turn_count < 20:
+        print(self.board.turn_count)
+        if self.board.turn_count < 60:
+            return self.minimax_agent.action(**referee)
+        if self.board.turn_count < 120:
             return self.mcts_agent.action(**referee)
-            
         else:
             return self.minimax_agent.action(**referee)
     def update(self, color: PlayerColor, action: Action, **referee: dict):

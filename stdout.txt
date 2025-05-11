@@ -1,0 +1,3275 @@
+*******************************************************************************
+Welcome to Freckers referee version 2025.0.0.
+
+Conduct a game of Freckers between 2 Agent classes.
+
+Run `python -m referee --help` for additional usage information.
+*******************************************************************************
+* referee : all messages printed by referee/wrapper modules begin with *
+* referee : (any other lines of output must be from your Agent class).
+* referee : 
+* referee ~ logging game output to 'log.txt'
+* referee ~ clearing existing log file 'log.txt'
+* referee : wrapping player 1 [agent:ABAgent] as RED...
+* referee : wrapping player 2 [agent:ABAgentWithCache] as BLUE...
+* referee : running game server...
+* referee : let the game begin!
+* referee : player RED is initialising
+* player1 ~ creating agent subprocess...
+* player1 ~ subprocess 14057 started
+* player1 ~ initialising class 'agent:ABAgent' on subprocess 14057
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* referee : player BLUE is initialising
+* player2 ~ creating agent subprocess...
+* player2 ~ subprocess 14066 started
+* player2 ~ initialising class 'agent:ABAgentWithCache' on subprocess 14066
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* referee : RED to play (turn 1) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=0, c=1), _directions=<Direction.Down: Vector2(r=1, c=0)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.151s  (just elapsed)       0.277s  (game total)
+* player1 ~   space:   1.160MB (current usage)      1.160MB (peak usage)
+* referee : RED plays action MOVE(0-1, [[↓]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * . R R R R R * 
+* referee :                          . R * * * * * . 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          . * * * * * * . 
+* referee :                          * B B B B B B * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=0, c=1), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       0.278s  (game total)
+* player1 ~   space:   1.164MB (current usage)      1.164MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=0, c=1), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.001s  (just elapsed)       0.272s  (game total)
+* player2 ~   space:   0.031MB (current usage)      0.031MB (peak usage)
+* referee : BLUE to play (turn 2) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ MoveAction(coord=Coord(r=7, c=4), _directions=<Direction.Up: Vector2(r=-1, c=0)>)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.942s  (just elapsed)       3.213s  (game total)
+* player2 ~   space:   0.168MB (current usage)      0.168MB (peak usage)
+* referee : BLUE plays action MOVE(7-4, [[↑]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * . R R R R R * 
+* referee :                          . R * * * * * . 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          . * * * B * * . 
+* referee :                          * B B B . B B * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=7, c=4), _directions=<Direction.Up: Vector2(r=-1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.001s  (just elapsed)       0.279s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=7, c=4), _directions=<Direction.Up: Vector2(r=-1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.001s  (just elapsed)       3.214s  (game total)
+* player2 ~   space:   0.168MB (current usage)      0.168MB (peak usage)
+* referee : RED to play (turn 3) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=0, c=4), _directions=<Direction.Down: Vector2(r=1, c=0)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.131s  (just elapsed)       0.410s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action MOVE(0-4, [[↓]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * . R R . R R * 
+* referee :                          . R * * R * * . 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          . * * * B * * . 
+* referee :                          * B B B . B B * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=0, c=4), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       0.410s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=0, c=4), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)       3.214s  (game total)
+* player2 ~   space:   0.168MB (current usage)      0.168MB (peak usage)
+* referee : BLUE to play (turn 4) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ MoveAction(coord=Coord(r=7, c=1), _directions=<Direction.Up: Vector2(r=-1, c=0)>)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.538s  (just elapsed)       5.753s  (game total)
+* player2 ~   space:   0.168MB (current usage)      0.168MB (peak usage)
+* referee : BLUE plays action MOVE(7-1, [[↑]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * . R R . R R * 
+* referee :                          . R * * R * * . 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          . B * * B * * . 
+* referee :                          * . B B . B B * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=7, c=1), _directions=<Direction.Up: Vector2(r=-1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       0.411s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=7, c=1), _directions=<Direction.Up: Vector2(r=-1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)       5.753s  (game total)
+* player2 ~   space:   0.168MB (current usage)      0.168MB (peak usage)
+* referee : RED to play (turn 5) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=0, c=3), _directions=<Direction.Down: Vector2(r=1, c=0)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.090s  (just elapsed)       0.501s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action MOVE(0-3, [[↓]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * . R . . R R * 
+* referee :                          . R * R R * * . 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          . B * * B * * . 
+* referee :                          * . B B . B B * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=0, c=3), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       0.501s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=0, c=3), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)       5.753s  (game total)
+* player2 ~   space:   0.168MB (current usage)      0.168MB (peak usage)
+* referee : BLUE to play (turn 6) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ MoveAction(coord=Coord(r=7, c=3), _directions=<Direction.Up: Vector2(r=-1, c=0)>)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.637s  (just elapsed)       8.391s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : BLUE plays action MOVE(7-3, [[↑]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * . R . . R R * 
+* referee :                          . R * R R * * . 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          . B * B B * * . 
+* referee :                          * . B . . B B * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=7, c=3), _directions=<Direction.Up: Vector2(r=-1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       0.502s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=7, c=3), _directions=<Direction.Up: Vector2(r=-1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)       8.391s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED to play (turn 7) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=0, c=6), _directions=<Direction.Down: Vector2(r=1, c=0)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.078s  (just elapsed)       0.580s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action MOVE(0-6, [[↓]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * . R . . R . * 
+* referee :                          . R * R R * R . 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          . B * B B * * . 
+* referee :                          * . B . . B B * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=0, c=6), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       0.580s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=0, c=6), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)       8.392s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : BLUE to play (turn 8) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ MoveAction(coord=Coord(r=7, c=6), _directions=<Direction.Up: Vector2(r=-1, c=0)>)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.526s  (just elapsed)      10.918s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : BLUE plays action MOVE(7-6, [[↑]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * . R . . R . * 
+* referee :                          . R * R R * R . 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          . B * B B * B . 
+* referee :                          * . B . . B . * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=7, c=6), _directions=<Direction.Up: Vector2(r=-1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       0.580s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=7, c=6), _directions=<Direction.Up: Vector2(r=-1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      10.918s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED to play (turn 9) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=0, c=2), _directions=<Direction.Down: Vector2(r=1, c=0)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.055s  (just elapsed)       0.636s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action MOVE(0-2, [[↓]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * . . . . R . * 
+* referee :                          . R R R R * R . 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          . B * B B * B . 
+* referee :                          * . B . . B . * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=0, c=2), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       0.636s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=0, c=2), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      10.919s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : BLUE to play (turn 10) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ MoveAction(coord=Coord(r=7, c=2), _directions=<Direction.Up: Vector2(r=-1, c=0)>)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.544s  (just elapsed)      13.463s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : BLUE plays action MOVE(7-2, [[↑]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * . . . . R . * 
+* referee :                          . R R R R * R . 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          . B B B B * B . 
+* referee :                          * . . . . B . * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=7, c=2), _directions=<Direction.Up: Vector2(r=-1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       0.636s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=7, c=2), _directions=<Direction.Up: Vector2(r=-1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      13.463s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED to play (turn 11) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=0, c=5), _directions=<Direction.Down: Vector2(r=1, c=0)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.032s  (just elapsed)       0.668s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action MOVE(0-5, [[↓]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * . . . . . . * 
+* referee :                          . R R R R R R . 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          . B B B B * B . 
+* referee :                          * . . . . B . * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=0, c=5), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       0.669s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=0, c=5), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      13.463s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : BLUE to play (turn 12) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ MoveAction(coord=Coord(r=7, c=5), _directions=<Direction.Up: Vector2(r=-1, c=0)>)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.504s  (just elapsed)      15.968s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : BLUE plays action MOVE(7-5, [[↑]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * . . . . . . * 
+* referee :                          . R R R R R R . 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          . B B B B B B . 
+* referee :                          * . . . . . . * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=7, c=5), _directions=<Direction.Up: Vector2(r=-1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       0.669s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=7, c=5), _directions=<Direction.Up: Vector2(r=-1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      15.968s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED to play (turn 13) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ GrowAction()
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.012s  (just elapsed)       0.681s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action GROW
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * R R R R R R * 
+* referee :                          * * * * * * * * 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          . B B B B B B . 
+* referee :                          * . . . . . . * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, GrowAction())'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       0.681s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, GrowAction())'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      15.968s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : BLUE to play (turn 14) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ GrowAction()
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.514s  (just elapsed)      18.483s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : BLUE plays action GROW
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * R R R R R R * 
+* referee :                          * * * * * * * * 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          * * * * * * * * 
+* referee :                          * B B B B B B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, GrowAction())'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       0.682s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, GrowAction())'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      18.483s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED to play (turn 15) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=1, c=2), _directions=<Direction.Down: Vector2(r=1, c=0)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.145s  (just elapsed)       0.826s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action MOVE(1-2, [[↓]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * R . R R R R * 
+* referee :                          * * R * * * * * 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          * * * * * * * * 
+* referee :                          * B B B B B B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=1, c=2), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       0.827s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=1, c=2), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      18.483s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : BLUE to play (turn 16) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ GrowAction()
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.533s  (just elapsed)      21.017s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : BLUE plays action GROW
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * R . R R R R * 
+* referee :                          * * R * * * * * 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          * * * * * * * * 
+* referee :                          * B B B B B B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, GrowAction())'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       0.827s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, GrowAction())'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      21.017s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED to play (turn 17) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=1, c=5), _directions=<Direction.Down: Vector2(r=1, c=0)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.133s  (just elapsed)       0.960s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action MOVE(1-5, [[↓]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * R . R R . R * 
+* referee :                          * * R * * R * * 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          * * * * * * * * 
+* referee :                          * B B B B B B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=1, c=5), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       0.961s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=1, c=5), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      21.018s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : BLUE to play (turn 18) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ GrowAction()
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.878s  (just elapsed)      23.896s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : BLUE plays action GROW
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * R . R R . R * 
+* referee :                          * * R * * R * * 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          * * * * * * * * 
+* referee :                          * B B B B B B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, GrowAction())'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       0.961s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, GrowAction())'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      23.896s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED to play (turn 19) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=1, c=1), _directions=<Direction.Down: Vector2(r=1, c=0)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.115s  (just elapsed)       1.076s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action MOVE(1-1, [[↓]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * . . R R . R * 
+* referee :                          * R R * * R * * 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          * * * * * * * * 
+* referee :                          * B B B B B B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=1, c=1), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       1.076s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=1, c=1), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      23.897s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : BLUE to play (turn 20) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ GrowAction()
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.896s  (just elapsed)      26.792s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : BLUE plays action GROW
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * . . R R . R * 
+* referee :                          * R R * * R * * 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          * * * * * * * * 
+* referee :                          * B B B B B B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, GrowAction())'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.001s  (just elapsed)       1.077s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, GrowAction())'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.001s  (just elapsed)      26.793s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED to play (turn 21) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=1, c=4), _directions=<Direction.Down: Vector2(r=1, c=0)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.100s  (just elapsed)       1.176s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action MOVE(1-4, [[↓]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * . . R . . R * 
+* referee :                          * R R * R R * * 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          * * * * * * * * 
+* referee :                          * B B B B B B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=1, c=4), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       1.177s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=1, c=4), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      26.793s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : BLUE to play (turn 22) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ GrowAction()
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.611s  (just elapsed)      29.405s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : BLUE plays action GROW
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * . . R . . R * 
+* referee :                          * R R * R R * * 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          * * * * * * * * 
+* referee :                          * B B B B B B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, GrowAction())'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       1.177s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, GrowAction())'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      29.405s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED to play (turn 23) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=1, c=6), _directions=<Direction.Down: Vector2(r=1, c=0)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.072s  (just elapsed)       1.249s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action MOVE(1-6, [[↓]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * . . R . . . * 
+* referee :                          * R R * R R R * 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          * * * * * * * * 
+* referee :                          * B B B B B B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=1, c=6), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       1.249s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=1, c=6), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      29.405s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : BLUE to play (turn 24) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ GrowAction()
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.582s  (just elapsed)      31.987s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : BLUE plays action GROW
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * . . R . . . * 
+* referee :                          * R R * R R R * 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          * * * * * * * * 
+* referee :                          * B B B B B B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, GrowAction())'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       1.250s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, GrowAction())'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      31.988s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED to play (turn 25) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=1, c=3), _directions=<Direction.Down: Vector2(r=1, c=0)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.049s  (just elapsed)       1.299s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action MOVE(1-3, [[↓]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * . . . . . . * 
+* referee :                          * R R R R R R * 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          * * * * * * * * 
+* referee :                          * B B B B B B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=1, c=3), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       1.299s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=1, c=3), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      31.988s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : BLUE to play (turn 26) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ GrowAction()
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.565s  (just elapsed)      34.554s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : BLUE plays action GROW
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * . . . . . . * 
+* referee :                          * R R R R R R * 
+* referee :                          . . . . . . . . 
+* referee :                          . . . . . . . . 
+* referee :                          * * * * * * * * 
+* referee :                          * B B B B B B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, GrowAction())'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       1.300s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, GrowAction())'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      34.554s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED to play (turn 27) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ GrowAction()
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.029s  (just elapsed)       1.328s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action GROW
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * R R R R R R * 
+* referee :                          * * * * * * * * 
+* referee :                          . . . . . . . . 
+* referee :                          * * * * * * * * 
+* referee :                          * B B B B B B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, GrowAction())'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       1.329s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, GrowAction())'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.001s  (just elapsed)      34.555s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : BLUE to play (turn 28) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ GrowAction()
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.512s  (just elapsed)      37.067s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : BLUE plays action GROW
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * R R R R R R * 
+* referee :                          * * * * * * * * 
+* referee :                          . . . . . . . . 
+* referee :                          * * * * * * * * 
+* referee :                          * B B B B B B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, GrowAction())'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       1.329s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, GrowAction())'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      37.067s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED to play (turn 29) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=2, c=4), _directions=<Direction.Down: Vector2(r=1, c=0)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.145s  (just elapsed)       1.474s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action MOVE(2-4, [[↓]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * R R R . R R * 
+* referee :                          * * * * R * * * 
+* referee :                          . . . . . . . . 
+* referee :                          * * * * * * * * 
+* referee :                          * B B B B B B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=2, c=4), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       1.475s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=2, c=4), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      37.067s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : BLUE to play (turn 30) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ GrowAction()
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.538s  (just elapsed)      39.606s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : BLUE plays action GROW
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * R R R . R R * 
+* referee :                          * * * * R * * * 
+* referee :                          . . . . . . . . 
+* referee :                          * * * * * * * * 
+* referee :                          * B B B B B B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, GrowAction())'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       1.475s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, GrowAction())'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      39.606s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED to play (turn 31) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=2, c=1), _directions=<Direction.Down: Vector2(r=1, c=0)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.132s  (just elapsed)       1.607s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action MOVE(2-1, [[↓]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * . R R . R R * 
+* referee :                          * R * * R * * * 
+* referee :                          . . . . . . . . 
+* referee :                          * * * * * * * * 
+* referee :                          * B B B B B B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=2, c=1), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       1.608s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=2, c=1), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      39.606s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : BLUE to play (turn 32) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ GrowAction()
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.944s  (just elapsed)      42.551s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : BLUE plays action GROW
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * . R R . R R * 
+* referee :                          * R * * R * * * 
+* referee :                          . . . . . . . . 
+* referee :                          * * * * * * * * 
+* referee :                          * B B B B B B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, GrowAction())'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       1.608s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, GrowAction())'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      42.551s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED to play (turn 33) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=2, c=3), _directions=<Direction.Down: Vector2(r=1, c=0)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.111s  (just elapsed)       1.719s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action MOVE(2-3, [[↓]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * . R . . R R * 
+* referee :                          * R * R R * * * 
+* referee :                          . . . . . . . . 
+* referee :                          * * * * * * * * 
+* referee :                          * B B B B B B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=2, c=3), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       1.720s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=2, c=3), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      42.551s  (game total)
+* player2 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : BLUE to play (turn 34) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ GrowAction()
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.898s  (just elapsed)      45.449s  (game total)
+* player2 ~   space:   1.379MB (current usage)      1.379MB (peak usage)
+* referee : BLUE plays action GROW
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * . R . . R R * 
+* referee :                          * R * R R * * * 
+* referee :                          . . . . . . . . 
+* referee :                          * * * * * * * * 
+* referee :                          * B B B B B B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, GrowAction())'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       1.720s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, GrowAction())'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      45.450s  (game total)
+* player2 ~   space:   1.379MB (current usage)      1.379MB (peak usage)
+* referee : RED to play (turn 35) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=2, c=6), _directions=<Direction.Down: Vector2(r=1, c=0)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.092s  (just elapsed)       1.812s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action MOVE(2-6, [[↓]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * . R . . R . * 
+* referee :                          * R * R R * R * 
+* referee :                          . . . . . . . . 
+* referee :                          * * * * * * * * 
+* referee :                          * B B B B B B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=2, c=6), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       1.813s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=2, c=6), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      45.450s  (game total)
+* player2 ~   space:   1.379MB (current usage)      1.379MB (peak usage)
+* referee : BLUE to play (turn 36) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ GrowAction()
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.682s  (just elapsed)      48.132s  (game total)
+* player2 ~   space:   1.379MB (current usage)      1.379MB (peak usage)
+* referee : BLUE plays action GROW
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * . R . . R . * 
+* referee :                          * R * R R * R * 
+* referee :                          . . . . . . . . 
+* referee :                          * * * * * * * * 
+* referee :                          * B B B B B B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, GrowAction())'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       1.813s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, GrowAction())'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      48.132s  (game total)
+* player2 ~   space:   1.379MB (current usage)      1.379MB (peak usage)
+* referee : RED to play (turn 37) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=2, c=2), _directions=<Direction.Down: Vector2(r=1, c=0)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.080s  (just elapsed)       1.893s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action MOVE(2-2, [[↓]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * . . . . R . * 
+* referee :                          * R R R R * R * 
+* referee :                          . . . . . . . . 
+* referee :                          * * * * * * * * 
+* referee :                          * B B B B B B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=2, c=2), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       1.893s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=2, c=2), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      48.133s  (game total)
+* player2 ~   space:   1.379MB (current usage)      1.379MB (peak usage)
+* referee : BLUE to play (turn 38) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ GrowAction()
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.648s  (just elapsed)      50.781s  (game total)
+* player2 ~   space:   1.379MB (current usage)      1.379MB (peak usage)
+* referee : BLUE plays action GROW
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * . . . . R . * 
+* referee :                          * R R R R * R * 
+* referee :                          . . . . . . . . 
+* referee :                          * * * * * * * * 
+* referee :                          * B B B B B B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, GrowAction())'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.001s  (just elapsed)       1.894s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, GrowAction())'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      50.781s  (game total)
+* player2 ~   space:   1.379MB (current usage)      1.379MB (peak usage)
+* referee : RED to play (turn 39) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=2, c=5), _directions=<Direction.Down: Vector2(r=1, c=0)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.049s  (just elapsed)       1.943s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action MOVE(2-5, [[↓]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * . . . . . . * 
+* referee :                          * R R R R R R * 
+* referee :                          . . . . . . . . 
+* referee :                          * * * * * * * * 
+* referee :                          * B B B B B B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=2, c=5), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       1.944s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=2, c=5), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      50.782s  (game total)
+* player2 ~   space:   1.379MB (current usage)      1.379MB (peak usage)
+* referee : BLUE to play (turn 40) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ GrowAction()
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.599s  (just elapsed)      53.380s  (game total)
+* player2 ~   space:   1.379MB (current usage)      1.379MB (peak usage)
+* referee : BLUE plays action GROW
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * . . . . . . * 
+* referee :                          * R R R R R R * 
+* referee :                          . . . . . . . . 
+* referee :                          * * * * * * * * 
+* referee :                          * B B B B B B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, GrowAction())'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       1.944s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, GrowAction())'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      53.381s  (game total)
+* player2 ~   space:   1.379MB (current usage)      1.379MB (peak usage)
+* referee : RED to play (turn 41) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ GrowAction()
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.028s  (just elapsed)       1.972s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action GROW
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * R R R R R R * 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * B B B B B B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, GrowAction())'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       1.973s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, GrowAction())'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      53.381s  (game total)
+* player2 ~   space:   1.379MB (current usage)      1.379MB (peak usage)
+* referee : BLUE to play (turn 42) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ GrowAction()
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.558s  (just elapsed)      55.939s  (game total)
+* player2 ~   space:   1.379MB (current usage)      1.379MB (peak usage)
+* referee : BLUE plays action GROW
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * R R R R R R * 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * B B B B B B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, GrowAction())'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       1.973s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, GrowAction())'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      55.939s  (game total)
+* player2 ~   space:   1.379MB (current usage)      1.379MB (peak usage)
+* referee : RED to play (turn 43) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=3, c=4), _directions=<Direction.Down: Vector2(r=1, c=0)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.150s  (just elapsed)       2.123s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action MOVE(3-4, [[↓]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * R R R . R R * 
+* referee :                          * * * * R * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * B B B B B B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=3, c=4), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       2.124s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=3, c=4), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      55.940s  (game total)
+* player2 ~   space:   1.379MB (current usage)      1.379MB (peak usage)
+* referee : BLUE to play (turn 44) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ GrowAction()
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.559s  (just elapsed)      58.499s  (game total)
+* player2 ~   space:   1.379MB (current usage)      1.379MB (peak usage)
+* referee : BLUE plays action GROW
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * R R R . R R * 
+* referee :                          * * * * R * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * B B B B B B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, GrowAction())'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       2.124s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, GrowAction())'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      58.499s  (game total)
+* player2 ~   space:   1.379MB (current usage)      1.379MB (peak usage)
+* referee : RED to play (turn 45) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=4, c=4), _directions=<Direction.Down: Vector2(r=1, c=0)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.196s  (just elapsed)       2.320s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action MOVE(4-4, [[↓]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * R R R . R R * 
+* referee :                          * * * * . * * * 
+* referee :                          * * * * R * * * 
+* referee :                          * B B B B B B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=4, c=4), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       2.320s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=4, c=4), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      58.500s  (game total)
+* player2 ~   space:   1.379MB (current usage)      1.379MB (peak usage)
+* referee : BLUE to play (turn 46) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ MoveAction(coord=Coord(r=6, c=5), _directions=<Direction.Up: Vector2(r=-1, c=0)>)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.979s  (just elapsed)      61.479s  (game total)
+* player2 ~   space:   1.379MB (current usage)      1.379MB (peak usage)
+* referee : BLUE plays action MOVE(6-5, [[↑]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * R R R . R R * 
+* referee :                          * * * * . * * * 
+* referee :                          * * * * R B * * 
+* referee :                          * B B B B . B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=6, c=5), _directions=<Direction.Up: Vector2(r=-1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       2.321s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=6, c=5), _directions=<Direction.Up: Vector2(r=-1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      61.479s  (game total)
+* player2 ~   space:   1.379MB (current usage)      1.379MB (peak usage)
+* referee : RED to play (turn 47) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=3, c=1), _directions=<Direction.Down: Vector2(r=1, c=0)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.184s  (just elapsed)       2.505s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action MOVE(3-1, [[↓]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * . R R . R R * 
+* referee :                          * R * * . * * * 
+* referee :                          * * * * R B * * 
+* referee :                          * B B B B . B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=3, c=1), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       2.506s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=3, c=1), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      61.480s  (game total)
+* player2 ~   space:   1.379MB (current usage)      1.379MB (peak usage)
+* referee : BLUE to play (turn 48) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ MoveAction(coord=Coord(r=6, c=2), _directions=<Direction.UpLeft: Vector2(r=-1, c=-1)>)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.782s  (just elapsed)      64.262s  (game total)
+* player2 ~   space:   1.379MB (current usage)      1.379MB (peak usage)
+* referee : BLUE plays action MOVE(6-2, [[↖]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * . R R . R R * 
+* referee :                          * R * * . * * * 
+* referee :                          * B * * R B * * 
+* referee :                          * B . B B . B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=6, c=2), _directions=<Direction.UpLeft: Vector2(r=-1, c=-1)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       2.506s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=6, c=2), _directions=<Direction.UpLeft: Vector2(r=-1, c=-1)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      64.262s  (game total)
+* player2 ~   space:   1.379MB (current usage)      1.379MB (peak usage)
+* referee : RED to play (turn 49) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=3, c=3), _directions=<Direction.Down: Vector2(r=1, c=0)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.174s  (just elapsed)       2.680s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action MOVE(3-3, [[↓]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * . R . . R R * 
+* referee :                          * R * R . * * * 
+* referee :                          * B * * R B * * 
+* referee :                          * B . B B . B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=3, c=3), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       2.680s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=3, c=3), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      64.263s  (game total)
+* player2 ~   space:   1.379MB (current usage)      1.379MB (peak usage)
+* referee : BLUE to play (turn 50) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ MoveAction(coord=Coord(r=5, c=5), _directions=<Direction.UpRight: Vector2(r=-1, c=1)>)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.789s  (just elapsed)      67.052s  (game total)
+* player2 ~   space:   1.379MB (current usage)      1.379MB (peak usage)
+* referee : BLUE plays action MOVE(5-5, [[↗]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * . R . . R R * 
+* referee :                          * R * R . * B * 
+* referee :                          * B * * R . * * 
+* referee :                          * B . B B . B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=5, c=5), _directions=<Direction.UpRight: Vector2(r=-1, c=1)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       2.680s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=5, c=5), _directions=<Direction.UpRight: Vector2(r=-1, c=1)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      67.052s  (game total)
+* player2 ~   space:   1.379MB (current usage)      1.379MB (peak usage)
+* referee : RED to play (turn 51) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=4, c=3), _directions=<Direction.Down: Vector2(r=1, c=0)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.143s  (just elapsed)       2.823s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action MOVE(4-3, [[↓]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * . R . . R R * 
+* referee :                          * R * . . * B * 
+* referee :                          * B * R R . * * 
+* referee :                          * B . B B . B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=4, c=3), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       2.824s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=4, c=3), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      67.053s  (game total)
+* player2 ~   space:   1.379MB (current usage)      1.379MB (peak usage)
+* referee : BLUE to play (turn 52) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ MoveAction(coord=Coord(r=6, c=1), _directions=<Direction.UpRight: Vector2(r=-1, c=1)>)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.768s  (just elapsed)      69.821s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : BLUE plays action MOVE(6-1, [[↗]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * . R . . R R * 
+* referee :                          * R * . . * B * 
+* referee :                          * B B R R . * * 
+* referee :                          * . . B B . B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=6, c=1), _directions=<Direction.UpRight: Vector2(r=-1, c=1)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       2.824s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=6, c=1), _directions=<Direction.UpRight: Vector2(r=-1, c=1)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      69.821s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : RED to play (turn 53) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=3, c=6), _directions=<Direction.DownLeft: Vector2(r=1, c=-1)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.107s  (just elapsed)       2.931s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action MOVE(3-6, [[↙]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * . R . . R . * 
+* referee :                          * R * . . R B * 
+* referee :                          * B B R R . * * 
+* referee :                          * . . B B . B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=3, c=6), _directions=<Direction.DownLeft: Vector2(r=1, c=-1)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       2.932s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=3, c=6), _directions=<Direction.DownLeft: Vector2(r=1, c=-1)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      69.822s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : BLUE to play (turn 54) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ MoveAction(coord=Coord(r=5, c=1), _directions=<Direction.UpLeft: Vector2(r=-1, c=-1)>)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.566s  (just elapsed)      72.388s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : BLUE plays action MOVE(5-1, [[↖]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * . R . . R . * 
+* referee :                          B R * . . R B * 
+* referee :                          * . B R R . * * 
+* referee :                          * . . B B . B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=5, c=1), _directions=<Direction.UpLeft: Vector2(r=-1, c=-1)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       2.932s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=5, c=1), _directions=<Direction.UpLeft: Vector2(r=-1, c=-1)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      72.388s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : RED to play (turn 55) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=4, c=5), _directions=<Direction.DownRight: Vector2(r=1, c=1)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.054s  (just elapsed)       2.986s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action MOVE(4-5, [[↘]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * . R . . R . * 
+* referee :                          B R * . . . B * 
+* referee :                          * . B R R . R * 
+* referee :                          * . . B B . B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=4, c=5), _directions=<Direction.DownRight: Vector2(r=1, c=1)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       2.987s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=4, c=5), _directions=<Direction.DownRight: Vector2(r=1, c=1)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      72.389s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : BLUE to play (turn 56) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ MoveAction(coord=Coord(r=4, c=6), _directions=<Direction.UpRight: Vector2(r=-1, c=1)>)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.524s  (just elapsed)      74.913s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : BLUE plays action MOVE(4-6, [[↗]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * . R . . R . B 
+* referee :                          B R * . . . . * 
+* referee :                          * . B R R . R * 
+* referee :                          * . . B B . B * 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=4, c=6), _directions=<Direction.UpRight: Vector2(r=-1, c=1)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       2.987s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=4, c=6), _directions=<Direction.UpRight: Vector2(r=-1, c=1)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      74.913s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : RED to play (turn 57) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=5, c=6), _directions=<Direction.DownRight: Vector2(r=1, c=1)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.064s  (just elapsed)       3.051s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action MOVE(5-6, [[↘]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * . R . . R . B 
+* referee :                          B R * . . . . * 
+* referee :                          * . B R R . . * 
+* referee :                          * . . B B . B R 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=5, c=6), _directions=<Direction.DownRight: Vector2(r=1, c=1)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       3.052s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=5, c=6), _directions=<Direction.DownRight: Vector2(r=1, c=1)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.001s  (just elapsed)      74.914s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : BLUE to play (turn 58) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ MoveAction(coord=Coord(r=3, c=7), _directions=<Direction.Up: Vector2(r=-1, c=0)>)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.543s  (just elapsed)      77.456s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : BLUE plays action MOVE(3-7, [[↑]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * B 
+* referee :                          * . R . . R . . 
+* referee :                          B R * . . . . * 
+* referee :                          * . B R R . . * 
+* referee :                          * . . B B . B R 
+* referee :                          * * * * * * * * 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=3, c=7), _directions=<Direction.Up: Vector2(r=-1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       3.052s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=3, c=7), _directions=<Direction.Up: Vector2(r=-1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      77.456s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : RED to play (turn 59) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=6, c=7), _directions=<Direction.Down: Vector2(r=1, c=0)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.057s  (just elapsed)       3.109s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action MOVE(6-7, [[↓]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * B 
+* referee :                          * . R . . R . . 
+* referee :                          B R * . . . . * 
+* referee :                          * . B R R . . * 
+* referee :                          * . . B B . B . 
+* referee :                          * * * * * * * R 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=6, c=7), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       3.110s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=6, c=7), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      77.457s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : BLUE to play (turn 60) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ MoveAction(coord=Coord(r=2, c=7), _directions=<Direction.Up: Vector2(r=-1, c=0)>)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.544s  (just elapsed)      80.001s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : BLUE plays action MOVE(2-7, [[↑]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * B 
+* referee :                          * * * * * * * . 
+* referee :                          * . R . . R . . 
+* referee :                          B R * . . . . * 
+* referee :                          * . B R R . . * 
+* referee :                          * . . B B . B . 
+* referee :                          * * * * * * * R 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=2, c=7), _directions=<Direction.Up: Vector2(r=-1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       3.110s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=2, c=7), _directions=<Direction.Up: Vector2(r=-1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      80.001s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : RED to play (turn 61) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=3, c=2), _directions=<Direction.Down: Vector2(r=1, c=0)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.048s  (just elapsed)       3.158s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action MOVE(3-2, [[↓]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * * 
+* referee :                          * * * * * * * B 
+* referee :                          * * * * * * * . 
+* referee :                          * . . . . R . . 
+* referee :                          B R R . . . . * 
+* referee :                          * . B R R . . * 
+* referee :                          * . . B B . B . 
+* referee :                          * * * * * * * R 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=3, c=2), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       3.159s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=3, c=2), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      80.001s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : BLUE to play (turn 62) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ MoveAction(coord=Coord(r=1, c=7), _directions=<Direction.Up: Vector2(r=-1, c=0)>)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.522s  (just elapsed)      82.523s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : BLUE plays action MOVE(1-7, [[↑]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * B 
+* referee :                          * * * * * * * . 
+* referee :                          * * * * * * * . 
+* referee :                          * . . . . R . . 
+* referee :                          B R R . . . . * 
+* referee :                          * . B R R . . * 
+* referee :                          * . . B B . B . 
+* referee :                          * * * * * * * R 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=1, c=7), _directions=<Direction.Up: Vector2(r=-1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       3.159s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=1, c=7), _directions=<Direction.Up: Vector2(r=-1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      82.523s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : RED to play (turn 63) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=4, c=1), _directions=<Direction.DownLeft: Vector2(r=1, c=-1)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.030s  (just elapsed)       3.189s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action MOVE(4-1, [[↙]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * B 
+* referee :                          * * * * * * * . 
+* referee :                          * * * * * * * . 
+* referee :                          * . . . . R . . 
+* referee :                          B . R . . . . * 
+* referee :                          R . B R R . . * 
+* referee :                          * . . B B . B . 
+* referee :                          * * * * * * * R 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=4, c=1), _directions=<Direction.DownLeft: Vector2(r=1, c=-1)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       3.190s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=4, c=1), _directions=<Direction.DownLeft: Vector2(r=1, c=-1)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      82.524s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : BLUE to play (turn 64) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ MoveAction(coord=Coord(r=6, c=6), _directions=<Direction.UpRight: Vector2(r=-1, c=1)>)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.512s  (just elapsed)      85.036s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : BLUE plays action MOVE(6-6, [[↗]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * B 
+* referee :                          * * * * * * * . 
+* referee :                          * * * * * * * . 
+* referee :                          * . . . . R . . 
+* referee :                          B . R . . . . * 
+* referee :                          R . B R R . . B 
+* referee :                          * . . B B . . . 
+* referee :                          * * * * * * * R 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=6, c=6), _directions=<Direction.UpRight: Vector2(r=-1, c=1)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       3.190s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=6, c=6), _directions=<Direction.UpRight: Vector2(r=-1, c=1)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      85.036s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : RED to play (turn 65) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=5, c=0), _directions=<Direction.Down: Vector2(r=1, c=0)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.027s  (just elapsed)       3.217s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action MOVE(5-0, [[↓]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * B 
+* referee :                          * * * * * * * . 
+* referee :                          * * * * * * * . 
+* referee :                          * . . . . R . . 
+* referee :                          B . R . . . . * 
+* referee :                          . . B R R . . B 
+* referee :                          R . . B B . . . 
+* referee :                          * * * * * * * R 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=5, c=0), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       3.217s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=5, c=0), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      85.036s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : BLUE to play (turn 66) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ MoveAction(coord=Coord(r=5, c=7), _directions=<Direction.Up: Vector2(r=-1, c=0)>)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.508s  (just elapsed)      87.544s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : BLUE plays action MOVE(5-7, [[↑]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * B 
+* referee :                          * * * * * * * . 
+* referee :                          * * * * * * * . 
+* referee :                          * . . . . R . . 
+* referee :                          B . R . . . . B 
+* referee :                          . . B R R . . . 
+* referee :                          R . . B B . . . 
+* referee :                          * * * * * * * R 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=5, c=7), _directions=<Direction.Up: Vector2(r=-1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.001s  (just elapsed)       3.218s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=5, c=7), _directions=<Direction.Up: Vector2(r=-1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      87.545s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : RED to play (turn 67) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=6, c=0), _directions=<Direction.Down: Vector2(r=1, c=0)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.034s  (just elapsed)       3.252s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action MOVE(6-0, [[↓]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * B 
+* referee :                          * * * * * * * . 
+* referee :                          * * * * * * * . 
+* referee :                          * . . . . R . . 
+* referee :                          B . R . . . . B 
+* referee :                          . . B R R . . . 
+* referee :                          . . . B B . . . 
+* referee :                          R * * * * * * R 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=6, c=0), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       3.252s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=6, c=0), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      87.545s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : BLUE to play (turn 68) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ MoveAction(coord=Coord(r=4, c=0), _directions=<Direction.Up: Vector2(r=-1, c=0)>)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.503s  (just elapsed)      90.048s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : BLUE plays action MOVE(4-0, [[↑]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * B 
+* referee :                          * * * * * * * . 
+* referee :                          * * * * * * * . 
+* referee :                          B . . . . R . . 
+* referee :                          . . R . . . . B 
+* referee :                          . . B R R . . . 
+* referee :                          . . . B B . . . 
+* referee :                          R * * * * * * R 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=4, c=0), _directions=<Direction.Up: Vector2(r=-1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       3.253s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=4, c=0), _directions=<Direction.Up: Vector2(r=-1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      90.048s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : RED to play (turn 69) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ GrowAction()
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.026s  (just elapsed)       3.279s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action GROW
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * B 
+* referee :                          * * * * * * * . 
+* referee :                          * * * * * * * . 
+* referee :                          B * * * * R * . 
+* referee :                          . * R * * * * B 
+* referee :                          . * B R R * . . 
+* referee :                          * * * B B * * * 
+* referee :                          R * * * * * * R 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, GrowAction())'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       3.279s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, GrowAction())'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      90.048s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : BLUE to play (turn 70) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ MoveAction(coord=Coord(r=6, c=4), _directions=<Direction.UpRight: Vector2(r=-1, c=1)>)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.614s  (just elapsed)      92.663s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : BLUE plays action MOVE(6-4, [[↗]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * B 
+* referee :                          * * * * * * * . 
+* referee :                          * * * * * * * . 
+* referee :                          B * * * * R * . 
+* referee :                          . * R * * * * B 
+* referee :                          . * B R R B . . 
+* referee :                          * * * B . * * * 
+* referee :                          R * * * * * * R 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=6, c=4), _directions=<Direction.UpRight: Vector2(r=-1, c=1)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       3.279s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=6, c=4), _directions=<Direction.UpRight: Vector2(r=-1, c=1)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      92.663s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : RED to play (turn 71) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=5, c=4), _directions=<Direction.DownRight: Vector2(r=1, c=1)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.118s  (just elapsed)       3.398s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action MOVE(5-4, [[↘]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * B 
+* referee :                          * * * * * * * . 
+* referee :                          * * * * * * * . 
+* referee :                          B * * * * R * . 
+* referee :                          . * R * * * * B 
+* referee :                          . * B R . B . . 
+* referee :                          * * * B . R * * 
+* referee :                          R * * * * * * R 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=5, c=4), _directions=<Direction.DownRight: Vector2(r=1, c=1)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       3.398s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=5, c=4), _directions=<Direction.DownRight: Vector2(r=1, c=1)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      92.663s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : BLUE to play (turn 72) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ MoveAction(coord=Coord(r=5, c=5), _directions=<Direction.UpLeft: Vector2(r=-1, c=-1)>)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.622s  (just elapsed)      95.285s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : BLUE plays action MOVE(5-5, [[↖]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * B 
+* referee :                          * * * * * * * . 
+* referee :                          * * * * * * * . 
+* referee :                          B * * * * R * . 
+* referee :                          . * R * B * * B 
+* referee :                          . * B R . . . . 
+* referee :                          * * * B . R * * 
+* referee :                          R * * * * * * R 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=5, c=5), _directions=<Direction.UpLeft: Vector2(r=-1, c=-1)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       3.398s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=5, c=5), _directions=<Direction.UpLeft: Vector2(r=-1, c=-1)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      95.285s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : RED to play (turn 73) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=6, c=5), _directions=<Direction.Down: Vector2(r=1, c=0)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.138s  (just elapsed)       3.537s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action MOVE(6-5, [[↓]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * B 
+* referee :                          * * * * * * * . 
+* referee :                          * * * * * * * . 
+* referee :                          B * * * * R * . 
+* referee :                          . * R * B * * B 
+* referee :                          . * B R . . . . 
+* referee :                          * * * B . . * * 
+* referee :                          R * * * * R * R 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=6, c=5), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       3.537s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=6, c=5), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      95.286s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : BLUE to play (turn 74) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ MoveAction(coord=Coord(r=4, c=4), _directions=<Direction.UpLeft: Vector2(r=-1, c=-1)>)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.713s  (just elapsed)      97.999s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : BLUE plays action MOVE(4-4, [[↖]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * B 
+* referee :                          * * * * * * * . 
+* referee :                          * * * * * * * . 
+* referee :                          B * * B * R * . 
+* referee :                          . * R * . * * B 
+* referee :                          . * B R . . . . 
+* referee :                          * * * B . . * * 
+* referee :                          R * * * * R * R 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=4, c=4), _directions=<Direction.UpLeft: Vector2(r=-1, c=-1)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       3.538s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=4, c=4), _directions=<Direction.UpLeft: Vector2(r=-1, c=-1)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      97.999s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : RED to play (turn 75) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=4, c=2), _directions=<Direction.DownLeft: Vector2(r=1, c=-1)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.116s  (just elapsed)       3.654s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action MOVE(4-2, [[↙]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * B 
+* referee :                          * * * * * * * . 
+* referee :                          * * * * * * * . 
+* referee :                          B * * B * R * . 
+* referee :                          . * . * . * * B 
+* referee :                          . R B R . . . . 
+* referee :                          * * * B . . * * 
+* referee :                          R * * * * R * R 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=4, c=2), _directions=<Direction.DownLeft: Vector2(r=1, c=-1)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       3.654s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=4, c=2), _directions=<Direction.DownLeft: Vector2(r=1, c=-1)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)      97.999s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : BLUE to play (turn 76) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ MoveAction(coord=Coord(r=3, c=0), _directions=<Direction.UpRight: Vector2(r=-1, c=1)>)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.862s  (just elapsed)     100.861s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : BLUE plays action MOVE(3-0, [[↗]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * B 
+* referee :                          * * * * * * * . 
+* referee :                          * B * * * * * . 
+* referee :                          . * * B * R * . 
+* referee :                          . * . * . * * B 
+* referee :                          . R B R . . . . 
+* referee :                          * * * B . . * * 
+* referee :                          R * * * * R * R 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=3, c=0), _directions=<Direction.UpRight: Vector2(r=-1, c=1)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       3.655s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=3, c=0), _directions=<Direction.UpRight: Vector2(r=-1, c=1)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)     100.862s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : RED to play (turn 77) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=5, c=1), _directions=<Direction.Down: Vector2(r=1, c=0)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.109s  (just elapsed)       3.764s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action MOVE(5-1, [[↓]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * B 
+* referee :                          * * * * * * * . 
+* referee :                          * B * * * * * . 
+* referee :                          . * * B * R * . 
+* referee :                          . * . * . * * B 
+* referee :                          . . B R . . . . 
+* referee :                          * R * B . . * * 
+* referee :                          R * * * * R * R 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=5, c=1), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       3.764s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=5, c=1), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)     100.862s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : BLUE to play (turn 78) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ MoveAction(coord=Coord(r=2, c=1), _directions=<Direction.UpLeft: Vector2(r=-1, c=-1)>)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.907s  (just elapsed)     103.769s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : BLUE plays action MOVE(2-1, [[↖]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * B 
+* referee :                          B * * * * * * . 
+* referee :                          * . * * * * * . 
+* referee :                          . * * B * R * . 
+* referee :                          . * . * . * * B 
+* referee :                          . . B R . . . . 
+* referee :                          * R * B . . * * 
+* referee :                          R * * * * R * R 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=2, c=1), _directions=<Direction.UpLeft: Vector2(r=-1, c=-1)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       3.765s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=2, c=1), _directions=<Direction.UpLeft: Vector2(r=-1, c=-1)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)     103.770s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : RED to play (turn 79) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=6, c=1), _directions=<Direction.Down: Vector2(r=1, c=0)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.105s  (just elapsed)       3.870s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action MOVE(6-1, [[↓]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * B 
+* referee :                          B * * * * * * . 
+* referee :                          * . * * * * * . 
+* referee :                          . * * B * R * . 
+* referee :                          . * . * . * * B 
+* referee :                          . . B R . . . . 
+* referee :                          * . * B . . * * 
+* referee :                          R R * * * R * R 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=6, c=1), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       3.871s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=6, c=1), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)     103.770s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : BLUE to play (turn 80) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ MoveAction(coord=Coord(r=3, c=3), _directions=<Direction.UpLeft: Vector2(r=-1, c=-1)>)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.687s  (just elapsed)     106.457s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : BLUE plays action MOVE(3-3, [[↖]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * B 
+* referee :                          B * * * * * * . 
+* referee :                          * . B * * * * . 
+* referee :                          . * * . * R * . 
+* referee :                          . * . * . * * B 
+* referee :                          . . B R . . . . 
+* referee :                          * . * B . . * * 
+* referee :                          R R * * * R * R 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=3, c=3), _directions=<Direction.UpLeft: Vector2(r=-1, c=-1)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       3.871s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=3, c=3), _directions=<Direction.UpLeft: Vector2(r=-1, c=-1)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)     106.458s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : RED to play (turn 81) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=5, c=3), _directions=<Direction.DownLeft: Vector2(r=1, c=-1)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.072s  (just elapsed)       3.943s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action MOVE(5-3, [[↙]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * B 
+* referee :                          B * * * * * * . 
+* referee :                          * . B * * * * . 
+* referee :                          . * * . * R * . 
+* referee :                          . * . * . * * B 
+* referee :                          . . B . . . . . 
+* referee :                          * . R B . . * * 
+* referee :                          R R * * * R * R 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=5, c=3), _directions=<Direction.DownLeft: Vector2(r=1, c=-1)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       3.944s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=5, c=3), _directions=<Direction.DownLeft: Vector2(r=1, c=-1)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)     106.458s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : BLUE to play (turn 82) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ MoveAction(coord=Coord(r=2, c=2), _directions=<Direction.UpLeft: Vector2(r=-1, c=-1)>)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.663s  (just elapsed)     109.121s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : BLUE plays action MOVE(2-2, [[↖]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * B 
+* referee :                          B B * * * * * . 
+* referee :                          * . . * * * * . 
+* referee :                          . * * . * R * . 
+* referee :                          . * . * . * * B 
+* referee :                          . . B . . . . . 
+* referee :                          * . R B . . * * 
+* referee :                          R R * * * R * R 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=2, c=2), _directions=<Direction.UpLeft: Vector2(r=-1, c=-1)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       3.944s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=2, c=2), _directions=<Direction.UpLeft: Vector2(r=-1, c=-1)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)     109.121s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : RED to play (turn 83) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=6, c=2), _directions=<Direction.Down: Vector2(r=1, c=0)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.074s  (just elapsed)       4.018s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action MOVE(6-2, [[↓]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          * * * * * * * B 
+* referee :                          B B * * * * * . 
+* referee :                          * . . * * * * . 
+* referee :                          . * * . * R * . 
+* referee :                          . * . * . * * B 
+* referee :                          . . B . . . . . 
+* referee :                          * . . B . . * * 
+* referee :                          R R R * * R * R 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=6, c=2), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       4.018s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=6, c=2), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)     109.122s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : BLUE to play (turn 84) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ MoveAction(coord=Coord(r=1, c=1), _directions=<Direction.UpLeft: Vector2(r=-1, c=-1)>)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.620s  (just elapsed)     111.742s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : BLUE plays action MOVE(1-1, [[↖]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          B * * * * * * B 
+* referee :                          B . * * * * * . 
+* referee :                          * . . * * * * . 
+* referee :                          . * * . * R * . 
+* referee :                          . * . * . * * B 
+* referee :                          . . B . . . . . 
+* referee :                          * . . B . . * * 
+* referee :                          R R R * * R * R 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=1, c=1), _directions=<Direction.UpLeft: Vector2(r=-1, c=-1)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       4.019s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=1, c=1), _directions=<Direction.UpLeft: Vector2(r=-1, c=-1)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)     111.742s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : RED to play (turn 85) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=3, c=5), _directions=<Direction.Down: Vector2(r=1, c=0)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.050s  (just elapsed)       4.069s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action MOVE(3-5, [[↓]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          B * * * * * * B 
+* referee :                          B . * * * * * . 
+* referee :                          * . . * * * * . 
+* referee :                          . * * . * . * . 
+* referee :                          . * . * . R * B 
+* referee :                          . . B . . . . . 
+* referee :                          * . . B . . * * 
+* referee :                          R R R * * R * R 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=3, c=5), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       4.069s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=3, c=5), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)     111.742s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : BLUE to play (turn 86) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ MoveAction(coord=Coord(r=4, c=7), _directions=<Direction.UpLeft: Vector2(r=-1, c=-1)>)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.531s  (just elapsed)     114.274s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : BLUE plays action MOVE(4-7, [[↖]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          B * * * * * * B 
+* referee :                          B . * * * * * . 
+* referee :                          * . . * * * * . 
+* referee :                          . * * . * . B . 
+* referee :                          . * . * . R * . 
+* referee :                          . . B . . . . . 
+* referee :                          * . . B . . * * 
+* referee :                          R R R * * R * R 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=4, c=7), _directions=<Direction.UpLeft: Vector2(r=-1, c=-1)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       4.069s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=4, c=7), _directions=<Direction.UpLeft: Vector2(r=-1, c=-1)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)     114.274s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : RED to play (turn 87) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ GrowAction()
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.035s  (just elapsed)       4.105s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action GROW
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          B * * * * * * B 
+* referee :                          B . * * * * * . 
+* referee :                          * . . * * * * . 
+* referee :                          . * * . * * B . 
+* referee :                          . * . * * R * . 
+* referee :                          . . B . * * * . 
+* referee :                          * * * B * * * * 
+* referee :                          R R R * * R * R 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, GrowAction())'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       4.105s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, GrowAction())'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)     114.274s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : BLUE to play (turn 88) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ MoveAction(coord=Coord(r=3, c=6), _directions=<Direction.Up: Vector2(r=-1, c=0)>)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.504s  (just elapsed)     116.778s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : BLUE plays action MOVE(3-6, [[↑]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          B * * * * * * B 
+* referee :                          B . * * * * * . 
+* referee :                          * . . * * * B . 
+* referee :                          . * * . * * . . 
+* referee :                          . * . * * R * . 
+* referee :                          . . B . * * * . 
+* referee :                          * * * B * * * * 
+* referee :                          R R R * * R * R 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=3, c=6), _directions=<Direction.Up: Vector2(r=-1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       4.105s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=3, c=6), _directions=<Direction.Up: Vector2(r=-1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)     116.779s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : RED to play (turn 89) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=4, c=5), _directions=<Direction.Down: Vector2(r=1, c=0)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.058s  (just elapsed)       4.163s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action MOVE(4-5, [[↓]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          B * * * * * * B 
+* referee :                          B . * * * * * . 
+* referee :                          * . . * * * B . 
+* referee :                          . * * . * * . . 
+* referee :                          . * . * * . * . 
+* referee :                          . . B . * R * . 
+* referee :                          * * * B * * * * 
+* referee :                          R R R * * R * R 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=4, c=5), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       4.163s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=4, c=5), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)     116.779s  (game total)
+* player2 ~   space:   1.664MB (current usage)      1.664MB (peak usage)
+* referee : BLUE to play (turn 90) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ MoveAction(coord=Coord(r=2, c=6), _directions=<Direction.Up: Vector2(r=-1, c=0)>)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.714s  (just elapsed)     119.493s  (game total)
+* player2 ~   space:   1.945MB (current usage)      2.230MB (peak usage)
+* referee : BLUE plays action MOVE(2-6, [[↑]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          B * * * * * * B 
+* referee :                          B . * * * * B . 
+* referee :                          * . . * * * . . 
+* referee :                          . * * . * * . . 
+* referee :                          . * . * * . * . 
+* referee :                          . . B . * R * . 
+* referee :                          * * * B * * * * 
+* referee :                          R R R * * R * R 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=2, c=6), _directions=<Direction.Up: Vector2(r=-1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       4.164s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=2, c=6), _directions=<Direction.Up: Vector2(r=-1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)     119.493s  (game total)
+* player2 ~   space:   1.945MB (current usage)      2.230MB (peak usage)
+* referee : RED to play (turn 91) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=5, c=5), _directions=<Direction.Down: Vector2(r=1, c=0)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.058s  (just elapsed)       4.222s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action MOVE(5-5, [[↓]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          B * * * * * * B 
+* referee :                          B . * * * * B . 
+* referee :                          * . . * * * . . 
+* referee :                          . * * . * * . . 
+* referee :                          . * . * * . * . 
+* referee :                          . . B . * . * . 
+* referee :                          * * * B * R * * 
+* referee :                          R R R * * R * R 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=5, c=5), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       4.222s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.RED: 0>, MoveAction(coord=Coord(r=5, c=5), _directions=<Direction.Down: Vector2(r=1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)     119.494s  (game total)
+* player2 ~   space:   1.945MB (current usage)      2.230MB (peak usage)
+* referee : BLUE to play (turn 92) ...
+* player2 ~ call 'action()'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ ⤷ MoveAction(coord=Coord(r=1, c=6), _directions=<Direction.Up: Vector2(r=-1, c=0)>)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 2.577s  (just elapsed)     122.071s  (game total)
+* player2 ~   space:   1.945MB (current usage)      2.230MB (peak usage)
+* referee : BLUE plays action MOVE(1-6, [[↑]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          B * * * * * B B 
+* referee :                          B . * * * * . . 
+* referee :                          * . . * * * . . 
+* referee :                          . * * . * * . . 
+* referee :                          . * . * * . * . 
+* referee :                          . . B . * . * . 
+* referee :                          * * * B * R * * 
+* referee :                          R R R * * R * R 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player1 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=1, c=6), _directions=<Direction.Up: Vector2(r=-1, c=0)>))'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.000s  (just elapsed)       4.223s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* player2 ~ call 'update(<PlayerColor.BLUE: 1>, MoveAction(coord=Coord(r=1, c=6), _directions=<Direction.Up: Vector2(r=-1, c=0)>))'...
+* player2 ~ send method call request to subprocess 14066 (stdin)
+* player2 ~ waiting for reply from subprocess 14066 (stdout)
+* player2 ~ resources usage status:
+* player2 ~   time:  + 0.000s  (just elapsed)     122.071s  (game total)
+* player2 ~   space:   1.945MB (current usage)      2.230MB (peak usage)
+* referee : RED to play (turn 93) ...
+* player1 ~ call 'action()'...
+* player1 ~ send method call request to subprocess 14057 (stdin)
+* player1 ~ waiting for reply from subprocess 14057 (stdout)
+* player1 ~ ⤷ MoveAction(coord=Coord(r=6, c=5), _directions=<Direction.DownLeft: Vector2(r=1, c=-1)>)
+* player1 ~ resources usage status:
+* player1 ~   time:  + 0.050s  (just elapsed)       4.272s  (game total)
+* player1 ~   space:   1.168MB (current usage)      1.168MB (peak usage)
+* referee : RED plays action MOVE(6-5, [[↙]])
+* referee : 
+* referee : =========================== game board ===========================
+* referee : 
+* referee :                          B * * * * * B B 
+* referee :                          B . * * * * . . 
+* referee :                          * . . * * * . . 
+* referee :                          . * * . * * . . 
+* referee :                          . * . * * . * . 
+* referee :                          . . B . * . * . 
+* referee :                          * * * B * . * * 
+* referee :                          R R R * R R * R 
+* referee : 
+* referee : ==================================================================
+* referee : 
+* player2 ~ gracefully ending subprocess 14066...
+* player2 ~ agent process terminated
+* player1 ~ gracefully ending subprocess 14057...
+* player1 ~ agent process terminated
+* referee : game over, winner is RED
+* referee @ result: player 1 [agent:ABAgent]

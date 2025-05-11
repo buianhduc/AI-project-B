@@ -1,23 +1,516 @@
-Executing <Task pending name='Task-2' coro=<main.<locals>._run() running at /workspaces/part_b/referee/main.py:146> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/lib/python3.12/asyncio/base_events.py:448> cb=[gather.<locals>._done_callback() at /usr/lib/python3.12/asyncio/tasks.py:767] created at /usr/lib/python3.12/asyncio/tasks.py:695> took 0.776 seconds
-Traceback (most recent call last):
-  File "<frozen runpy>", line 189, in _run_module_as_main
-  File "<frozen runpy>", line 112, in _get_module_details
-  File "/workspaces/part_b/referee/__init__.py", line 4, in <module>
-    from .main import main as referee
-  File "/workspaces/part_b/referee/main.py", line 14, in <module>
-    import asyncio
-  File "/usr/lib/python3.12/asyncio/__init__.py", line 8, in <module>
-    from .base_events import *
-  File "/usr/lib/python3.12/asyncio/base_events.py", line 34, in <module>
-    import ssl
-  File "/usr/lib/python3.12/ssl.py", line 143, in <module>
-    _IntFlag._convert_(
-  File "/usr/lib/python3.12/enum.py", line 943, in _convert_
-    cls = _simple_enum(etype=cls, boundary=boundary or KEEP)(tmp_cls)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/enum.py", line 1794, in convert_class
-    setattr(enum_class, name, redirect)
-  File "/usr/lib/python3.12/enum.py", line 855, in __setattr__
-    super().__setattr__(name, value)
-KeyboardInterrupt
-Killed
+Testing: I am playing as BLUE
+MOVE(0-1, [[↓]])
+Testing: RED played MOVE action:
+  Coord: 0-1
+  Directions: 1, 0
+Testing: RED played MOVE action:
+  Coord: 0-1
+  Directions: 1, 0
+Testing: BLUE played MOVE action:
+  Coord: 7-4
+  Directions: -1, 0
+Testing: BLUE played MOVE action:
+  Coord: 7-4
+  Directions: -1, 0
+MOVE(0-4, [[↓]])
+Testing: RED played MOVE action:
+  Coord: 0-4
+  Directions: 1, 0
+Testing: RED played MOVE action:
+  Coord: 0-4
+  Directions: 1, 0
+Testing: BLUE played MOVE action:
+  Coord: 7-1
+  Directions: -1, 0
+Testing: BLUE played MOVE action:
+  Coord: 7-1
+  Directions: -1, 0
+MOVE(0-3, [[↓]])
+Testing: RED played MOVE action:
+  Coord: 0-3
+  Directions: 1, 0
+Testing: RED played MOVE action:
+  Coord: 0-3
+  Directions: 1, 0
+Testing: BLUE played MOVE action:
+  Coord: 7-3
+  Directions: -1, 0
+Testing: BLUE played MOVE action:
+  Coord: 7-3
+  Directions: -1, 0
+MOVE(0-6, [[↓]])
+Testing: RED played MOVE action:
+  Coord: 0-6
+  Directions: 1, 0
+Testing: RED played MOVE action:
+  Coord: 0-6
+  Directions: 1, 0
+Testing: BLUE played MOVE action:
+  Coord: 7-6
+  Directions: -1, 0
+Testing: BLUE played MOVE action:
+  Coord: 7-6
+  Directions: -1, 0
+MOVE(0-2, [[↓]])
+Testing: RED played MOVE action:
+  Coord: 0-2
+  Directions: 1, 0
+Testing: RED played MOVE action:
+  Coord: 0-2
+  Directions: 1, 0
+Testing: BLUE played MOVE action:
+  Coord: 7-2
+  Directions: -1, 0
+Testing: BLUE played MOVE action:
+  Coord: 7-2
+  Directions: -1, 0
+MOVE(0-5, [[↓]])
+Testing: RED played MOVE action:
+  Coord: 0-5
+  Directions: 1, 0
+Testing: RED played MOVE action:
+  Coord: 0-5
+  Directions: 1, 0
+Testing: BLUE played MOVE action:
+  Coord: 7-5
+  Directions: -1, 0
+Testing: BLUE played MOVE action:
+  Coord: 7-5
+  Directions: -1, 0
+GROW
+Testing: RED played GROW action
+Testing: RED played GROW action
+Testing: BLUE played GROW action
+Testing: BLUE played GROW action
+MOVE(1-2, [[↓]])
+Testing: RED played MOVE action:
+  Coord: 1-2
+  Directions: 1, 0
+Testing: RED played MOVE action:
+  Coord: 1-2
+  Directions: 1, 0
+Testing: BLUE played GROW action
+Testing: BLUE played GROW action
+MOVE(1-5, [[↓]])
+Testing: RED played MOVE action:
+  Coord: 1-5
+  Directions: 1, 0
+Testing: RED played MOVE action:
+  Coord: 1-5
+  Directions: 1, 0
+Testing: BLUE played GROW action
+Testing: BLUE played GROW action
+MOVE(1-1, [[↓]])
+Testing: RED played MOVE action:
+  Coord: 1-1
+  Directions: 1, 0
+Testing: RED played MOVE action:
+  Coord: 1-1
+  Directions: 1, 0
+Testing: BLUE played GROW action
+Testing: BLUE played GROW action
+MOVE(1-4, [[↓]])
+Testing: RED played MOVE action:
+  Coord: 1-4
+  Directions: 1, 0
+Testing: RED played MOVE action:
+  Coord: 1-4
+  Directions: 1, 0
+Testing: BLUE played GROW action
+Testing: BLUE played GROW action
+MOVE(1-6, [[↓]])
+Testing: RED played MOVE action:
+  Coord: 1-6
+  Directions: 1, 0
+Testing: RED played MOVE action:
+  Coord: 1-6
+  Directions: 1, 0
+Testing: BLUE played GROW action
+Testing: BLUE played GROW action
+MOVE(1-3, [[↓]])
+Testing: RED played MOVE action:
+  Coord: 1-3
+  Directions: 1, 0
+Testing: RED played MOVE action:
+  Coord: 1-3
+  Directions: 1, 0
+Testing: BLUE played GROW action
+Testing: BLUE played GROW action
+GROW
+Testing: RED played GROW action
+Testing: RED played GROW action
+Testing: BLUE played GROW action
+Testing: BLUE played GROW action
+MOVE(2-4, [[↓]])
+Testing: RED played MOVE action:
+  Coord: 2-4
+  Directions: 1, 0
+Testing: RED played MOVE action:
+  Coord: 2-4
+  Directions: 1, 0
+Testing: BLUE played GROW action
+Testing: BLUE played GROW action
+MOVE(2-1, [[↓]])
+Testing: RED played MOVE action:
+  Coord: 2-1
+  Directions: 1, 0
+Testing: RED played MOVE action:
+  Coord: 2-1
+  Directions: 1, 0
+Testing: BLUE played GROW action
+Testing: BLUE played GROW action
+MOVE(2-3, [[↓]])
+Testing: RED played MOVE action:
+  Coord: 2-3
+  Directions: 1, 0
+Testing: RED played MOVE action:
+  Coord: 2-3
+  Directions: 1, 0
+Testing: BLUE played GROW action
+Testing: BLUE played GROW action
+MOVE(2-6, [[↓]])
+Testing: RED played MOVE action:
+  Coord: 2-6
+  Directions: 1, 0
+Testing: RED played MOVE action:
+  Coord: 2-6
+  Directions: 1, 0
+Testing: BLUE played GROW action
+Testing: BLUE played GROW action
+MOVE(2-2, [[↓]])
+Testing: RED played MOVE action:
+  Coord: 2-2
+  Directions: 1, 0
+Testing: RED played MOVE action:
+  Coord: 2-2
+  Directions: 1, 0
+Testing: BLUE played GROW action
+Testing: BLUE played GROW action
+MOVE(2-5, [[↓]])
+Testing: RED played MOVE action:
+  Coord: 2-5
+  Directions: 1, 0
+Testing: RED played MOVE action:
+  Coord: 2-5
+  Directions: 1, 0
+Testing: BLUE played GROW action
+Testing: BLUE played GROW action
+GROW
+Testing: RED played GROW action
+Testing: RED played GROW action
+Testing: BLUE played GROW action
+Testing: BLUE played GROW action
+MOVE(3-4, [[↓]])
+Testing: RED played MOVE action:
+  Coord: 3-4
+  Directions: 1, 0
+Testing: RED played MOVE action:
+  Coord: 3-4
+  Directions: 1, 0
+Testing: BLUE played GROW action
+Testing: BLUE played GROW action
+MOVE(4-4, [[↓]])
+Testing: RED played MOVE action:
+  Coord: 4-4
+  Directions: 1, 0
+Testing: RED played MOVE action:
+  Coord: 4-4
+  Directions: 1, 0
+Testing: BLUE played MOVE action:
+  Coord: 6-5
+  Directions: -1, 0
+Testing: BLUE played MOVE action:
+  Coord: 6-5
+  Directions: -1, 0
+MOVE(3-1, [[↓]])
+Testing: RED played MOVE action:
+  Coord: 3-1
+  Directions: 1, 0
+Testing: RED played MOVE action:
+  Coord: 3-1
+  Directions: 1, 0
+Testing: BLUE played MOVE action:
+  Coord: 6-2
+  Directions: -1, -1
+Testing: BLUE played MOVE action:
+  Coord: 6-2
+  Directions: -1, -1
+MOVE(3-3, [[↓]])
+Testing: RED played MOVE action:
+  Coord: 3-3
+  Directions: 1, 0
+Testing: RED played MOVE action:
+  Coord: 3-3
+  Directions: 1, 0
+Testing: BLUE played MOVE action:
+  Coord: 5-5
+  Directions: -1, 1
+Testing: BLUE played MOVE action:
+  Coord: 5-5
+  Directions: -1, 1
+MOVE(4-3, [[↓]])
+Testing: RED played MOVE action:
+  Coord: 4-3
+  Directions: 1, 0
+Testing: RED played MOVE action:
+  Coord: 4-3
+  Directions: 1, 0
+Testing: BLUE played MOVE action:
+  Coord: 6-1
+  Directions: -1, 1
+Testing: BLUE played MOVE action:
+  Coord: 6-1
+  Directions: -1, 1
+MOVE(3-6, [[↙]])
+Testing: RED played MOVE action:
+  Coord: 3-6
+  Directions: 1, -1
+Testing: RED played MOVE action:
+  Coord: 3-6
+  Directions: 1, -1
+Testing: BLUE played MOVE action:
+  Coord: 5-1
+  Directions: -1, -1
+Testing: BLUE played MOVE action:
+  Coord: 5-1
+  Directions: -1, -1
+MOVE(4-5, [[↘]])
+Testing: RED played MOVE action:
+  Coord: 4-5
+  Directions: 1, 1
+Testing: RED played MOVE action:
+  Coord: 4-5
+  Directions: 1, 1
+Testing: BLUE played MOVE action:
+  Coord: 4-6
+  Directions: -1, 1
+Testing: BLUE played MOVE action:
+  Coord: 4-6
+  Directions: -1, 1
+MOVE(5-6, [[↘]])
+Testing: RED played MOVE action:
+  Coord: 5-6
+  Directions: 1, 1
+Testing: RED played MOVE action:
+  Coord: 5-6
+  Directions: 1, 1
+Testing: BLUE played MOVE action:
+  Coord: 3-7
+  Directions: -1, 0
+Testing: BLUE played MOVE action:
+  Coord: 3-7
+  Directions: -1, 0
+MOVE(6-7, [[↓]])
+Testing: RED played MOVE action:
+  Coord: 6-7
+  Directions: 1, 0
+Testing: RED played MOVE action:
+  Coord: 6-7
+  Directions: 1, 0
+Testing: BLUE played MOVE action:
+  Coord: 2-7
+  Directions: -1, 0
+Testing: BLUE played MOVE action:
+  Coord: 2-7
+  Directions: -1, 0
+MOVE(3-2, [[↓]])
+Testing: RED played MOVE action:
+  Coord: 3-2
+  Directions: 1, 0
+Testing: RED played MOVE action:
+  Coord: 3-2
+  Directions: 1, 0
+Testing: BLUE played MOVE action:
+  Coord: 1-7
+  Directions: -1, 0
+Testing: BLUE played MOVE action:
+  Coord: 1-7
+  Directions: -1, 0
+MOVE(4-1, [[↙]])
+Testing: RED played MOVE action:
+  Coord: 4-1
+  Directions: 1, -1
+Testing: RED played MOVE action:
+  Coord: 4-1
+  Directions: 1, -1
+Testing: BLUE played MOVE action:
+  Coord: 6-6
+  Directions: -1, 1
+Testing: BLUE played MOVE action:
+  Coord: 6-6
+  Directions: -1, 1
+MOVE(5-0, [[↓]])
+Testing: RED played MOVE action:
+  Coord: 5-0
+  Directions: 1, 0
+Testing: RED played MOVE action:
+  Coord: 5-0
+  Directions: 1, 0
+Testing: BLUE played MOVE action:
+  Coord: 5-7
+  Directions: -1, 0
+Testing: BLUE played MOVE action:
+  Coord: 5-7
+  Directions: -1, 0
+MOVE(6-0, [[↓]])
+Testing: RED played MOVE action:
+  Coord: 6-0
+  Directions: 1, 0
+Testing: RED played MOVE action:
+  Coord: 6-0
+  Directions: 1, 0
+Testing: BLUE played MOVE action:
+  Coord: 4-0
+  Directions: -1, 0
+Testing: BLUE played MOVE action:
+  Coord: 4-0
+  Directions: -1, 0
+GROW
+Testing: RED played GROW action
+Testing: RED played GROW action
+Testing: BLUE played MOVE action:
+  Coord: 6-4
+  Directions: -1, 1
+Testing: BLUE played MOVE action:
+  Coord: 6-4
+  Directions: -1, 1
+MOVE(5-4, [[↘]])
+Testing: RED played MOVE action:
+  Coord: 5-4
+  Directions: 1, 1
+Testing: RED played MOVE action:
+  Coord: 5-4
+  Directions: 1, 1
+Testing: BLUE played MOVE action:
+  Coord: 5-5
+  Directions: -1, -1
+Testing: BLUE played MOVE action:
+  Coord: 5-5
+  Directions: -1, -1
+MOVE(6-5, [[↓]])
+Testing: RED played MOVE action:
+  Coord: 6-5
+  Directions: 1, 0
+Testing: RED played MOVE action:
+  Coord: 6-5
+  Directions: 1, 0
+Testing: BLUE played MOVE action:
+  Coord: 4-4
+  Directions: -1, -1
+Testing: BLUE played MOVE action:
+  Coord: 4-4
+  Directions: -1, -1
+MOVE(4-2, [[↙]])
+Testing: RED played MOVE action:
+  Coord: 4-2
+  Directions: 1, -1
+Testing: RED played MOVE action:
+  Coord: 4-2
+  Directions: 1, -1
+Testing: BLUE played MOVE action:
+  Coord: 3-0
+  Directions: -1, 1
+Testing: BLUE played MOVE action:
+  Coord: 3-0
+  Directions: -1, 1
+MOVE(5-1, [[↓]])
+Testing: RED played MOVE action:
+  Coord: 5-1
+  Directions: 1, 0
+Testing: RED played MOVE action:
+  Coord: 5-1
+  Directions: 1, 0
+Testing: BLUE played MOVE action:
+  Coord: 2-1
+  Directions: -1, -1
+Testing: BLUE played MOVE action:
+  Coord: 2-1
+  Directions: -1, -1
+MOVE(6-1, [[↓]])
+Testing: RED played MOVE action:
+  Coord: 6-1
+  Directions: 1, 0
+Testing: RED played MOVE action:
+  Coord: 6-1
+  Directions: 1, 0
+Testing: BLUE played MOVE action:
+  Coord: 3-3
+  Directions: -1, -1
+Testing: BLUE played MOVE action:
+  Coord: 3-3
+  Directions: -1, -1
+MOVE(5-3, [[↙]])
+Testing: RED played MOVE action:
+  Coord: 5-3
+  Directions: 1, -1
+Testing: RED played MOVE action:
+  Coord: 5-3
+  Directions: 1, -1
+Testing: BLUE played MOVE action:
+  Coord: 2-2
+  Directions: -1, -1
+Testing: BLUE played MOVE action:
+  Coord: 2-2
+  Directions: -1, -1
+MOVE(6-2, [[↓]])
+Testing: RED played MOVE action:
+  Coord: 6-2
+  Directions: 1, 0
+Testing: RED played MOVE action:
+  Coord: 6-2
+  Directions: 1, 0
+Testing: BLUE played MOVE action:
+  Coord: 1-1
+  Directions: -1, -1
+Testing: BLUE played MOVE action:
+  Coord: 1-1
+  Directions: -1, -1
+MOVE(3-5, [[↓]])
+Testing: RED played MOVE action:
+  Coord: 3-5
+  Directions: 1, 0
+Testing: RED played MOVE action:
+  Coord: 3-5
+  Directions: 1, 0
+Testing: BLUE played MOVE action:
+  Coord: 4-7
+  Directions: -1, -1
+Testing: BLUE played MOVE action:
+  Coord: 4-7
+  Directions: -1, -1
+GROW
+Testing: RED played GROW action
+Testing: RED played GROW action
+Testing: BLUE played MOVE action:
+  Coord: 3-6
+  Directions: -1, 0
+Testing: BLUE played MOVE action:
+  Coord: 3-6
+  Directions: -1, 0
+MOVE(4-5, [[↓]])
+Testing: RED played MOVE action:
+  Coord: 4-5
+  Directions: 1, 0
+Testing: RED played MOVE action:
+  Coord: 4-5
+  Directions: 1, 0
+Testing: BLUE played MOVE action:
+  Coord: 2-6
+  Directions: -1, 0
+Testing: BLUE played MOVE action:
+  Coord: 2-6
+  Directions: -1, 0
+MOVE(5-5, [[↓]])
+Testing: RED played MOVE action:
+  Coord: 5-5
+  Directions: 1, 0
+Testing: RED played MOVE action:
+  Coord: 5-5
+  Directions: 1, 0
+Testing: BLUE played MOVE action:
+  Coord: 1-6
+  Directions: -1, 0
+Testing: BLUE played MOVE action:
+  Coord: 1-6
+  Directions: -1, 0
+MOVE(6-5, [[↙]])

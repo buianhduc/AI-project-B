@@ -10,7 +10,7 @@ from referee.game.constants import MAX_TURNS
 from referee.game.coord import Coord, Direction
 import random
 import time
-
+from collections import defaultdict
 from referee.game.exceptions import IllegalActionException
 
 class MCTSNode:
@@ -20,21 +20,26 @@ class MCTSNode:
         self.children = []
         self.parent = None
         self.visits = 0
-        self.value = 0
         self._unexplored_actions = None
+        self.result = defaultdict(int)
+        self.result[1] = 0
+        self.result[-1] = 0
+        self.result[0] = 0
     
     def ubc_score(self, c: float)->float:
         if self.visits == 0 or self.parent is None:
             return float('inf')
-        return self.value / self.visits + c * math.sqrt((2*math.log(self.parent.visits)) / self.visits)
-    
+        return (self.value / self.visits)+ c * math.sqrt((2*math.log(self.parent.visits)) / self.visits)
+    @property
+    def value(self):
+        return self.result[1] + self.result[0] - self.result[-1]
     @property
     def unexplored_actions(self):
         if self._unexplored_actions is None:
             self._unexplored_actions = self.board.get_next_possible_configurations()
         return self._unexplored_actions
     
-    def best_child(self, c: float = 1.41) -> 'MCTSNode':
+    def best_child(self, c: float = 0.01) -> 'MCTSNode':
         choices = [child for child in self.children if child.visits > 0]
         return max(choices, key=lambda child: child.ubc_score(c))
     def is_fully_expanded(self):
@@ -42,12 +47,12 @@ class MCTSNode:
     @property
     def is_leaf(self):
         return len(self.children) == 0
-    
+    def is_terminal(self, color: PlayerColor):
+        return self.board.determine_winner(color) is not None or self.board.turn_count >= MAX_TURNS
     def backpropagate(self, result: int):
-        result = (result - (-1))/2
-        self.value += result
+        self.result[result] += 1
         self.visits += 1
-        if self.parent is not None:
+        if self.parent:
             self.parent.backpropagate(result)
     def render(self):
         def format_node(node, depth=0):
@@ -56,8 +61,7 @@ class MCTSNode:
             output += f"{indent}Action: {node.action}\n"
             output += f"{indent}Visits: {node.visits}\n" 
             output += f"{indent}Value: {node.value}\n"
-            output += f"{indent}UCB Score: {node.ubc_score}\n"
-            output += f"{indent}Turn: {node.turn}\n"
+            output += f"{indent}UCB Score: {node.ubc_score(2)}\n"
             output += f"{indent}Children: {len(node.children)}\n"
             output += f"{indent}Board:\n{node.board.render()}\n"
             
@@ -83,36 +87,38 @@ class MCTSAgent(Agent):
     
     def search_best_action(self, board: Board, remaining_time: float) -> Action:
         new_board = Board(initial_state=board._state, initial_player=self._color, turn_count=board.turn_count)
+
         root = MCTSNode(action=None, board=new_board)
+        current = root
         iteration = 0
         start_time = time.time()
-        while time.time() - start_time < (remaining_time/(MAX_TURNS - self.board.turn_count)) + 10:
+        while time.time() - start_time <= 180/75:
+            iteration += 1
+            print(iteration)
             current = self.tree_policy(root)
             new_board = Board(initial_state=current.board._state, 
-                              initial_player=self._color, 
+                              initial_player=current.board.turn_color, 
                               turn_count=current.board.turn_count)
             result = self.rollout(new_board)
             current.backpropagate(result)
-            iteration += 1
-        return root.best_child(c=0).action
+        print(root.render())
+        print(max(root.children, key=lambda child: child.value/child.visits if child.visits > 0 else -float('inf')).render())
+        return max(root.children, key=lambda child: child.value/child.visits if child.visits > 0 else -float('inf')).action
     def rollout(self, state: Board):
-        print("rollout turn count:", state.turn_count)
-        while True:
-            if state.determine_winner(self._color) is not None:
-                print("rollout winner:", state.determine_winner(self._color))
-                print(state.render())
-                print("rollout turn:", state.turn_count)
-                return state.determine_winner(self._color)
-            
+
+        while state.winner_color is None and state.turn_count < MAX_TURNS:
             action = self.rollout_policy(state)
             state.apply_action(action)
-            
+        if state.turn_count >= MAX_TURNS:
+            return 0 if state.winner_color == None else 1 if state.winner_color == self._color else -1
+        return 1 if state.winner_color == self._color else -1
+    
     def rollout_policy(self, state: Board) -> Action:
         return random.choice(state.get_next_possible_configurations())
     
     def tree_policy(self, root: MCTSNode) -> MCTSNode:
         current = root
-        while not current.is_leaf or current.parent is None:
+        while not current.is_terminal(self._color):
             if not current.is_fully_expanded():
                 return self.expand(current)
             else: 
@@ -120,11 +126,14 @@ class MCTSAgent(Agent):
         return current
 
     def expand(self, node: MCTSNode):
-        if len(node.unexplored_actions) > 0:
-            action = node.unexplored_actions.pop()
-            new_board = Board(initial_state=node.board._state, initial_player=self._color, turn_count=node.board.turn_count + 1)
-            new_board.apply_action(action)
-            child = MCTSNode(action=action, board=new_board)
-            child.parent = node
-            node.children.append(child)
-            return child
+
+        action = node.unexplored_actions.pop()
+        # Next state
+        new_board = Board(initial_state=node.board._state, initial_player=node.board.turn_color, turn_count=node.board.turn_count)
+        new_board.apply_action(action)
+        # Create child node
+        child = MCTSNode(action=action, board=new_board)
+        child.parent = node
+        node.children.append(child)
+        
+        return child

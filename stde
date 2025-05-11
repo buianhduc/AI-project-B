@@ -1,0 +1,9 @@
+Testing: I am playing as BLUE
+MOVE(0-1, [[↓]])
+Testing: RED played MOVE action:
+  Coord: 0-1
+  Directions: 1, 0
+Testing: RED played MOVE action:
+  Coord: 0-1
+  Directions: 1, 0
+Killed

@@ -463,7 +463,7 @@ class Board:
         board = Board(initial_state=self._state, initial_player=self._turn_color)
         board.turn_count = self.turn_count
         possible_configs = [grow_action]
-
+        
         # Acquire all respective colored frogs
         position_of_frogs: set[Coord] = set(
             coord for coord, cell in self._state.items()
@@ -474,9 +474,10 @@ class Board:
             if (cell.r != (7 if self._turn_color == PlayerColor.RED else 0)):
                 board = Board(self._state, initial_player=self._turn_color)
                 board.turn_count = self.turn_count
-                neighbors = self.get_neighbors_and_distance(
+                possible_directions = self.get_neighbors_and_distance(
                     self._turn_color, board, cell,  [], [])
-                possible_configs += neighbors
+                for directions in possible_directions:
+                    possible_configs.append(MoveAction(cell, directions))
         # Try to find possible paths if each of them do move action
 
         return possible_configs if len(possible_configs) != 0 else None
@@ -521,7 +522,7 @@ class Board:
             current_node: Coord,
             current_direction: list[Direction],
             visited: list[Coord] = [],
-            can_jump_to_lilypad=True) -> list[Action]:
+            can_jump_to_lilypad=True) -> list[list[Direction]]:
         """Get the neighbors and their distance from the current_node
         Args:
         boards: Dictionary with Coord instance key
@@ -531,45 +532,37 @@ class Board:
         can_jump_to_lilypad: internal variable.
 
         Returns:
-            neighbors: list of tuples of action and board
+
         """
-
-        neighbors = []
+        neighbor = []
         for direction in Direction:
+            if not self._is_valid_move(player_color, direction):
+                continue
 
-            if self._is_valid_move(player_color, direction):
+            try: new_coord = current_node + direction
+            except ValueError: continue
 
-                # Try if it's a valid move, if not continue to the next directio
-                try: new_coord = current_node + direction
+            if new_coord in visited: continue
+            visited.append(new_coord)
+            
+
+            if init_board[new_coord] == CellState("LilyPad") and can_jump_to_lilypad:
+                new_directions = current_direction.copy()
+                new_directions.append(direction)
+                neighbor.append(new_directions)
+                
+            elif init_board[new_coord] == CellState(PlayerColor.BLUE) or init_board[new_coord] == CellState(PlayerColor.RED):
+                
+                try: new_coord = new_coord + direction
                 except ValueError: continue
-                # If that new coord has already been visited
-                if new_coord in visited:
-                    continue
-                visited.append(new_coord)
-                board = Board(init_board._state, player_color)
-                # If the next node is a lilypad, and was not over another frog in the previous move
-                if (init_board[new_coord] == CellState("LilyPad") and
-                        can_jump_to_lilypad):
-                    new_dir = current_direction.copy()
-                    new_dir.append(direction)
 
-                    board.apply_action(MoveAction(current_node, *new_dir))
-                    neighbors.append(MoveAction(current_node, *new_dir))
-                # If the next node is a frog, check if it can be jumped over
-                elif (init_board[new_coord] == CellState(PlayerColor.BLUE) or
-                      init_board[new_coord] == CellState(PlayerColor.RED)):
+                if init_board[new_coord] == CellState("LilyPad"):    
+                    new_directions = current_direction.copy()
+                    new_directions.append(direction)
+                    neighbor.append(new_directions)
+                    neighbor += self.get_neighbors_and_distance(player_color, init_board, new_coord, new_directions, visited, False)
 
-                    try:
-                        new_coord += direction
-                        if init_board[new_coord] == CellState("LilyPad"):
-                            new_dir = current_direction.copy()
-                            new_dir.append(direction)
-                            neighbors += self.get_neighbors_and_distance(
-                                player_color, board, new_coord, new_dir,
-                                visited, False)
-                    except ValueError:
-                        continue
-        return neighbors
+        return neighbor
     
     def _is_valid_move(self, color: PlayerColor, direction: Direction):
         if color == PlayerColor.RED:
