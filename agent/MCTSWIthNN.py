@@ -14,8 +14,8 @@ from collections import defaultdict
 from referee.game.exceptions import IllegalActionException
 
 class MCTSNode:
-    def __init__(self, action: Action, board: Board):
-        self.board = board
+    def __init__(self, action: Action, board: Board, action_index: int):
+        self.game = board
         self.action = action
         self.children = []
         self.parent = None
@@ -25,11 +25,17 @@ class MCTSNode:
         self.result[1] = 0
         self.result[-1] = 0
         self.result[0] = 0
+        self.action_index = action_index
+        # the value of the node according to nn
+        self.nn_v = 0
+        
+        # the next probabilities
+        self.nn_p = None     
     
     def ubc_score(self, c: float)->float:
         if self.visits == 0 or self.parent is None:
             return float('inf')
-        return (self.value / self.visits)+ c * math.sqrt((math.log(self.parent.visits)) / self.visits)
+        return (self.value / self.visits)+ c * math.sqrt((2*math.log(self.parent.visits)) / self.visits)
     @property
     def value(self):
         return self.result[1] + self.result[0] - self.result[-1]
@@ -94,7 +100,6 @@ class MCTSAgent(Agent):
         start_time = time.time()
         while time.time() - start_time <= 180/75:
             iteration += 1
-            print(iteration)
             current = self.tree_policy(root)
             new_board = Board(initial_state=current.board._state, 
                               initial_player=current.board.turn_color, 

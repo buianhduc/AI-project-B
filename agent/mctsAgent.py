@@ -94,7 +94,6 @@ class MCTSAgent(Agent):
         start_time = time.time()
         while time.time() - start_time <= 180/75:
             iteration += 1
-            print(iteration)
             current = self.tree_policy(root)
             new_board = Board(initial_state=current.board._state, 
                               initial_player=current.board.turn_color, 

@@ -131,8 +131,6 @@ def main(options: Namespace|None=None):
                                      options.use_colour, 
                                      options.use_unicode)\
                     if options.verbosity >= 2 else None,
-                game_delay(options.wait) if options.wait > 0 else None,
-                game_user_wait(rl) if options.wait < 0 else None,
                 RemoteGame(
                     server,
                     [agents[p]["name"] for p in agents.keys()],
@@ -168,6 +166,92 @@ def main(options: Namespace|None=None):
             rl.critical(f"result: {agents[game_result]['name']}")
 
         exit(0)
+
+    except InvalidAckError:
+        rl.error("server error: invalid ack received")
+        rl.error("result: <error>")
+        exit(1)
+
+    except KeyboardInterrupt:
+        rl.info()  # (end the line)
+        rl.info("KeyboardInterrupt: bye!")
+
+        rl.critical("result: <interrupt>")
+        os.kill(os.getpid(), 9)
+
+    except Exception as e:
+        rl.critical(f"unhandled exception: {str(e)}")
+        rl.critical("stack trace:")
+        rl.critical(">> ")
+        rl.critical(">> ".join(format_tb(e.__traceback__)))
+        rl.critical("\n")
+        rl.critical(
+            f">> Please report this error to the course staff, including\n"
+            f">> the trigger and the above stack trace.")
+
+        rl.critical(f"result: <error>")
+        exit(1)
+
+def main_modified(players: str, **options):
+    print(options)
+    rl = LogStream("referee", LogColor.WHITE)
+    try:
+        agents: dict[Player, dict] = {}
+        for p_num, player_color in enumerate(PlayerColor, 1):
+            # Import player classes
+            player_loc: PlayerLoc = PlayerLoc("agent", players[p_num-1])
+            player_name = f"player {p_num} [{':'.join(player_loc)}]"
+
+            rl.info(f"wrapping {player_name} as {player_color}...")
+            p: Player = AgentProxyPlayer(
+                player_name,
+                player_color,
+                player_loc,
+                time_limit=options["time"],
+                space_limit=options["space"],
+                log=LogStream(f"player{p_num}", LogColor[str(player_color)])
+            )
+            agents[p] = {
+                "name": player_name,
+                "loc": player_loc,
+            }
+
+        # Run server
+        rl.info("running game server...")
+
+        sl = LogStream(
+            "server", 
+            ansi=options["use_colour"],
+            color=LogColor.GREEN, 
+        )
+
+        gl=None
+        # Play the game!
+        async def _run(options: Namespace) -> Player | None:
+            event_handlers = [
+                game_event_logger(gl) if gl is not None else None,
+                game_commentator(rl),
+                output_board_updates(rl, 
+                                     options["use_colour"], 
+                                     options["use_unicode"])\
+                    if options["verbosity"] >= 2 else None,
+            ]
+
+
+            result = await run_game(
+                players=[p for p in agents.keys()],
+                event_handlers=event_handlers,
+            )
+
+            return result
+        
+        async def _run_all():
+            return await asyncio.gather(
+                _run(options),
+            )
+        
+        game_result = asyncio.run(_run_all(), debug=True)
+        return game_result
 
     except InvalidAckError:
         rl.error("server error: invalid ack received")

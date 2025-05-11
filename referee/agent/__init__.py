@@ -169,3 +169,13 @@ class AgentProxyPlayer(Player):
         else:
             space_str = "  space: unknown (check platform)\n"
         return f"resources usage status:\n{time_str}{space_str}"
+
+    def __str__(self):
+        return (
+            f"AgentProxyPlayer(\n"
+            f"  name: {self._name}\n"
+            f"  color: {self._color}\n"
+            f"  resource limit tolerance: {self._agent._res_limit_tolerance}\n"
+            f"  agent status: {self._summarise_status(self._agent.status)}"
+            f")"
+        )
