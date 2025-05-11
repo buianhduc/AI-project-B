@@ -3,7 +3,7 @@
 from typing import Any
 import numpy as np
 
-from agent.game.board import Board, BoardMutation, BoardState, CellState, \
+from .game.board import Board, BoardMutation, BoardState, CellState, \
     ILLEGAL_RED_DIRECTIONS, ILLEGAL_BLUE_DIRECTIONS
 from referee.game import (PlayerColor, Coord, Direction, Action, MoveAction,
                           GrowAction, IllegalActionException)
