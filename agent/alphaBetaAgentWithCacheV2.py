@@ -6,7 +6,7 @@ from typing import Any
 import time
 from functools import cmp_to_key
 
-from agent.utils import BOARD_WEIGHT_RED, BOARD_WEIGHT_BLUE
+from .utils import BOARD_WEIGHT_RED, BOARD_WEIGHT_BLUE
 from .game.board import Board, BoardMutation, BoardState, CellState, \
     ILLEGAL_RED_DIRECTIONS, ILLEGAL_BLUE_DIRECTIONS
 from referee.game import (PlayerColor, Coord, Direction, Action, MoveAction,
