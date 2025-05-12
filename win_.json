@@ -1,0 +1,268 @@
+{
+    "data": [
+        {
+            "round": 0,
+            "red_agent": "MinimaxAgent",
+            "blue_agent": "ABAgent",
+            "winner_name": "player 2 [agent:ABAgent]",
+            "winner_color": "BLUE"
+        },
+        {
+            "round": 0,
+            "red_agent": "MinimaxAgent",
+            "blue_agent": "ABAgentWithCache",
+            "winner_name": "player 1 [agent:MinimaxAgent]",
+            "winner_color": "RED"
+        },
+        {
+            "round": 0,
+            "red_agent": "MinimaxAgent",
+            "blue_agent": "MCSTAgent",
+            "winner_name": "player 1 [agent:MinimaxAgent]",
+            "winner_color": "RED"
+        },
+        {
+            "round": 0,
+            "red_agent": "MinimaxAgent",
+            "blue_agent": "GreedyAgent",
+            "winner_name": "player 2 [agent:GreedyAgent]",
+            "winner_color": "BLUE"
+        },
+        {
+            "round": 0,
+            "red_agent": "MinimaxAgent",
+            "blue_agent": "RandomAgent",
+            "winner_name": "player 1 [agent:MinimaxAgent]",
+            "winner_color": "RED"
+        },
+        {
+            "round": 0,
+            "red_agent": "ABAgent",
+            "blue_agent": "MinimaxAgent",
+            "winner_name": "player 2 [agent:MinimaxAgent]",
+            "winner_color": "BLUE"
+        },
+        {
+            "round": 0,
+            "red_agent": "ABAgent",
+            "blue_agent": "ABAgent",
+            "winner_name": "player 2 [agent:ABAgent]",
+            "winner_color": "BLUE"
+        },
+        {
+            "round": 0,
+            "red_agent": "ABAgent",
+            "blue_agent": "ABAgentWithCache",
+            "winner_name": "player 1 [agent:ABAgent]",
+            "winner_color": "RED"
+        },
+        {
+            "round": 0,
+            "red_agent": "ABAgent",
+            "blue_agent": "MCSTAgent",
+            "winner_name": "player 1 [agent:ABAgent]",
+            "winner_color": "RED"
+        },
+        {
+            "round": 0,
+            "red_agent": "ABAgent",
+            "blue_agent": "GreedyAgent",
+            "winner_name": "player 2 [agent:GreedyAgent]",
+            "winner_color": "BLUE"
+        },
+        {
+            "round": 0,
+            "red_agent": "ABAgentWithCache",
+            "blue_agent": "MinimaxAgent",
+            "winner_name": "player 2 [agent:MinimaxAgent]",
+            "winner_color": "BLUE"
+        },
+        {
+            "round": 0,
+            "red_agent": "ABAgentWithCache",
+            "blue_agent": "ABAgent",
+            "winner_name": "player 2 [agent:ABAgent]",
+            "winner_color": "BLUE"
+        },
+        {
+            "round": 0,
+            "red_agent": "ABAgentWithCache",
+            "blue_agent": "ABAgentWithCache",
+            "winner_name": "player 2 [agent:ABAgentWithCache]",
+            "winner_color": "BLUE"
+        },
+        {
+            "round": 0,
+            "red_agent": "ABAgentWithCache",
+            "blue_agent": "GreedyAgent",
+            "winner_name": "player 1 [agent:ABAgentWithCache]",
+            "winner_color": "RED"
+        },
+        {
+            "round": 0,
+            "red_agent": "ABAgentWithCache",
+            "blue_agent": "MCSTAgent",
+            "winner_name": "player 1 [agent:ABAgentWithCache]",
+            "winner_color": "RED"
+        },
+        {
+            "round": 0,
+            "red_agent": "ABAgentWithCache",
+            "blue_agent": "RandomAgent",
+            "winner_name": "player 1 [agent:ABAgentWithCache]",
+            "winner_color": "RED"
+        },
+        {
+            "round": 0,
+            "red_agent": "GreedyAgent",
+            "blue_agent": "MinimaxAgent",
+            "winner_name": "player 2 [agent:MinimaxAgent]",
+            "winner_color": "BLUE"
+        },
+        {
+            "round": 0,
+            "red_agent": "GreedyAgent",
+            "blue_agent": "ABAgent",
+            "winner_name": "player 2 [agent:ABAgent]",
+            "winner_color": "BLUE"
+        },
+        {
+            "round": 0,
+            "red_agent": "GreedyAgent",
+            "blue_agent": "ABAgentWithCache",
+            "winner_name": "player 2 [agent:ABAgentWithCache]",
+            "winner_color": "BLUE"
+        },
+        {
+            "round": 0,
+            "red_agent": "GreedyAgent",
+            "blue_agent": "MCSTAgent",
+            "winner_name": "player 1 [agent:GreedyAgent]",
+            "winner_color": "RED"
+        },
+        {
+            "round": 0,
+            "red_agent": "GreedyAgent",
+            "blue_agent": "GreedyAgent",
+            "winner_name": "player 2 [agent:GreedyAgent]",
+            "winner_color": "BLUE"
+        },
+        {
+            "round": 0,
+            "red_agent": "GreedyAgent",
+            "blue_agent": "RandomAgent",
+            "winner_name": "player 1 [agent:GreedyAgent]",
+            "winner_color": "RED"
+        },
+        {
+            "round": 0,
+            "red_agent": "RandomAgent",
+            "blue_agent": "MinimaxAgent",
+            "winner_name": "player 1 [agent:RandomAgent]",
+            "winner_color": "RED"
+        },
+        {
+            "round": 0,
+            "red_agent": "RandomAgent",
+            "blue_agent": "ABAgent",
+            "winner_name": "player 2 [agent:ABAgent]",
+            "winner_color": "BLUE"
+        },
+        {
+            "round": 0,
+            "red_agent": "RandomAgent",
+            "blue_agent": "ABAgentWithCache",
+            "winner_name": "player 1 [agent:RandomAgent]",
+            "winner_color": "RED"
+        },
+        {
+            "round": 0,
+            "red_agent": "RandomAgent",
+            "blue_agent": "MCSTAgent",
+            "winner_name": "player 1 [agent:RandomAgent]",
+            "winner_color": "RED"
+        },
+        {
+            "round": 0,
+            "red_agent": "RandomAgent",
+            "blue_agent": "GreedyAgent",
+            "winner_name": "player 2 [agent:GreedyAgent]",
+            "winner_color": "BLUE"
+        },
+        {
+            "round": 0,
+            "red_agent": "RandomAgent",
+            "blue_agent": "RandomAgent",
+            "winner_name": "player 1 [agent:RandomAgent]",
+            "winner_color": "RED"
+        }
+    ]
+}
+
+{
+    "data": [
+        {
+            "round": 0,
+            "red_agent": "ABAgentWithCache",
+            "blue_agent": "ABAgentWithCache",
+            "winner_name": "player 2 [agent:ABAgentWithCache]",
+            "winner_color": "BLUE"
+        },
+        {
+            "round": 0,
+            "red_agent": "ABAgentWithCache",
+            "blue_agent": "GreedyAgent",
+            "winner_name": "player 1 [agent:ABAgentWithCache]",
+            "winner_color": "RED"
+        },
+        {
+            "round": 0,
+            "red_agent": "ABAgentWithCache",
+            "blue_agent": "RandomAgent",
+            "winner_name": "player 1 [agent:ABAgentWithCache]",
+            "winner_color": "RED"
+        },
+        {
+            "round": 0,
+            "red_agent": "GreedyAgent",
+            "blue_agent": "ABAgentWithCache",
+            "winner_name": "player 2 [agent:ABAgentWithCache]",
+            "winner_color": "BLUE"
+        },
+        {
+            "round": 0,
+            "red_agent": "GreedyAgent",
+            "blue_agent": "GreedyAgent",
+            "winner_name": "player 2 [agent:GreedyAgent]",
+            "winner_color": "BLUE"
+        },
+        {
+            "round": 0,
+            "red_agent": "GreedyAgent",
+            "blue_agent": "RandomAgent",
+            "winner_name": "player 1 [agent:GreedyAgent]",
+            "winner_color": "RED"
+        },
+        {
+            "round": 0,
+            "red_agent": "RandomAgent",
+            "blue_agent": "ABAgentWithCache",
+            "winner_name": "player 2 [agent:ABAgentWithCache]",
+            "winner_color": "BLUE"
+        },
+        {
+            "round": 0,
+            "red_agent": "RandomAgent",
+            "blue_agent": "GreedyAgent",
+            "winner_name": "player 1 [agent:RandomAgent]",
+            "winner_color": "RED"
+        },
+        {
+            "round": 0,
+            "red_agent": "RandomAgent",
+            "blue_agent": "RandomAgent",
+            "winner_name": "player 2 [agent:RandomAgent]",
+            "winner_color": "BLUE"
+        }
+    ]
+}

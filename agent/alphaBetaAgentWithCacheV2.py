@@ -2,11 +2,11 @@
 # Project Part B: Game Playing Agent
 from dataclasses import dataclass
 from enum import Enum
-import math
 from typing import Any
-import random
 import time
 from functools import cmp_to_key
+
+from agent.utils import BOARD_WEIGHT_RED, BOARD_WEIGHT_BLUE
 from .game.board import Board, BoardMutation, BoardState, CellState, \
     ILLEGAL_RED_DIRECTIONS, ILLEGAL_BLUE_DIRECTIONS
 from referee.game import (PlayerColor, Coord, Direction, Action, MoveAction,
@@ -23,8 +23,8 @@ class Flag(Enum):
 @dataclass
 class TranspositionTableEntry:
     depth: int
-    upperbound: float
-    lowerbound: float
+    evalutation_score: float
+    best_move: Action
     flag: Flag
     acient: int = 0
 
@@ -49,15 +49,15 @@ class TranspositionTable:
                     piece = self.indexOf(board[Coord(i, j)])
                     hash_key ^= self.table[i][j][piece]
         return hash_key
-    def insert(self, board:Board, depth,  upperbound: float, lowerbound: float, best_move: Action, flag: Flag):
+    def insert(self, board:Board, depth,  eval_score: float, best_move: Action, flag: Flag):
         hash = self.computeHash(board)
         # Check if already existed
         if hash in self.hash_table:
             # Replace it if depth > entry.depth
             if depth > self.hash_table[hash].depth:
-                self.hash_table[hash] = TranspositionTableEntry(board.turn_count, upperbound, lowerbound,0)
+                self.hash_table[hash] = TranspositionTableEntry(board.turn_count, eval_score, best_move, flag, 0)
                 return
-        self.hash_table[hash] = TranspositionTableEntry(board.turn_count, upperbound, lowerbound, 0)
+        self.hash_table[hash] = TranspositionTableEntry(board.turn_count, eval_score, best_move, flag, 0)
     
     def lookup(self, board: Board,  alpha: float, beta: float, depth: int) -> float | None:
         hash_key = self.computeHash(board)
@@ -116,10 +116,8 @@ class ABAgentWithCache:
         best_score = -float("inf")
         next_possible_moves = self.get_next_possible_configurations(self.board, self._color)
         for action in next_possible_moves:
-            if action is MoveAction and len(action.directions > 1):
-                print(action)
             self.board.apply_action(action)
-            search_limit = ((3) / len(next_possible_moves))
+            search_limit = ((referee["time_remaining"]/(150-self.board.turn_count) )/ len(next_possible_moves))
             score = self.iterative_deepening(current_state=self.board, time_limit=search_limit)
             self.board.undo_action()
             if score > best_score:
@@ -155,8 +153,10 @@ class ABAgentWithCache:
                                 alpha=-float("inf"),
                                 beta=float("inf"))
             depth+=1
+            
             if depth > cutoff_depth:
-                break 
+                break
+            print(depth) 
         return score
     def actions_compare(self, a: Action, b: Action):
         if type(a) == GrowAction and type(b) == GrowAction:
@@ -183,25 +183,24 @@ class ABAgentWithCache:
                 node_count = 0) -> float:
         
 
-        lookup_result = self.transposition_table.lookup(current_state, alpha, beta, current_state.turn_count)
+        lookup_result = self.transposition_table.lookup(current_state, alpha, beta, curDepth)
         if lookup_result is not None:
-            return lookup_result
+            if lookup_result >= beta: return lookup_result
+            if lookup_result <= alpha: return lookup_result
+            
+            alpha = max(alpha, lookup_result)
+            beta = min(beta, lookup_result)
+            # return lookup_result
+        
         # If the node is the leaf (at terminal state) or the maximum lookahead depth
         if curDepth == targetDepth or current_state.has_game_ended():
             eval_score = self.eval(current_state)
-            self.transposition_table.insert(current_state, current_state.turn_count, eval_score, None, Flag.EXACT)
+            self.transposition_table.insert(current_state, curDepth, eval_score, None, Flag.EXACT)
             return eval_score
 
         if maxTurn:
             value = -float("inf")
             list_of_actions = self.get_next_possible_configurations(init_board=current_state, player_turn=self._color)
-            list_of_actions = sorted(list_of_actions, key=cmp_to_key(self.actions_compare))
-            for move in self.killer_moves[current_state.turn_count]:
-                
-                if move is not None:
-                    
-                    self.killer_move_hits+=1
-                    list_of_actions.insert(0, move)
 
             for action in list_of_actions:
                 current_state.apply_action(action)
@@ -213,21 +212,13 @@ class ABAgentWithCache:
                 value = max(value, score)
                 alpha = max(alpha, score) 
                 if  beta <= alpha:
-                    self.transposition_table.insert(current_state, current_state.turn_count, current_state.turn_count, action, Flag.BETA)
-                    self.killer_moves[current_state.turn_count].insert(0, action)
-                    raise Exception(f"Killer move has been added {action}\n{current_state.render()} {curDepth} {beta} {alpha} \n {maxTurn} {self.eval(current_state)}"+
-                                    f"hash table {self.transposition_table.hash_table}")
+                    self.transposition_table.insert(current_state, curDepth, value, action, Flag.ALPHA)
                     break
                 
             return value
 
         value = float("inf")
         list_of_actions = self.get_next_possible_configurations(init_board=current_state, player_turn=self.opponent_color)
-        list_of_actions = sorted(list_of_actions, key=cmp_to_key(self.actions_compare))
-        for move in self.killer_moves[current_state.turn_count]:
-                if move is not None:
-                    self.killer_move_hits+=1
-                    list_of_actions.insert(0, move)
 
         for action in list_of_actions:
             current_state.apply_action(action)
@@ -236,16 +227,12 @@ class ABAgentWithCache:
             value = min(value, score)
             beta = min(beta, value)
             if beta <= alpha:
-                raise Exception(f"Killer move has been added {action}\n{current_state.render()} {curDepth} {beta} {alpha} \n {maxTurn} {self.eval(current_state)}" +
-                                f"hash table {self.transposition_table.hash_table}")
-                self.transposition_table.insert(current_state, current_state.turn_count, current_state.turn_count, action, Flag.BETA)
-                self.killer_moves[current_state.turn_count].insert(0, action)
-                raise Exception(f"Killer move has been added {action}")
+                self.transposition_table.insert(current_state, curDepth, value, action, Flag.BETA)
                 break
         return value
             
     def eval(self, board: Board):
-        # print(f"Score of self: {self.get_score(board, self._color)} \n Score of opponent: {self.get_score(board, self._color.opponent)}")
+        
         return self.get_score(board, self._color) - self.get_score(board, self.opponent_color)
 
     def _is_valid_move(self, color: PlayerColor, direction: Direction):
@@ -340,23 +327,12 @@ class ABAgentWithCache:
 
         return neighbor
     def get_score(self, board: Board, player_color: PlayerColor) -> int:
-        def distance(coord1: Coord, coord2: Coord):
-            return math.floor(math.sqrt((coord1.c - coord2.c)**2 + (coord1.r - coord2.r)**2))
         position_of_frogs: set[Coord] = set(
             coord for coord, cell in board._state.items()
             if cell.state == player_color
         )
-        count = 0
+        score = 0
+        weight_score_matrix = BOARD_WEIGHT_RED if player_color == PlayerColor.RED else BOARD_WEIGHT_BLUE
         for cell in position_of_frogs:
-            goal_r = (7 if player_color == PlayerColor.RED else 0)
-            if cell.r != goal_r:
-                from_cell = (7 if player_color == PlayerColor.RED else 0)
-                # check to the right
-                left = cell.c
-                right = cell.c
-                while (left > 0 and board[Coord(from_cell, left)] == CellState(self._color)) and (right < 7 and board[Coord(from_cell, right)] == CellState(self._color)):
-                    left -= 1
-                    right += 1
-                
-                count -= min(abs(distance(cell, Coord(from_cell, left))), abs(distance(cell, Coord(from_cell,right))))
-        return count
+            score += weight_score_matrix[cell.r][cell.c]
+        return score

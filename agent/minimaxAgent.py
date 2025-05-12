@@ -2,6 +2,7 @@
 # Project Part B: Game Playing Agent
 from typing import Any
 
+from agent.utils import BOARD_WEIGHT_BLUE, BOARD_WEIGHT_RED
 from referee.game.constants import MAX_TURNS
 
 from .game.board import Board, BoardMutation, BoardState, CellState, \
@@ -226,8 +227,8 @@ class MinimaxAgent:
             coord for coord, cell in board._state.items()
             if cell.state == player_color
         )
-        count = 0
+        score = 0
+        weight_score_matrix = BOARD_WEIGHT_RED if player_color == PlayerColor.RED else BOARD_WEIGHT_BLUE
         for cell in position_of_frogs:
-                from_cell = 7 if player_color == PlayerColor.RED else 0
-                count -= abs(from_cell - cell.r)
-        return count
+            score += weight_score_matrix[cell.r][cell.c]
+        return score

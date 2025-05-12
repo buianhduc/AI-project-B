@@ -3,9 +3,10 @@ import os
 import sys
 
 from referee.agent import AgentProxyPlayer
-# agents = ["MinimaxAgent", "ABAgent", "ABAgentWithCache", "MTCSAgent", "GreedyAgent", "RandomAgent"]
-agents = ["RandomAgent", "ABAgentWithCache"]
+import json
 
+from referee.game.player import PlayerColor
+agents = ["ABAgentWithCache", "GreedyAgent", "RandomAgent", "MCTSAgent", "MinimaxAgent"]
 from referee import evaluation_referee
 from os import devnull
 
@@ -29,14 +30,76 @@ def enablePrint():
     # close the temporary fds
     os.close(null_fds[0])
     os.close(null_fds[1])
-with open("output.txt", "w") as f:
-    for red in agents:
-        for blue in agents:
-    
-                f.write(f"Running {red} vs {blue}\n")
-                # suppress_stdout_stderr()
-                result:AgentProxyPlayer = evaluation_referee([red, blue], time=180, space=250, use_colour=True, use_unicode=False, verbosity=3)[0]
-                
-                # enablePrint()
-                f.write(f"{result}\n")
-                f.write(f"--------------------------------\n")
+with open("win.json", "a") as win_file:
+    with open("usage.json", "a") as usage_file:
+        win_df = {"data": []}
+        usage_df = {"data": []}
+        for i in range(1):
+            for red in agents:
+                for blue in agents:
+                    try: 
+                        result:AgentProxyPlayer = evaluation_referee([red, blue], time=180, space=250, use_colour=True, use_unicode=False, verbosity=3)[0]
+                    except:
+                        print(f"Exception Occured between red: {red} and blue: {blue}")
+                        json.dump(win_df, win_file)
+                        json.dump(usage_df, usage_file)
+                        raise Exception("Premature exited")
+                    # In case of draw
+                    if result is None:
+                        continue
+                    try: 
+                        if result is None:
+                            win_df["data"].append(
+                                {
+                                    "round": i,
+                                    "red_agent": red,
+                                    "blue_agent": blue,
+                                    "result": "draw"
+                                }
+                            )
+                            continue
+                        winner_name = result._name
+                        winner_color = "RED" if result.color == PlayerColor.RED else "BLUE"
+                        memory_used = result._agent.status.space_peak
+                        time_elapsed = result._agent.status.time_used
+                        win_df["data"].append(
+                            {
+                                "round": i,
+                                "red_agent": red,
+                                "blue_agent": blue,
+                                "winner_name": winner_name,
+                                "winner_color": winner_color
+                            }
+                        )
+                        data = {
+                            "round": i,
+                            "red_agent": red,
+                            "blue_agent": blue,
+                            "winner_name": winner_name,
+                            "winner_color": winner_color
+                        }
+                        data[winner_name] = {
+                            "memory_used": memory_used,
+                            "time_elapsed": time_elapsed
+                        }
+                        usage_df["data"].append(data)
+                    except Exception as e:
+                        win_df["data"].append(
+                            {
+                                "round": i,
+                                "red_agent": red,
+                                "blue_agent": blue,
+                                "is_terminated_early": True,
+                                "reasons": "An error Occured" + e.__str__()
+                            }
+                        )
+                        usage_df["data"].append({
+                            "round": i,
+                            "red_agent": red,
+                            "blue_agent": blue,
+                            "is_terminated_early": True,
+                            "reasons": "An error Occured" + e.__str__()
+                        })
+                        continue
+        json.dump(win_df, win_file)
+        json.dump(usage_df, usage_file)

@@ -1,0 +1,268 @@
+{
+    "data": [
+        {
+            "round": 0,
+            "player 2 [agent:ABAgent]": {
+                "memory_used": 1.0390625,
+                "time_elapsed": 93.13584988
+            }
+        },
+        {
+            "round": 0,
+            "player 1 [agent:MinimaxAgent]": {
+                "memory_used": 1.0390625,
+                "time_elapsed": 26.41765253499998
+            }
+        },
+        {
+            "round": 0,
+            "player 1 [agent:MinimaxAgent]": {
+                "memory_used": 0.00390625,
+                "time_elapsed": 0.17000420800000016
+            }
+        },
+        {
+            "round": 0,
+            "player 2 [agent:GreedyAgent]": {
+                "memory_used": 1.02734375,
+                "time_elapsed": 0.1024932420000022
+            }
+        },
+        {
+            "round": 0,
+            "player 1 [agent:MinimaxAgent]": {
+                "memory_used": 1.0390625,
+                "time_elapsed": 10.531555752999997
+            }
+        },
+        {
+            "round": 0,
+            "player 2 [agent:MinimaxAgent]": {
+                "memory_used": 1.0390625,
+                "time_elapsed": 13.911558989000003
+            }
+        },
+        {
+            "round": 0,
+            "player 2 [agent:ABAgent]": {
+                "memory_used": 1.0390625,
+                "time_elapsed": 82.76311383200002
+            }
+        },
+        {
+            "round": 0,
+            "player 1 [agent:ABAgent]": {
+                "memory_used": 1.0390625,
+                "time_elapsed": 136.54235220899986
+            }
+        },
+        {
+            "round": 0,
+            "player 1 [agent:ABAgent]": {
+                "memory_used": 0.0,
+                "time_elapsed": 0.4728048760000001
+            }
+        },
+        {
+            "round": 0,
+            "player 2 [agent:GreedyAgent]": {
+                "memory_used": 1.0390625,
+                "time_elapsed": 0.2709423419999979
+            }
+        },
+        {
+            "round": 0,
+            "player 2 [agent:MinimaxAgent]": {
+                "memory_used": 1.0390625,
+                "time_elapsed": 13.36801166500001
+            }
+        },
+        {
+            "round": 0,
+            "player 2 [agent:ABAgent]": {
+                "memory_used": 1.0390625,
+                "time_elapsed": 67.96597952599998
+            }
+        },
+        {
+            "round": 0,
+            "player 1 [agent:ABAgentWithCache]": {
+                "memory_used": 2.9609375,
+                "time_elapsed": 150.09400323499995
+            }
+        },
+        {
+            "round": 0,
+            "player 1 [agent:ABAgentWithCache]": {
+                "memory_used": 0.0,
+                "time_elapsed": 0.1871449970000001
+            }
+        },
+        {
+            "round": 0,
+            "player 2 [agent:GreedyAgent]": {
+                "memory_used": 1.0390625,
+                "time_elapsed": 0.21097524000000267
+            }
+        },
+        {
+            "round": 0,
+            "player 1 [agent:ABAgentWithCache]": {
+                "memory_used": 1.68359375,
+                "time_elapsed": 95.68394849799998
+            }
+        },
+        {
+            "round": 0,
+            "player 2 [agent:MinimaxAgent]": {
+                "memory_used": 1.0390625,
+                "time_elapsed": 14.09372291099999
+            }
+        },
+        {
+            "round": 0,
+            "player 2 [agent:ABAgent]": {
+                "memory_used": 1.0390625,
+                "time_elapsed": 67.69517594500003
+            }
+        },
+        {
+            "round": 0,
+            "player 1 [agent:GreedyAgent]": {
+                "memory_used": 1.0390625,
+                "time_elapsed": 0.29414166299999955
+            }
+        },
+        {
+            "round": 0,
+            "player 1 [agent:GreedyAgent]": {
+                "memory_used": 0.0,
+                "time_elapsed": 0.014217706000000163
+            }
+        },
+        {
+            "round": 0,
+            "player 2 [agent:GreedyAgent]": {
+                "memory_used": 1.0390625,
+                "time_elapsed": 0.3011551180000016
+            }
+        },
+        {
+            "round": 0,
+            "player 1 [agent:GreedyAgent]": {
+                "memory_used": 1.0390625,
+                "time_elapsed": 0.3763020020000003
+            }
+        },
+        {
+            "round": 0,
+            "player 1 [agent:RandomAgent]": {
+                "memory_used": 1.03515625,
+                "time_elapsed": 0.3368478259999963
+            }
+        },
+        {
+            "round": 0,
+            "player 2 [agent:ABAgent]": {
+                "memory_used": 1.0390625,
+                "time_elapsed": 68.64057412500003
+            }
+        },
+        {
+            "round": 0,
+            "player 1 [agent:RandomAgent]": {
+                "memory_used": 1.03515625,
+                "time_elapsed": 0.15685513499999626
+            }
+        },
+        {
+            "round": 0,
+            "player 1 [agent:RandomAgent]": {
+                "memory_used": 0.00390625,
+                "time_elapsed": 0.22606087799999997
+            }
+        },
+        {
+            "round": 0,
+            "player 2 [agent:GreedyAgent]": {
+                "memory_used": 1.0390625,
+                "time_elapsed": 0.29938853999999604
+            }
+        },
+        {
+            "round": 0,
+            "player 1 [agent:RandomAgent]": {
+                "memory_used": 1.03515625,
+                "time_elapsed": 0.3030845339999968
+            }
+        }
+    ]
+}
+
+{
+    "data": [
+        {
+            "round": 0,
+            "player 2 [agent:ABAgentWithCache]": {
+                "memory_used": 1.6796875,
+                "time_elapsed": 105.74329694299993
+            }
+        },
+        {
+            "round": 0,
+            "player 1 [agent:ABAgentWithCache]": {
+                "memory_used": 1.6796875,
+                "time_elapsed": 98.82160061199995
+            }
+        },
+        {
+            "round": 0,
+            "player 1 [agent:ABAgentWithCache]": {
+                "memory_used": 1.6796875,
+                "time_elapsed": 100.18343170600004
+            }
+        },
+        {
+            "round": 0,
+            "player 2 [agent:ABAgentWithCache]": {
+                "memory_used": 1.6796875,
+                "time_elapsed": 98.84561037400003
+            }
+        },
+        {
+            "round": 0,
+            "player 2 [agent:GreedyAgent]": {
+                "memory_used": 1.03125,
+                "time_elapsed": 0.09777929799999985
+            }
+        },
+        {
+            "round": 0,
+            "player 1 [agent:GreedyAgent]": {
+                "memory_used": 1.03125,
+                "time_elapsed": 0.13989175100000284
+            }
+        },
+        {
+            "round": 0,
+            "player 2 [agent:ABAgentWithCache]": {
+                "memory_used": 1.6796875,
+                "time_elapsed": 88.77067136900001
+            }
+        },
+        {
+            "round": 0,
+            "player 1 [agent:RandomAgent]": {
+                "memory_used": 1.0390625,
+                "time_elapsed": 0.2754554450000004
+            }
+        },
+        {
+            "round": 0,
+            "player 2 [agent:RandomAgent]": {
+                "memory_used": 1.0390625,
+                "time_elapsed": 0.29767795500000194
+            }
+        }
+    ]
+}

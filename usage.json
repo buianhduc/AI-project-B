@@ -1,0 +1,268 @@
+{
+    "data": [
+        {
+            "round": 0,
+            "red_agent": "ABAgentWithCache",
+            "blue_agent": "ABAgentWithCache",
+            "winner_name": "ABAgentWithCache",
+            "winner_color": "BLUE",
+            "ABAgentWithCache": {
+                "memory_used": 1.6796875,
+                "time_elapsed": 105.80250090199998
+            }
+        },
+        {
+            "round": 0,
+            "red_agent": "ABAgentWithCache",
+            "blue_agent": "GreedyAgent",
+            "winner_name": "ABAgentWithCache",
+            "winner_color": "RED",
+            "ABAgentWithCache": {
+                "memory_used": 1.6796875,
+                "time_elapsed": 95.07800692999994
+            }
+        },
+        {
+            "round": 0,
+            "red_agent": "ABAgentWithCache",
+            "blue_agent": "RandomAgent",
+            "winner_name": "ABAgentWithCache",
+            "winner_color": "RED",
+            "ABAgentWithCache": {
+                "memory_used": 1.6796875,
+                "time_elapsed": 99.42751016100003
+            }
+        },
+        {
+            "round": 0,
+            "red_agent": "ABAgentWithCache",
+            "blue_agent": "MCTSAgent",
+            "winner_name": "ABAgentWithCache",
+            "winner_color": "RED",
+            "ABAgentWithCache": {
+                "memory_used": 1.6796875,
+                "time_elapsed": 96.04775107200003
+            }
+        },
+        {
+            "round": 0,
+            "red_agent": "ABAgentWithCache",
+            "blue_agent": "MinimaxAgent",
+            "winner_name": "ABAgentWithCache",
+            "winner_color": "RED",
+            "ABAgentWithCache": {
+                "memory_used": 1.6796875,
+                "time_elapsed": 96.4756893109999
+            }
+        },
+        {
+            "round": 0,
+            "red_agent": "GreedyAgent",
+            "blue_agent": "ABAgentWithCache",
+            "winner_name": "ABAgentWithCache",
+            "winner_color": "BLUE",
+            "ABAgentWithCache": {
+                "memory_used": 1.6796875,
+                "time_elapsed": 99.56866842300005
+            }
+        },
+        {
+            "round": 0,
+            "red_agent": "GreedyAgent",
+            "blue_agent": "GreedyAgent",
+            "winner_name": "GreedyAgent",
+            "winner_color": "BLUE",
+            "GreedyAgent": {
+                "memory_used": 1.0390625,
+                "time_elapsed": 0.354072674
+            }
+        },
+        {
+            "round": 0,
+            "red_agent": "GreedyAgent",
+            "blue_agent": "RandomAgent",
+            "winner_name": "GreedyAgent",
+            "winner_color": "RED",
+            "GreedyAgent": {
+                "memory_used": 1.0390625,
+                "time_elapsed": 0.2751297499999994
+            }
+        },
+        {
+            "round": 0,
+            "red_agent": "GreedyAgent",
+            "blue_agent": "MCTSAgent",
+            "winner_name": "GreedyAgent",
+            "winner_color": "RED",
+            "GreedyAgent": {
+                "memory_used": 1.0390625,
+                "time_elapsed": 0.2900736690000003
+            }
+        },
+        {
+            "round": 0,
+            "red_agent": "GreedyAgent",
+            "blue_agent": "MinimaxAgent",
+            "winner_name": "GreedyAgent",
+            "winner_color": "RED",
+            "GreedyAgent": {
+                "memory_used": 1.0390625,
+                "time_elapsed": 0.22591974700000095
+            }
+        },
+        {
+            "round": 0,
+            "red_agent": "RandomAgent",
+            "blue_agent": "ABAgentWithCache",
+            "winner_name": "ABAgentWithCache",
+            "winner_color": "BLUE",
+            "ABAgentWithCache": {
+                "memory_used": 1.67578125,
+                "time_elapsed": 89.74964462299998
+            }
+        },
+        {
+            "round": 0,
+            "red_agent": "RandomAgent",
+            "blue_agent": "GreedyAgent",
+            "winner_name": "GreedyAgent",
+            "winner_color": "BLUE",
+            "GreedyAgent": {
+                "memory_used": 1.0390625,
+                "time_elapsed": 0.27642337000000095
+            }
+        },
+        {
+            "round": 0,
+            "red_agent": "RandomAgent",
+            "blue_agent": "RandomAgent",
+            "winner_name": "RandomAgent",
+            "winner_color": "RED",
+            "RandomAgent": {
+                "memory_used": 1.0390625,
+                "time_elapsed": 0.46948678499999663
+            }
+        },
+        {
+            "round": 0,
+            "red_agent": "RandomAgent",
+            "blue_agent": "MCTSAgent",
+            "winner_name": "RandomAgent",
+            "winner_color": "RED",
+            "RandomAgent": {
+                "memory_used": 1.0390625,
+                "time_elapsed": 0.31653057700000486
+            }
+        },
+        {
+            "round": 0,
+            "red_agent": "RandomAgent",
+            "blue_agent": "MinimaxAgent",
+            "winner_name": "RandomAgent",
+            "winner_color": "RED",
+            "RandomAgent": {
+                "memory_used": 1.03515625,
+                "time_elapsed": 0.32656433299999477
+            }
+        },
+        {
+            "round": 0,
+            "red_agent": "MCTSAgent",
+            "blue_agent": "ABAgentWithCache",
+            "winner_name": "ABAgentWithCache",
+            "winner_color": "BLUE",
+            "ABAgentWithCache": {
+                "memory_used": 1.6796875,
+                "time_elapsed": 118.66639083900014
+            }
+        },
+        {
+            "round": 0,
+            "red_agent": "MCTSAgent",
+            "blue_agent": "GreedyAgent",
+            "winner_name": "GreedyAgent",
+            "winner_color": "BLUE",
+            "GreedyAgent": {
+                "memory_used": 1.04296875,
+                "time_elapsed": 0.27909187100000077
+            }
+        },
+        {
+            "round": 0,
+            "red_agent": "MCTSAgent",
+            "blue_agent": "RandomAgent",
+            "winner_name": "MCTSAgent",
+            "winner_color": "RED",
+            "MCTSAgent": {
+                "memory_used": 23.12109375,
+                "time_elapsed": 161.3603028249999
+            }
+        },
+        {
+            "round": 0,
+            "red_agent": "MCTSAgent",
+            "blue_agent": "MCTSAgent",
+            "winner_name": "MCTSAgent",
+            "winner_color": "BLUE",
+            "MCTSAgent": {
+                "memory_used": 34.86328125,
+                "time_elapsed": 178.25408733999987
+            }
+        },
+        {
+            "round": 0,
+            "red_agent": "MCTSAgent",
+            "blue_agent": "MinimaxAgent",
+            "winner_name": "MCTSAgent",
+            "winner_color": "RED",
+            "MCTSAgent": {
+                "memory_used": 1.31640625,
+                "time_elapsed": 75.56255771400006
+            }
+        },
+        {
+            "round": 0,
+            "red_agent": "MinimaxAgent",
+            "blue_agent": "ABAgentWithCache",
+            "winner_name": "MinimaxAgent",
+            "winner_color": "RED",
+            "MinimaxAgent": {
+                "memory_used": 1.0390625,
+                "time_elapsed": 11.473270536999996
+            }
+        },
+        {
+            "round": 0,
+            "red_agent": "MinimaxAgent",
+            "blue_agent": "GreedyAgent",
+            "winner_name": "GreedyAgent",
+            "winner_color": "BLUE",
+            "GreedyAgent": {
+                "memory_used": 1.0390625,
+                "time_elapsed": 0.24775670800000205
+            }
+        },
+        {
+            "round": 0,
+            "red_agent": "MinimaxAgent",
+            "blue_agent": "RandomAgent",
+            "winner_name": "MinimaxAgent",
+            "winner_color": "RED",
+            "MinimaxAgent": {
+                "memory_used": 1.0390625,
+                "time_elapsed": 19.00589406000003
+            }
+        },
+        {
+            "round": 0,
+            "red_agent": "MinimaxAgent",
+            "blue_agent": "MCTSAgent",
+            "winner_name": "MinimaxAgent",
+            "winner_color": "RED",
+            "MinimaxAgent": {
+                "memory_used": 1.0390625,
+                "time_elapsed": 15.438759309000003
+            }
+        }
+    ]
+}

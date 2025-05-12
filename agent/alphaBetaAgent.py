@@ -85,6 +85,17 @@ class ABAgent:
                 print(f"Testing: {color} played GROW action")
             case _:
                 raise ValueError(f"Unknown action type: {action}")
+    def actions_compare(a: Action, b: Action):
+        # Sort by the length of the directions
+        length_directions_a = len(a.directions)
+        length_directions_b = len(b.directions)
+        # Sort by the vertical distance of the direction
+        length_a = sum(1 if direction in {Direction.Down, Direction.DownLeft, Direction.DownRight, Direction.Up, Direction.UpLeft, Direction.UpRight} else 0 for direction in a.directions)
+        length_b = sum(1 if direction in {Direction.Down, Direction.DownLeft, Direction.DownRight, Direction.Up, Direction.UpLeft, Direction.UpRight} else 0 for direction in b.directions)
+        if length_a == length_b:
+            return length_directions_a - length_directions_b
+        return length_a - length_b
+        
     def minimax(self, current_state: Board,
                 curDepth: int,
                 maxTurn: bool,
