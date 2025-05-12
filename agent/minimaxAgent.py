@@ -2,7 +2,7 @@
 # Project Part B: Game Playing Agent
 from typing import Any
 
-from agent.utils import BOARD_WEIGHT_BLUE, BOARD_WEIGHT_RED
+from .utils import BOARD_WEIGHT_BLUE, BOARD_WEIGHT_RED
 from referee.game.constants import MAX_TURNS
 
 from .game.board import Board, BoardMutation, BoardState, CellState, \
