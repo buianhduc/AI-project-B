@@ -6,7 +6,7 @@ from .minimaxAgent import MinimaxAgent
 from .mctsAgent import MCTSAgent as MCTSAgent
 from .alphaBetaAgent import ABAgent
 from .alphaBetaAgentWithCache import ABAgentWithCache
-from .alphaBetaAgentWithCacheV2 import ABAgentWithCache as ABAgentWithCacheV2
+from .alphaBetaAgentWithCacheV2 import ABAgentWithCache as Agent
 from .randomAgent import RandomAgent
 from .greedyAgent import GreedyAgent
 # from .combinedAgent import CombinedAgent as Agent
