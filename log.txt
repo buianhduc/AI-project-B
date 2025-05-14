@@ -1,1279 +1,5583 @@
-T0000.000	referee	game_begin
-T0000.000	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status: unknown
-)	initialising
-T0000.143	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status: unknown
-)	initialising
-T0000.359	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.037s  (just elapsed)       0.037s  (game total)
-  space: unknown (check platform)
-)	turn_begin	1
-T0000.888	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.541s  (just elapsed)       0.579s  (game total)
-  space: unknown (check platform)
-)	turn_end	1	MOVE(0-1, [[↓]])
-T0000.888	referee	board_update
-T0000.898	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)       0.038s  (game total)
-  space: unknown (check platform)
-)	turn_begin	2
-T0002.589	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 1.677s  (just elapsed)       1.715s  (game total)
-  space: unknown (check platform)
-)	turn_end	2	GROW
-T0002.590	referee	board_update
-T0002.598	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)       0.579s  (game total)
-  space: unknown (check platform)
-)	turn_begin	3
-T0002.956	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.351s  (just elapsed)       0.930s  (game total)
-  space: unknown (check platform)
-)	turn_end	3	MOVE(0-4, [[↓]])
-T0002.957	referee	board_update
-T0002.965	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)       1.715s  (game total)
-  space: unknown (check platform)
-)	turn_begin	4
-T0004.806	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 1.830s  (just elapsed)       3.546s  (game total)
-  space: unknown (check platform)
-)	turn_end	4	MOVE(7-4, [[↑]])
-T0004.807	referee	board_update
-T0004.815	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)       0.930s  (game total)
-  space: unknown (check platform)
-)	turn_begin	5
-T0005.088	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.267s  (just elapsed)       1.197s  (game total)
-  space: unknown (check platform)
-)	turn_end	5	MOVE(0-3, [[↓]])
-T0005.089	referee	board_update
-T0005.097	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)       3.546s  (game total)
-  space: unknown (check platform)
-)	turn_begin	6
-T0006.839	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 1.707s  (just elapsed)       5.252s  (game total)
-  space: unknown (check platform)
-)	turn_end	6	MOVE(7-1, [[↑]])
-T0006.840	referee	board_update
-T0006.850	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)       1.198s  (game total)
-  space: unknown (check platform)
-)	turn_begin	7
-T0007.056	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.199s  (just elapsed)       1.397s  (game total)
-  space: unknown (check platform)
-)	turn_end	7	MOVE(0-6, [[↓]])
-T0007.059	referee	board_update
-T0007.075	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)       5.253s  (game total)
-  space: unknown (check platform)
-)	turn_begin	8
-T0010.183	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 3.090s  (just elapsed)       8.343s  (game total)
-  space: unknown (check platform)
-)	turn_end	8	MOVE(7-3, [[↑]])
-T0010.184	referee	board_update
-T0010.194	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)       1.397s  (game total)
-  space: unknown (check platform)
-)	turn_begin	9
-T0010.325	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.126s  (just elapsed)       1.523s  (game total)
-  space: unknown (check platform)
-)	turn_end	9	MOVE(0-2, [[↓]])
-T0010.326	referee	board_update
-T0010.336	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)       8.343s  (game total)
-  space: unknown (check platform)
-)	turn_begin	10
-T0012.260	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 1.892s  (just elapsed)      10.235s  (game total)
-  space: unknown (check platform)
-)	turn_end	10	MOVE(7-6, [[↑]])
-T0012.261	referee	board_update
-T0012.271	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)       1.524s  (game total)
-  space: unknown (check platform)
-)	turn_begin	11
-T0012.332	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.057s  (just elapsed)       1.580s  (game total)
-  space: unknown (check platform)
-)	turn_end	11	GROW
-T0012.333	referee	board_update
-T0012.344	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      10.236s  (game total)
-  space: unknown (check platform)
-)	turn_begin	12
-T0017.281	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 4.843s  (just elapsed)      15.079s  (game total)
-  space: unknown (check platform)
-)	turn_end	12	MOVE(7-2, [[↑]])
-T0017.281	referee	board_update
-T0017.302	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)       1.581s  (game total)
-  space: unknown (check platform)
-)	turn_begin	13
-T0017.625	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.316s  (just elapsed)       1.897s  (game total)
-  space: unknown (check platform)
-)	turn_end	13	MOVE(1-2, [[↓]])
-T0017.625	referee	board_update
-T0017.638	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      15.079s  (game total)
-  space: unknown (check platform)
-)	turn_begin	14
-T0020.908	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 3.252s  (just elapsed)      18.331s  (game total)
-  space: unknown (check platform)
-)	turn_end	14	GROW
-T0020.909	referee	board_update
-T0020.922	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)       1.897s  (game total)
-  space: unknown (check platform)
-)	turn_begin	15
-T0021.678	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.750s  (just elapsed)       2.648s  (game total)
-  space: unknown (check platform)
-)	turn_end	15	MOVE(1-1, [[↓]])
-T0021.679	referee	board_update
-T0021.691	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      18.331s  (game total)
-  space: unknown (check platform)
-)	turn_begin	16
-T0026.033	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 4.304s  (just elapsed)      22.636s  (game total)
-  space: unknown (check platform)
-)	turn_end	16	MOVE(6-2, [[↑]])
-T0026.034	referee	board_update
-T0026.048	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)       2.648s  (game total)
-  space: unknown (check platform)
-)	turn_begin	17
-T0026.699	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.645s  (just elapsed)       3.292s  (game total)
-  space: unknown (check platform)
-)	turn_end	17	MOVE(1-4, [[↓]])
-T0026.700	referee	board_update
-T0026.715	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      22.636s  (game total)
-  space: unknown (check platform)
-)	turn_begin	18
-T0030.221	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 3.488s  (just elapsed)      26.124s  (game total)
-  space: unknown (check platform)
-)	turn_end	18	MOVE(6-1, [[↑]])
-T0030.222	referee	board_update
-T0030.238	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)       3.293s  (game total)
-  space: unknown (check platform)
-)	turn_begin	19
-T0030.666	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.423s  (just elapsed)       3.716s  (game total)
-  space: unknown (check platform)
-)	turn_end	19	MOVE(0-5, [[↘]])
-T0030.667	referee	board_update
-T0030.682	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      26.124s  (game total)
-  space: unknown (check platform)
-)	turn_begin	20
-T0034.331	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 3.612s  (just elapsed)      29.736s  (game total)
-  space: unknown (check platform)
-)	turn_end	20	MOVE(7-5, [[↖]])
-T0034.332	referee	board_update
-T0034.347	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)       3.716s  (game total)
-  space: unknown (check platform)
-)	turn_begin	21
-T0034.565	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.213s  (just elapsed)       3.929s  (game total)
-  space: unknown (check platform)
-)	turn_end	21	GROW
-T0034.566	referee	board_update
-T0034.582	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      29.736s  (game total)
-  space: unknown (check platform)
-)	turn_begin	22
-T0040.291	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 5.686s  (just elapsed)      35.423s  (game total)
-  space: unknown (check platform)
-)	turn_end	22	GROW
-T0040.293	referee	board_update
-T0040.310	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)       3.930s  (game total)
-  space: unknown (check platform)
-)	turn_begin	23
-T0041.435	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 1.120s  (just elapsed)       5.050s  (game total)
-  space: unknown (check platform)
-)	turn_end	23	MOVE(2-2, [[↓]])
-T0041.436	referee	board_update
-T0041.454	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      35.423s  (game total)
-  space: unknown (check platform)
-)	turn_begin	24
-T0048.876	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 7.369s  (just elapsed)      42.792s  (game total)
-  space: unknown (check platform)
-)	turn_end	24	MOVE(6-4, [[↖]])
-T0048.877	referee	board_update
-T0048.897	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)       5.050s  (game total)
-  space: unknown (check platform)
-)	turn_begin	25
-T0050.045	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 1.142s  (just elapsed)       6.192s  (game total)
-  space: unknown (check platform)
-)	turn_end	25	MOVE(2-1, [[↘], [↙]])
-T0050.046	referee	board_update
-T0050.065	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      42.792s  (game total)
-  space: unknown (check platform)
-)	turn_begin	26
-T0056.684	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 6.564s  (just elapsed)      49.356s  (game total)
-  space: unknown (check platform)
-)	turn_end	26	MOVE(5-1, [[↗], [↗], [→]])
-T0056.685	referee	board_update
-T0056.709	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)       6.192s  (game total)
-  space: unknown (check platform)
-)	turn_begin	27
-T0057.489	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.775s  (just elapsed)       6.967s  (game total)
-  space: unknown (check platform)
-)	turn_end	27	MOVE(3-2, [[↙]])
-T0057.490	referee	board_update
-T0057.512	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      49.356s  (game total)
-  space: unknown (check platform)
-)	turn_begin	28
-T0060.909	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 3.372s  (just elapsed)      52.729s  (game total)
-  space: unknown (check platform)
-)	turn_end	28	MOVE(5-3, [[↖]])
-T0060.910	referee	board_update
-T0060.934	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)       6.967s  (game total)
-  space: unknown (check platform)
-)	turn_begin	29
-T0061.453	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.512s  (just elapsed)       7.479s  (game total)
-  space: unknown (check platform)
-)	turn_end	29	MOVE(2-7, [[↓]])
-T0061.454	referee	board_update
-T0061.476	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      52.729s  (game total)
-  space: unknown (check platform)
-)	turn_begin	30
-T0063.989	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 2.461s  (just elapsed)      55.190s  (game total)
-  space: unknown (check platform)
-)	turn_end	30	MOVE(4-2, [[↖]])
-T0063.990	referee	board_update
-T0064.014	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)       7.479s  (game total)
-  space: unknown (check platform)
-)	turn_begin	31
-T0064.396	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.378s  (just elapsed)       7.857s  (game total)
-  space: unknown (check platform)
-)	turn_end	31	MOVE(4-1, [[↙]])
-T0064.397	referee	board_update
-T0064.423	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      55.190s  (game total)
-  space: unknown (check platform)
-)	turn_begin	32
-T0066.063	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 1.616s  (just elapsed)      56.806s  (game total)
-  space: unknown (check platform)
-)	turn_end	32	GROW
-T0066.064	referee	board_update
-T0066.089	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)       7.857s  (game total)
-  space: unknown (check platform)
-)	turn_begin	33
-T0066.794	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.700s  (just elapsed)       8.557s  (game total)
-  space: unknown (check platform)
-)	turn_end	33	MOVE(1-3, [[↓]])
-T0066.795	referee	board_update
-T0066.819	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      56.806s  (game total)
-  space: unknown (check platform)
-)	turn_begin	34
-T0071.322	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 4.445s  (just elapsed)      61.251s  (game total)
-  space: unknown (check platform)
-)	turn_end	34	MOVE(3-1, [[↑]])
-T0071.323	referee	board_update
-T0071.348	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)       8.557s  (game total)
-  space: unknown (check platform)
-)	turn_begin	35
-T0072.029	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.675s  (just elapsed)       9.232s  (game total)
-  space: unknown (check platform)
-)	turn_end	35	MOVE(2-3, [[↓]])
-T0072.030	referee	board_update
-T0072.056	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      61.251s  (game total)
-  space: unknown (check platform)
-)	turn_begin	36
-T0076.237	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 4.118s  (just elapsed)      65.369s  (game total)
-  space: unknown (check platform)
-)	turn_end	36	MOVE(6-3, [[↖]])
-T0076.238	referee	board_update
-T0076.264	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)       9.233s  (game total)
-  space: unknown (check platform)
-)	turn_begin	37
-T0077.131	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.855s  (just elapsed)      10.087s  (game total)
-  space: unknown (check platform)
-)	turn_end	37	MOVE(2-4, [[↙]])
-T0077.133	referee	board_update
-T0077.159	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      65.369s  (game total)
-  space: unknown (check platform)
-)	turn_begin	38
-T0082.924	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 5.695s  (just elapsed)      71.064s  (game total)
-  space: unknown (check platform)
-)	turn_end	38	MOVE(5-2, [[↑], [↖]])
-T0082.925	referee	board_update
-T0082.954	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      10.088s  (game total)
-  space: unknown (check platform)
-)	turn_begin	39
-T0083.605	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.647s  (just elapsed)      10.734s  (game total)
-  space: unknown (check platform)
-)	turn_end	39	MOVE(3-3, [[↙], [↓]])
-T0083.606	referee	board_update
-T0083.634	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      71.064s  (game total)
-  space: unknown (check platform)
-)	turn_begin	40
-T0085.674	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 2.012s  (just elapsed)      73.076s  (game total)
-  space: unknown (check platform)
-)	turn_end	40	MOVE(2-0, [[↑]])
-T0085.675	referee	board_update
-T0085.703	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      10.735s  (game total)
-  space: unknown (check platform)
-)	turn_begin	41
-T0086.104	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.396s  (just elapsed)      11.130s  (game total)
-  space: unknown (check platform)
-)	turn_end	41	MOVE(4-2, [[←], [↓]])
-T0086.104	referee	board_update
-T0086.135	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      73.077s  (game total)
-  space: unknown (check platform)
-)	turn_begin	42
-T0090.713	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 4.519s  (just elapsed)      77.595s  (game total)
-  space: unknown (check platform)
-)	turn_end	42	MOVE(2-1, [[↑]])
-T0090.714	referee	board_update
-T0090.743	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      11.131s  (game total)
-  space: unknown (check platform)
-)	turn_begin	43
-T0091.010	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.262s  (just elapsed)      11.393s  (game total)
-  space: unknown (check platform)
-)	turn_end	43	MOVE(6-1, [[↘]])
-T0091.011	referee	board_update
-T0091.041	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      77.595s  (game total)
-  space: unknown (check platform)
-)	turn_begin	44
-T0093.086	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 2.014s  (just elapsed)      79.610s  (game total)
-  space: unknown (check platform)
-)	turn_end	44	MOVE(1-1, [[↑]])
-T0093.087	referee	board_update
-T0093.117	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      11.393s  (game total)
-  space: unknown (check platform)
-)	turn_begin	45
-T0093.236	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.115s  (just elapsed)      11.508s  (game total)
-  space: unknown (check platform)
-)	turn_end	45	MOVE(5-0, [[↓]])
-T0093.237	referee	board_update
-T0093.269	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      79.610s  (game total)
-  space: unknown (check platform)
-)	turn_begin	46
-T0094.898	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 1.599s  (just elapsed)      81.209s  (game total)
-  space: unknown (check platform)
-)	turn_end	46	MOVE(6-6, [[↑]])
-T0094.900	referee	board_update
-T0094.929	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      11.508s  (game total)
-  space: unknown (check platform)
-)	turn_begin	47
-T0094.990	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.057s  (just elapsed)      11.565s  (game total)
-  space: unknown (check platform)
-)	turn_end	47	MOVE(1-6, [[↓]])
-T0094.991	referee	board_update
-T0095.024	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      81.209s  (game total)
-  space: unknown (check platform)
-)	turn_begin	48
-T0096.496	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 1.412s  (just elapsed)      82.621s  (game total)
-  space: unknown (check platform)
-)	turn_end	48	MOVE(1-7, [[↑]])
-T0096.497	referee	board_update
-T0096.530	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      11.565s  (game total)
-  space: unknown (check platform)
-)	turn_begin	49
-T0096.583	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.049s  (just elapsed)      11.614s  (game total)
-  space: unknown (check platform)
-)	turn_end	49	MOVE(2-6, [[↙]])
-T0096.584	referee	board_update
-T0096.615	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      82.621s  (game total)
-  space: unknown (check platform)
-)	turn_begin	50
-T0099.380	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 2.733s  (just elapsed)      85.355s  (game total)
-  space: unknown (check platform)
-)	turn_end	50	MOVE(4-1, [[↗]])
-T0099.381	referee	board_update
-T0099.412	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      11.614s  (game total)
-  space: unknown (check platform)
-)	turn_begin	51
-T0099.451	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.034s  (just elapsed)      11.648s  (game total)
-  space: unknown (check platform)
-)	turn_end	51	MOVE(3-5, [[↙]])
-T0099.452	referee	board_update
-T0099.483	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      85.355s  (game total)
-  space: unknown (check platform)
-)	turn_begin	52
-T0101.683	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 2.169s  (just elapsed)      87.523s  (game total)
-  space: unknown (check platform)
-)	turn_end	52	MOVE(3-2, [[↑]])
-T0101.684	referee	board_update
-T0101.716	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      11.649s  (game total)
-  space: unknown (check platform)
-)	turn_begin	53
-T0101.763	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.042s  (just elapsed)      11.690s  (game total)
-  space: unknown (check platform)
-)	turn_end	53	MOVE(4-4, [[↓]])
-T0101.764	referee	board_update
-T0101.798	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      87.524s  (game total)
-  space: unknown (check platform)
-)	turn_begin	54
-T0104.470	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 2.617s  (just elapsed)      90.140s  (game total)
-  space: unknown (check platform)
-)	turn_end	54	MOVE(2-2, [[↑]])
-T0104.471	referee	board_update
-T0104.504	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      11.690s  (game total)
-  space: unknown (check platform)
-)	turn_begin	55
-T0104.553	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.045s  (just elapsed)      11.735s  (game total)
-  space: unknown (check platform)
-)	turn_end	55	MOVE(5-4, [[↓]])
-T0104.554	referee	board_update
-T0104.586	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      90.140s  (game total)
-  space: unknown (check platform)
-)	turn_begin	56
-T0106.994	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 2.371s  (just elapsed)      92.512s  (game total)
-  space: unknown (check platform)
-)	turn_end	56	MOVE(0-1, [[→]])
-T0106.995	referee	board_update
-T0107.028	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      11.735s  (game total)
-  space: unknown (check platform)
-)	turn_begin	57
-T0107.067	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.034s  (just elapsed)      11.770s  (game total)
-  space: unknown (check platform)
-)	turn_end	57	GROW
-T0107.068	referee	board_update
-T0107.101	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      92.512s  (game total)
-  space: unknown (check platform)
-)	turn_begin	58
-T0108.785	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 1.653s  (just elapsed)      94.165s  (game total)
-  space: unknown (check platform)
-)	turn_end	58	MOVE(1-2, [[↗]])
-T0108.786	referee	board_update
-T0108.820	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      11.770s  (game total)
-  space: unknown (check platform)
-)	turn_begin	59
-T0108.898	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.074s  (just elapsed)      11.844s  (game total)
-  space: unknown (check platform)
-)	turn_end	59	MOVE(6-4, [[↓]])
-T0108.899	referee	board_update
-T0108.932	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      94.165s  (game total)
-  space: unknown (check platform)
-)	turn_begin	60
-T0110.656	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 1.689s  (just elapsed)      95.854s  (game total)
-  space: unknown (check platform)
-)	turn_end	60	MOVE(5-6, [[→]])
-T0110.657	referee	board_update
-T0110.693	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      11.844s  (game total)
-  space: unknown (check platform)
-)	turn_begin	61
-T0110.726	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.028s  (just elapsed)      11.872s  (game total)
-  space: unknown (check platform)
-)	turn_end	61	MOVE(3-7, [[↙]])
-T0110.726	referee	board_update
-T0110.762	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      95.854s  (game total)
-  space: unknown (check platform)
-)	turn_begin	62
-T0112.985	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 2.169s  (just elapsed)      98.023s  (game total)
-  space: unknown (check platform)
-)	turn_end	62	MOVE(5-7, [[↑]])
-T0112.986	referee	board_update
-T0113.020	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      11.872s  (game total)
-  space: unknown (check platform)
-)	turn_begin	63
-T0113.043	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.017s  (just elapsed)      11.889s  (game total)
-  space: unknown (check platform)
-)	turn_end	63	MOVE(4-6, [[↙]])
-T0113.043	referee	board_update
-T0113.079	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      98.024s  (game total)
-  space: unknown (check platform)
-)	turn_begin	64
-T0114.598	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 1.486s  (just elapsed)      99.509s  (game total)
-  space: unknown (check platform)
-)	turn_end	64	MOVE(4-7, [[↖]])
-T0114.599	referee	board_update
-T0114.633	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      11.890s  (game total)
-  space: unknown (check platform)
-)	turn_begin	65
-T0114.665	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.027s  (just elapsed)      11.916s  (game total)
-  space: unknown (check platform)
-)	turn_end	65	MOVE(5-5, [[↓]])
-T0114.665	referee	board_update
-T0114.701	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      99.509s  (game total)
-  space: unknown (check platform)
-)	turn_begin	66
-T0117.100	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 2.363s  (just elapsed)     101.872s  (game total)
-  space: unknown (check platform)
-)	turn_end	66	MOVE(3-6, [[↑]])
-T0117.101	referee	board_update
-T0117.137	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      11.916s  (game total)
-  space: unknown (check platform)
-)	turn_begin	67
-T0117.169	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.027s  (just elapsed)      11.944s  (game total)
-  space: unknown (check platform)
-)	turn_end	67	GROW
-T0117.170	referee	board_update
-T0117.206	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)     101.872s  (game total)
-  space: unknown (check platform)
-)	turn_begin	68
-T0119.350	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 2.108s  (just elapsed)     103.980s  (game total)
-  space: unknown (check platform)
-)	turn_end	68	MOVE(2-6, [[↖]])
-T0119.351	referee	board_update
-T0119.388	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      11.944s  (game total)
-  space: unknown (check platform)
-)	turn_begin	69
-T0119.437	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.045s  (just elapsed)      11.989s  (game total)
-  space: unknown (check platform)
-)	turn_end	69	GROW
-T0119.438	referee	board_update
-T0119.508	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)     103.981s  (game total)
-  space: unknown (check platform)
-)	turn_begin	70
-T0121.520	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 1.977s  (just elapsed)     105.957s  (game total)
-  space: unknown (check platform)
-)	turn_end	70	GROW
-T0121.521	referee	board_update
-T0121.559	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      11.989s  (game total)
-  space: unknown (check platform)
-)	turn_begin	71
-T0121.634	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.070s  (just elapsed)      12.060s  (game total)
-  space: unknown (check platform)
-)	turn_end	71	GROW
-T0121.635	referee	board_update
-T0121.671	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)     105.958s  (game total)
-  space: unknown (check platform)
-)	turn_begin	72
-T0123.295	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 1.581s  (just elapsed)     107.539s  (game total)
-  space: unknown (check platform)
-)	turn_end	72	MOVE(1-5, [[↑]])
-T0123.297	referee	board_update
-T0123.332	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)      12.060s  (game total)
-  space: unknown (check platform)
-)	turn_begin	73
-T0123.398	AgentProxyPlayer(
-  name: player 1 [agent:MinimaxAgent]
-  color: RED
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.061s  (just elapsed)      12.121s  (game total)
-  space: unknown (check platform)
-)	turn_end	73	MOVE(6-5, [[↓]])
-T0123.399	referee	board_update
-T0123.439	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 0.000s  (just elapsed)     107.539s  (game total)
-  space: unknown (check platform)
-)	turn_begin	74
-T0125.028	AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 1.549s  (just elapsed)     109.087s  (game total)
-  space: unknown (check platform)
-)	turn_end	74	MOVE(1-0, [[↗]])
-T0125.029	referee	board_update
-T0125.069	referee	game_end	winner:AgentProxyPlayer(
-  name: player 2 [agent:ABAgentWithCacheV2]
-  color: BLUE
-  resource limit tolerance: 1.0
-  agent status: resources usage status:
-  time:  + 1.549s  (just elapsed)     109.087s  (game total)
-  space: unknown (check platform)
-)
+Node count: 6560Node count: 6794Node count: 4509Node count: 4274Node count: 5942Node count: 5091Node count: 7216Node count: 5424Node count: 5997Node count: 4958Node count: 4995Node count: 6057Node count: 14433Node count: 7586Node count: 6869Node count: 7973Node count: 5112Node count: 4784Node count: 4894
+Node count: 5125
+Node count: 6298
+Node count: 6312
+Node count: 3454
+Node count: 4434
+Node count: 4848
+Node count: 4387
+Node count: 4960
+Node count: 5689
+Node count: 5980
+Node count: 4802
+Node count: 5537
+Node count: 7051
+Node count: 12159
+Node count: 6710
+Node count: 8847
+Node count: 14495
+Node count: 9619
+Node count: 11618
+Node count: 6979
+Node count: 6484
+Node count: 4656
+Node count: 6164
+Node count: 3930
+Node count: 5576
+Node count: 6274
+Node count: 3418
+Node count: 5154
+Node count: 5220
+Node count: 9628
+Node count: 7828
+Node count: 8762
+Node count: 5756
+Node count: 6781
+Node count: 3038
+Node count: 5355
+Node count: 5463
+Node count: 7129
+Node count: 6645
+
+
+WITHOUT TABLE
+Node count: 20204
+Node count: 17221
+Node count: 11537
+Node count: 9125
+Node count: 5866
+Node count: 13191
+Node count: 16809
+Node count: 7923
+Node count: 10677
+Node count: 18764
+Node count: 34204
+Node count: 20419
+Node count: 20076
+Node count: 12495
+Node count: 17565
+Node count: 7482
+Node count: 20736
+Node count: 9613
+Node count: 7988
+Node count: 28226
+Node count: 23054
+Node count: 13342
+Node count: 11132
+Node count: 6293
+Node count: 8987
+Node count: 7152
+Node count: 7747
+Node count: 8291
+Node count: 15283
+Node count: 9962
+Node count: 15733
+Node count: 14219
+Node count: 15439
+Node count: 7088
+Node count: 5639
+Node count: 6068
+Node count: 7624
+Node count: 5696
+Node count: 5623
+
+WITH TABLE AND KILLER MOVES
+Node count: 5966
+Node count: 5557
+Node count: 5481
+Node count: 7473
+Node count: 4689
+Node count: 16026
+Node count: 6998
+Node count: 5464
+Node count: 2864
+Node count: 3456
+Node count: 8813
+Node count: 7070
+Node count: 6476
+Node count: 7063
+Node count: 6074
+Node count: 4020
+Node count: 6463
+Node count: 4780
+Node count: 4554
+Node count: 13690
+Node count: 4173
+Node count: 10124
+Node count: 5499
+Node count: 6728
+Node count: 4703
+Node count: 5459
+Node count: 5555
+Node count: 5224
+Node count: 8468
+Node count: 4479
+Node count: 4458
+Node count: 4813
+Node count: 5713
+Node count: 5260
+Node count: 3707
+Node count: 3691
+
+WITHOUT KILLER MOVES
+Node count: 5966
+Node count: 5557
+Node count: 5481
+Node count: 8084
+Node count: 4689
+Node count: 17528
+Node count: 6998
+Node count: 5464
+Node count: 2864
+Node count: 3456
+Node count: 8813
+Node count: 7070
+Node count: 8274
+Node count: 5425
+Node count: 6375
+Node count: 5807
+Node count: 6712
+Node count: 4530
+Node count: 10499
+Node count: 4344
+Node count: 4774
+Node count: 5189
+Node count: 4455
+Node count: 4288
+Node count: 3646
+Node count: 2503
+Node count: 7376
+Node count: 7577
+Node count: 4908
+Node count: 12173
+Node count: 3879
+Node count: 4130
+Node count: 5217
+Node count: 5189
+Node count: 4099
+Node count: 3347
+Node count: 3636
+Node count: 8287
+Node count: 4911
+Node count: 3370
+Node count: 3991
+
+WITHOUT KILLER MOVES BUT ONLY SORT
+Node count: 5090
+Node count: 3668
+Node count: 3755
+Node count: 3272
+Node count: 6899
+Node count: 4350
+Node count: 18394
+Node count: 9398
+Node count: 4789
+Node count: 3733
+Node count: 5760
+Node count: 5063
+Node count: 3461
+Node count: 2395
+Node count: 3996
+Node count: 5394
+Node count: 5645
+Node count: 4700
+Node count: 3073
+Node count: 4749
+Node count: 3757
+Node count: 15570
+Node count: 8796
+Node count: 3449
+Node count: 3356
+Node count: 4062
+Node count: 3080
+Node count: 8788
+Node count: 8207
+Node count: 3269
+Node count: 3014
+Node count: 2853
+Node count: 2620
+Node count: 2181
+
+WITH KILLER MOVES AND SORTING
+Node count: 5090
+Node count: 3766
+Node count: 3885
+Node count: 2858
+Node count: 7105
+Node count: 4366
+Node count: 18394
+Node count: 9398
+Node count: 4789
+Node count: 2943
+Node count: 5760
+Node count: 5063
+Node count: 3461
+Node count: 2395
+Node count: 3764
+Node count: 4543
+Node count: 5646
+Node count: 4700
+Node count: 3073
+Node count: 4062
+Node count: 3757
+Node count: 15570
+Node count: 8796
+Node count: 3449
+Node count: 3020
+Node count: 4062
+Node count: 2652
+Node count: 7043
+Node count: 8207
+Node count: 2914
+Node count: 2746
+Node count: 2599
+Node count: 2889
+Node count: 1954
+
+
+Node count: 5090
+Node count: 3766
+Node count: 3768
+Node count: 3010
+Node count: 10463
+Node count: 6364
+Node count: 10011
+Node count: 7162
+Node count: 3306
+Node count: 4494
+Node count: 3604
+Node count: 3724
+Node count: 8109
+Node count: 2917
+Node count: 3959
+Node count: 4974
+Node count: 6199
+Node count: 4326
+Node count: 3757
+Node count: 3924
+Node count: 4813
+Node count: 3618
+Node count: 4506
+Node count: 3274
+Node count: 6033
+Node count: 2824
+Node count: 2297
+Node count: 2544
+Node count: 2890
+Node count: 2908
+Node count: 2694
+Node count: 2546
+Node count: 2633
+Node count: 2718
+Node count: 5090
+Node count: 3643
+Node count: 3428
+Node count: 3263
+Node count: 9742
+Node count: 8575
+Node count: 13409
+Node count: 3416
+Node count: 4744
+Node count: 4573
+Node count: 5916
+Node count: 8009
+Node count: 3096
+Node count: 4472
+Node count: 3832
+Node count: 4208
+Node count: 4090
+Node count: 4076
+Node count: 3738
+Node count: 4469
+Node count: 3658
+Node count: 3820
+Node count: 4587
+Node count: 4464
+Node count: 3154
+Node count: 3328
+Node count: 3662
+Node count: 3412
+Node count: 2868
+Node count: 2437
+Node count: 5169
+Node count: 4423
+Node count: 3753
+Node count: 4897
+Node count: 12209
+Node count: 6678
+Node count: 12602
+Node count: 3761
+Node count: 4706
+Node count: 5025
+Node count: 6228
+Node count: 3922
+Node count: 5524
+Node count: 5750
+Node count: 5202
+Node count: 3973
+Node count: 4126
+Node count: 3813
+Node count: 4519
+Node count: 7343
+Node count: 3953
+Node count: 3476
+Node count: 3153
+Node count: 4681
+Node count: 4283
+Node count: 3858
+Node count: 2884
+Node count: 3979
+Node count: 3026
+Node count: 3698
+Node count: 3764
+Node count: 4295
+Node count: 4390
+Node count: 2715
+Node count: 5090
+Node count: 3643
+Node count: 3637
+Node count: 2479
+Node count: 9543
+Node count: 6735
+Node count: 14363
+Node count: 7975
+Node count: 5023
+Node count: 4593
+Node count: 5908
+Node count: 4147
+Node count: 3883
+Node count: 4249
+Node count: 2972
+Node count: 5158
+Node count: 3867
+Node count: 4899
+Node count: 6544
+Node count: 3920
+Node count: 4020
+Node count: 3891
+Node count: 7636
+Node count: 6988
+Node count: 7974
+Node count: 5046
+Node count: 3134
+Node count: 3540
+Node count: 3319
+Node count: 2725
+Node count: 3087
+Node count: 3517
+Node count: 2932
+Node count: 2989
+Node count: 3007
+Node count: 3270
+Node count: 3426
+Node count: 3342
+Node count: 3423
+Node count: 3641
+Node count: 3481
+Node count: 3675
+Node count: 3663
+Node count: 3692
+Node count: 3475
+Node count: 3733
+Node count: 3600
+Node count: 3891
+Node count: 3633
+Node count: 3994
+Node count: 3893
+Node count: 4057
+Node count: 4041
+Node count: 4041
+Node count: 4059
+Node count: 4218
+Node count: 4527
+Node count: 4216
+Node count: 4544
+Node count: 4383
+Node count: 12391
+Node count: 7672
+Node count: 5247
+Node count: 9077
+Node count: 3498
+Node count: 9032
+Node count: 6075
+Node count: 4102
+Node count: 19822
+Node count: 6526
+Node count: 11725
+Node count: 6602
+Node count: 8420
+Node count: 7008
+Node count: 5799
+Node count: 6926
+Node count: 17996
+Node count: 19340
+Node count: 5263
+Node count: 12353
+Node count: 17753
+Node count: 11198
+Node count: 4100
+Node count: 6398
+Node count: 3918
+Node count: 5606
+Node count: 5684
+Node count: 4974
+Node count: 3561
+Node count: 4918
+Node count: 4384
+Node count: 7787
+Node count: 6887
+Node count: 7253
+Node count: 2679
+Node count: 2130
+Node count: 2006
+Node count: 2369
+Node count: 2858
+Node count: 2279
+Node count: 2919
+Node count: 2369
+Node count: 3064
+Node count: 2279
+Node count: 3107
+Node count: 2369
+Node count: 3207
+Node count: 11847
+Node count: 7672
+Node count: 5247
+Node count: 9077
+Node count: 3498
+Node count: 9032
+Node count: 6075
+Node count: 4102
+Node count: 17507
+Node count: 8519
+Node count: 9882
+Node count: 6885
+Node count: 6044
+Node count: 7033
+Node count: 5400
+Node count: 4280
+Node count: 10871
+Node count: 5337
+Node count: 2890
+Node count: 18086
+Node count: 25087
+Node count: 22381
+Node count: 16004
+Node count: 8334
+Node count: 7061
+Node count: 5649
+Node count: 6901
+Node count: 6165
+Node count: 6686
+Node count: 3040
+Node count: 2497
+Node count: 2864
+Node count: 2273
+Node count: 2617
+Node count: 2359
+Node count: 2894
+Node count: 2465
+Node count: 2832
+Node count: 2568
+Node count: 2812
+Node count: 2617
+Node count: 2832
+Node count: 2683
+Node count: 12391
+Node count: 7672
+Node count: 5247
+Node count: 9077
+Node count: 3498
+Node count: 9032
+Node count: 6075
+Node count: 4102
+Node count: 22740
+Node count: 6526
+Node count: 11309
+Node count: 4860
+Node count: 3998
+Node count: 3845
+Node count: 22120
+Node count: 4037
+Node count: 8004
+Node count: 4553
+Node count: 4240
+Node count: 6867
+Node count: 7234
+Node count: 4350
+Node count: 4505
+Node count: 3445
+Node count: 7897
+Node count: 6573
+Node count: 6695
+Node count: 9436
+Node count: 5239
+Node count: 3542
+Node count: 4578
+Node count: 5638
+Node count: 7333
+Node count: 7274
+Node count: 2787
+Node count: 4107
+Node count: 4955
+Node count: 5347
+Node count: 5297
+Node count: 4849
+Node count: 4222
+Node count: 5739
+Node count: 5297
+Node count: 16911
+Node count: 11534
+Node count: 9862
+Node count: 5676
+Node count: 17727
+Node count: 8103
+Node count: 4373
+Node count: 35026
+Node count: 4481
+Node count: 11389
+Node count: 11110
+Node count: 9499
+Node count: 12977
+Node count: 13007
+Node count: 17263
+Node count: 11903
+Node count: 7632
+Node count: 5947
+Node count: 8945
+Node count: 3614
+Node count: 9032
+Node count: 6075
+Node count: 4102
+Node count: 12926
+Node count: 12114
+Node count: 9981
+Node count: 8265
+Node count: 6528
+Node count: 3463
+Node count: 16911
+Node count: 11534
+Node count: 9862
+Node count: 5676
+Node count: 17727
+Node count: 8103
+Node count: 4373
+Node count: 35026
+Node count: 4481
+Node count: 11389
+Node count: 11110
+Node count: 9499
+Node count: 12977
+Node count: 14834
+Node count: 17263
+Node count: 14440
+Node count: 5691
+Node count: 12097
+Node count: 5709
+Node count: 8888
+Node count: 12467
+Node count: 11917
+Node count: 7125
+Node count: 4819
+Node count: 12738
+Node count: 19294
+Node count: 9977
+Node count: 7746
+Node count: 5504
+Node count: 4286
+Node count: 6487
+Node count: 4533
+Node count: 4159
+Node count: 2102
+Node count: 12391
+Node count: 7672
+Node count: 5247
+Node count: 8561
+Node count: 5965
+Node count: 6075
+Node count: 4749
+Node count: 15635
+Node count: 5145
+Node count: 7885
+Node count: 4300
+Node count: 4378
+Node count: 3158
+Node count: 10500
+Node count: 17562
+Node count: 5129
+Node count: 4547
+Node count: 4566
+Node count: 5149
+Node count: 18950
+Node count: 14885
+Node count: 15659
+Node count: 14685
+Node count: 3092
+Node count: 7414
+Node count: 10265
+Node count: 8981
+Node count: 8403
+Node count: 7313
+Node count: 7838
+Node count: 4875
+Node count: 4420
+Node count: 2863
+Node count: 5370
+Node count: 10470
+Node count: 5427
+Node count: 7252
+Node count: 13597
+Node count: 18174
+Node count: 5711
+Node count: 5507
+Node count: 4056
+Node count: 5563
+Node count: 6082
+Node count: 14609
+Node count: 5810
+Node count: 8587
+Node count: 7260
+Node count: 6225
+Node count: 3822
+Node count: 4426
+Node count: 8187
+Node count: 6533
+Node count: 6737
+Node count: 7038
+Node count: 4588
+Node count: 11226
+Node count: 8702
+Node count: 8445
+Node count: 6299
+Node count: 6018
+Node count: 4787
+Node count: 3873
+Node count: 5139
+Node count: 4249
+Node count: 14997
+Node count: 15726
+Node count: 12548
+Node count: 9483
+Node count: 4677
+Node count: 26852
+Node count: 7141
+Node count: 10735
+Node count: 5782
+Node count: 7256
+Node count: 6951
+Node count: 12167
+Node count: 9235
+Node count: 3788
+Node count: 3675
+Node count: 6901
+Node count: 4196
+Node count: 8612
+Node count: 4787
+Node count: 7620
+Node count: 7262
+Node count: 3939
+Node count: 9367
+Node count: 5097
+Node count: 11492
+Node count: 5487
+Node count: 9676
+Node count: 5378
+Node count: 10923
+Node count: 8729
+Node count: 10376
+Node count: 14927
+Node count: 15653
+Node count: 12548
+Node count: 9483
+Node count: 4654
+Node count: 26852
+Node count: 15579
+Node count: 15571
+Node count: 12548
+Node count: 9483
+Node count: 4677
+Node count: 26852
+Node count: 7141
+Node count: 10735
+Node count: 5782
+Node count: 7256
+Node count: 6951
+Node count: 12167
+Node count: 9235
+Node count: 3788
+Node count: 3675
+Node count: 6901
+Node count: 4196
+Node count: 8612
+Node count: 4787
+Node count: 7620
+Node count: 7262
+Node count: 3939
+Node count: 9367
+Node count: 5097
+Node count: 11492
+Node count: 5487
+Node count: 9676
+Node count: 5378
+Node count: 10923
+Node count: 8729
+Node count: 10376
+Node count: 17514
+Node count: 12024
+Node count: 10206
+Node count: 22852
+Node count: 37574
+Node count: 11108
+Node count: 9021
+Node count: 55946
+Node count: 38715
+Node count: 17873
+Node count: 16864
+Node count: 8652
+Node count: 8828
+Node count: 7935
+Node count: 11982
+Node count: 39150
+Node count: 31199
+Node count: 21851
+Node count: 17061
+Node count: 5215
+Node count: 7339
+Node count: 27310
+Node count: 20664
+Node count: 25389
+Node count: 23976
+Node count: 25662
+Node count: 18606
+Node count: 18749
+Node count: 16604
+Node count: 10246
+Node count: 5249
+Node count: 4604
+Node count: 5190
+Node count: 4913
+Node count: 3829
+Node count: 2721
+Node count: 3783
+Node count: 3783
+Node count: 3783
+Node count: 3783
+Node count: 3783
+Node count: 3783
+Node count: 3783
+Node count: 3783
+Node count: 3783
+Node count: 3783
+Node count: 3783
+Node count: 3783
+Node count: 3783
+Node count: 3783
+Node count: 3783
+Node count: 3783
+Node count: 3783
+Node count: 3783
+Node count: 3783
+Node count: 3783
+Node count: 15579
+Node count: 15571
+Node count: 12548
+Node count: 9483
+Node count: 4677
+Node count: 26852
+Node count: 7141
+Node count: 10735
+Node count: 5782
+Node count: 7256
+Node count: 6951
+Node count: 12167
+Node count: 9235
+Node count: 3788
+Node count: 3675
+Node count: 6901
+Node count: 4196
+Node count: 8612
+Node count: 4787
+Node count: 7514
+Node count: 7262
+Node count: 3939
+Node count: 9367
+Node count: 5097
+Node count: 7595
+Node count: 5829
+Node count: 8474
+Node count: 5378
+Node count: 10923
+Node count: 8729
+Node count: 10376
+Node count: 17514
+Node count: 12024
+Node count: 10206
+Node count: 22852
+Node count: 37574
+Node count: 11108
+Node count: 10430
+Node count: 51971
+Node count: 17514
+Node count: 12024
+Node count: 10206
+Node count: 21126
+Node count: 37574
+Node count: 11108
+Node count: 7604
+Node count: 51874
+Node count: 38715
+Node count: 17873
+Node count: 16864
+Node count: 8652
+Node count: 8828
+Node count: 7935
+Node count: 11982
+Node count: 33984
+Node count: 42097
+Node count: 40232
+Node count: 22911
+Node count: 9157
+Node count: 7665
+Node count: 38538
+Node count: 7103
+Node count: 19429
+Node count: 32428
+Node count: 25836
+Node count: 7503
+Node count: 24966
+Node count: 19512
+Node count: 14393
+Node count: 9325
+Node count: 8902
+Node count: 8405
+Node count: 6917
+Node count: 7067
+Node count: 6953
+Node count: 2381
+Node count: 2677
+Node count: 2677
+Node count: 2677
+Node count: 2677
+Node count: 2677
+Node count: 2677
+Node count: 2677
+Node count: 2677
+Node count: 2677
+Node count: 2677
+Node count: 2677
+Node count: 3090
+Node count: 2677
+Node count: 3090
+Node count: 3090
+Node count: 3090
+Node count: 3684
+Node count: 4238
+Node count: 17514
+Node count: 12024
+Node count: 10206
+Node count: 22852
+Node count: 37519
+Node count: 11108
+Node count: 10430
+Node count: 55946
+Node count: 36702
+Node count: 14741
+Node count: 16922
+Node count: 17179
+Node count: 9902
+Node count: 11013
+Node count: 8297
+Node count: 46903
+Node count: 31408
+Node count: 5066
+Node count: 4857
+Node count: 46858
+Node count: 44200
+Node count: 3967
+Node count: 10772
+Node count: 5842
+Node count: 14529
+Node count: 18959
+Node count: 20782
+Node count: 23511
+Node count: 19526
+Node count: 5826
+Node count: 17514
+Node count: 12024
+Node count: 10206
+Node count: 22852
+Node count: 37574
+Node count: 11108
+Node count: 9021
+Node count: 47899
+Node count: 39163
+Node count: 20551
+Node count: 24597
+Node count: 9061
+Node count: 9246
+Node count: 28391
+Node count: 8431
+Node count: 40541
+Node count: 38735
+Node count: 9906
+Node count: 6799
+Node count: 6568
+Node count: 9081
+Node count: 7364
+Node count: 28755
+Node count: 22430
+Node count: 13188
+Node count: 13470
+Node count: 5568
+Node count: 13709
+Node count: 13457
+Node count: 10509
+Node count: 8632
+Node count: 9222
+Node count: 6526
+Node count: 5049
+Node count: 6646
+Node count: 7085
+Node count: 6482
+Node count: 4125
+Node count: 6688
+Node count: 6688
+Node count: 5742
+Node count: 6188
+Node count: 5339
+Node count: 6188
+Node count: 4733
+Node count: 4716
+Node count: 5742
+Node count: 4716
+Node count: 4295
+Node count: 4716
+Node count: 4295
+Node count: 4716
+Node count: 4295
+Node count: 4304
+Node count: 4716
+Node count: 4716
+Node count: 4716
+Node count: 3870
+Node count: 4291
+Node count: 3870
+Node count: 4716
+Node count: 3586
+Node count: 3870
+Node count: 4716
+Node count: 4291
+Node count: 4716
+Node count: 4716
+Node count: 3870
+Node count: 4291
+Node count: 4304
+Node count: 3888
+Node count: 4291
+Node count: 3055
+Node count: 1134
+Node count: 0
+Node count: 17514
+Node count: 12024
+Node count: 10206
+Node count: 22852
+Node count: 37574
+Node count: 11108
+Node count: 7604
+Node count: 44647
+Node count: 39163
+Node count: 20551
+Node count: 24597
+Node count: 9061
+Node count: 9265
+Node count: 31180
+Node count: 6434
+Node count: 20991
+Node count: 37564
+Node count: 44651
+Node count: 5114
+Node count: 26297
+Node count: 25651
+Node count: 14778
+Node count: 13616
+Node count: 8599
+Node count: 6377
+Node count: 12461
+Node count: 11879
+Node count: 8427
+Node count: 24893
+Node count: 12562
+Node count: 14484
+Node count: 7985
+Node count: 8718
+Node count: 8990
+Node count: 6538
+Node count: 4435
+Node count: 4673
+Node count: 15579
+Node count: 15571
+Node count: 12548
+Node count: 9483
+Node count: 4677
+Node count: 26852
+Node count: 7141
+Node count: 10735
+Node count: 5782
+Node count: 7256
+Node count: 6951
+Node count: 11926
+Node count: 8622
+Node count: 4028
+Node count: 5913
+Node count: 6169
+Node count: 11919
+Node count: 15919
+Node count: 4020
+Node count: 5619
+Node count: 5766
+Node count: 4933
+Node count: 3900
+Node count: 4362
+Node count: 11142
+Node count: 6228
+Node count: 7070
+Node count: 4976
+Node count: 3442
+Node count: 10299
+Node count: 7188
+Node count: 7890
+Node count: 4615
+Node count: 5226
+Node count: 5792
+Node count: 3607
+Node count: 14997
+Node count: 15726
+Node count: 12548
+Node count: 9483
+Node count: 4677
+Node count: 18513
+Node count: 7141
+Node count: 10735
+Node count: 5782
+Node count: 7256
+Node count: 5785
+Node count: 3759
+Node count: 5117
+Node count: 16682
+Node count: 9956
+Node count: 4554
+Node count: 16324
+Node count: 3932
+Node count: 7394
+Node count: 4854
+Node count: 16329
+Node count: 5811
+Node count: 6908
+Node count: 9795
+Node count: 7390
+Node count: 2864
+Node count: 8646
+Node count: 5072
+Node count: 5717
+Node count: 4377
+Node count: 4264
+Node count: 5313
+Node count: 4536
+Node count: 7775
+Node count: 12372
+Node count: 8069
+Node count: 12690
+Node count: 13474
+Node count: 9667
+Node count: 6365
+Node count: 6107
+Node count: 8567
+Node count: 17514
+Node count: 12024
+Node count: 10206
+Node count: 22852
+Node count: 37574
+Node count: 11108
+Node count: 7604
+Node count: 41490
+Node count: 32950
+Node count: 9763
+Node count: 12849
+Node count: 12335
+Node count: 9629
+Node count: 39102
+Node count: 34124
+Node count: 39954
+Node count: 41013
+Node count: 37241
+Node count: 21633
+Node count: 17365
+Node count: 22489
+Node count: 12299
+Node count: 11049
+Node count: 11575
+Node count: 6307
+Node count: 7469
+Node count: 9495
+Node count: 6316
+Node count: 5701
+Node count: 17514
+Node count: 12024
+Node count: 10206
+Node count: 22852
+Node count: 37574
+Node count: 11108
+Node count: 7604
+Node count: 47899
+Node count: 39163
+Node count: 17873
+Node count: 17157
+Node count: 8727
+Node count: 9096
+Node count: 9084
+Node count: 50313
+Node count: 5026
+Node count: 13244
+Node count: 10850
+Node count: 12700
+Node count: 37428
+Node count: 34174
+Node count: 29013
+Node count: 17584
+Node count: 15065
+Node count: 5886
+Node count: 6382
+Node count: 6036
+Node count: 7431
+Node count: 4556
+Node count: 5185
+Node count: 5846
+Node count: 5405
+Node count: 17514
+Node count: 12024
+Node count: 10206
+Node count: 22852
+Node count: 37574
+Node count: 11108
+Node count: 7604
+Node count: 47899
+Node count: 39163
+Node count: 17873
+Node count: 17157
+Node count: 8727
+Node count: 9096
+Node count: 9084
+Node count: 50313
+Node count: 5026
+Node count: 12506
+Node count: 10850
+Node count: 14660
+Node count: 37428
+Node count: 34174
+Node count: 29013
+Node count: 17584
+Node count: 15065
+Node count: 5886
+Node count: 6382
+Node count: 6036
+Node count: 7431
+Node count: 4556
+Node count: 5348
+Node count: 8802
+Node count: 5836
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 11611
+Node count: 7436
+Node count: 7060
+Node count: 12645
+Node count: 4577
+Node count: 9500
+Node count: 8635
+Node count: 6780
+Node count: 10311
+Node count: 17028
+Node count: 18335
+Node count: 11669
+Node count: 10098
+Node count: 7855
+Node count: 6985
+Node count: 13580
+Node count: 7593
+Node count: 6236
+Node count: 6782
+Node count: 6945
+Node count: 9692
+Node count: 5909
+Node count: 7851
+Node count: 5123
+Node count: 8807
+Node count: 9150
+Node count: 5356
+Node count: 5450
+Node count: 4931
+Node count: 5326
+Node count: 4088
+Node count: 6180
+Node count: 5034
+Node count: 6282
+Node count: 4988
+Node count: 4988
+Node count: 4988
+Node count: 4988
+Node count: 4988
+Node count: 4988
+Node count: 4988
+Node count: 4988
+Node count: 5767
+Node count: 5767
+Node count: 5767
+Node count: 11611
+Node count: 7436
+Node count: 7060
+Node count: 11309
+Node count: 4577
+Node count: 9500
+Node count: 9132
+Node count: 7145
+Node count: 12545
+Node count: 17794
+Node count: 18335
+Node count: 11599
+Node count: 10098
+Node count: 7855
+Node count: 6985
+Node count: 14225
+Node count: 10692
+Node count: 13482
+Node count: 9936
+Node count: 6697
+Node count: 7067
+Node count: 12854
+Node count: 7588
+Node count: 7009
+Node count: 8755
+Node count: 5342
+Node count: 5200
+Node count: 12731
+Node count: 5057
+Node count: 4385
+Node count: 5779
+Node count: 5707
+Node count: 7746
+Node count: 8070
+Node count: 8070
+Node count: 8070
+Node count: 8070
+Node count: 8070
+Node count: 8070
+Node count: 7402
+Node count: 7402
+Node count: 8070
+Node count: 8070
+Node count: 8070
+Node count: 8070
+Node count: 8070
+Node count: 8743
+Node count: 8070
+Node count: 8743
+Node count: 8070
+Node count: 8070
+Node count: 8743
+Node count: 8070
+Node count: 8559
+Node count: 8743
+Node count: 8070
+Node count: 8075
+Node count: 9232
+Node count: 8070
+Node count: 8070
+Node count: 9232
+Node count: 8070
+Node count: 8559
+Node count: 8070
+Node count: 8070
+Node count: 8070
+Node count: 8070
+Node count: 9232
+Node count: 3759
+Node count: 5128
+Node count: 16682
+Node count: 9956
+Node count: 4554
+Node count: 16324
+Node count: 3932
+Node count: 7394
+Node count: 4854
+Node count: 18044
+Node count: 5811
+Node count: 6976
+Node count: 9844
+Node count: 6921
+Node count: 7923
+Node count: 8292
+Node count: 6130
+Node count: 8406
+Node count: 345651
+Node count: 1921
+Node count: 1939
+Node count: 1090
+Node count: 906
+Node count: 13231
+Node count: 3566
+Node count: 3122
+Node count: 1590
+Node count: 5036
+Node count: 1217
+Node count: 3275
+Node count: 4870
+Node count: 2745
+Node count: 2815
+Node count: 2247
+Node count: 1652
+Node count: 1250
+Node count: 1259
+Node count: 1569
+Node count: 1604
+Node count: 1639
+Node count: 1672
+Node count: 3125
+Node count: 2603
+Node count: 3142
+Node count: 4356
+Node count: 6921
+Node count: 7923
+Node count: 8292
+Node count: 6130
+Node count: 9088
+Node count: 345651
+Node count: 1921
+Node count: 1939
+Node count: 1090
+Node count: 906
+Node count: 13231
+Node count: 3566
+Node count: 3122
+Node count: 1590
+Node count: 5036
+Node count: 1058
+Node count: 3275
+Node count: 4870
+Node count: 2745
+Node count: 2815
+Node count: 2247
+Node count: 1652
+Node count: 1250
+Node count: 1259
+Node count: 1497
+Node count: 1604
+Node count: 1489
+Node count: 1623
+Node count: 3125
+Node count: 2482
+Node count: 3142
+Node count: 4356
+Node count: 16818
+Node count: 5446
+Node count: 6230
+Node count: 7699
+Node count: 18553
+Node count: 5536
+Node count: 7050
+Node count: 3899
+Node count: 3667
+Node count: 5599
+Node count: 5234
+Node count: 3212
+Node count: 2826
+Node count: 3766
+Node count: 3600
+Node count: 3432
+Node count: 12400
+Node count: 7849
+Node count: 12462
+Node count: 4198
+Node count: 3664
+Node count: 3319
+Node count: 4472
+Node count: 4252
+Node count: 8632
+Node count: 9805
+Node count: 5273
+Node count: 4811
+Node count: 4736
+Node count: 4273
+Node count: 15221
+Node count: 5446
+Node count: 6230
+Node count: 7699
+Node count: 18553
+Node count: 6465
+Node count: 6529
+Node count: 4763
+Node count: 3667
+Node count: 5599
+Node count: 5234
+Node count: 3212
+Node count: 2826
+Node count: 3766
+Node count: 3600
+Node count: 3165
+Node count: 13432
+Node count: 8417
+Node count: 4171
+Node count: 5033
+Node count: 9222
+Node count: 7711
+Node count: 8167
+Node count: 6466
+Node count: 4273
+Node count: 7023
+Node count: 5423
+Node count: 5506
+Node count: 4470
+Node count: 9386
+Node count: 10501
+Node count: 6217
+Node count: 4118
+Node count: 4389
+Node count: 4453
+Node count: 16818
+Node count: 5446
+Node count: 6230
+Node count: 7699
+Node count: 18553
+Node count: 5536
+Node count: 6888
+Node count: 4045
+Node count: 3667
+Node count: 5599
+Node count: 5067
+Node count: 3212
+Node count: 3002
+Node count: 4164
+Node count: 4045
+Node count: 4490
+Node count: 3800
+Node count: 14546
+Node count: 5433
+Node count: 5978
+Node count: 5934
+Node count: 19900
+Node count: 5536
+Node count: 15221
+Node count: 5446
+Node count: 6230
+Node count: 7699
+Node count: 18553
+Node count: 6465
+Node count: 6881
+Node count: 4763
+Node count: 3667
+Node count: 5599
+Node count: 5234
+Node count: 3212
+Node count: 3002
+Node count: 4305
+Node count: 4164
+Node count: 4490
+Node count: 3800
+Node count: 4829
+Node count: 11311
+Node count: 9560
+Node count: 8145
+Node count: 6731
+Node count: 8126
+Node count: 4203
+Node count: 5767
+Node count: 5740
+Node count: 4331
+Node count: 5947
+Node count: 4247
+Node count: 4974
+Node count: 4427
+Node count: 3883
+Node count: 4778
+Node count: 5389
+Node count: 5966
+Node count: 5835
+Node count: 5389
+Node count: 15221
+Node count: 5446
+Node count: 6230
+Node count: 7699
+Node count: 9901
+Node count: 6047
+Node count: 3455
+Node count: 15840
+Node count: 5743
+Node count: 6677
+Node count: 7985
+Node count: 35598
+Node count: 9939
+Node count: 4778
+Node count: 3071
+Node count: 3987
+Node count: 5623
+Node count: 5318
+Node count: 3897
+Node count: 3262
+Node count: 4178
+Node count: 3861
+Node count: 4289
+Node count: 4142
+Node count: 3729
+Node count: 4842
+Node count: 7519
+Node count: 14079
+Node count: 6395
+Node count: 9341
+Node count: 5225
+Node count: 7726
+Node count: 4682
+Node count: 4027
+Node count: 6332
+Node count: 4029
+Node count: 3640
+Node count: 4079
+Node count: 3937
+Node count: 3618
+Node count: 7570
+Node count: 4436
+Node count: 6135
+Node count: 5129
+Node count: 4293
+Node count: 6017
+Node count: 4878
+Node count: 10748
+Node count: 5625
+Node count: 4575
+Node count: 4002
+Node count: 3921
+Node count: 4434
+Node count: 3994
+Node count: 3716
+Node count: 2343
+Node count: 1996
+Node count: 3253
+Node count: 3530
+Node count: 3275
+Node count: 3124
+Node count: 3501
+Node count: 4205
+Node count: 5295
+Node count: 4235
+Node count: 5256
+Node count: 7958
+Node count: 4941
+Node count: 13645
+Node count: 5614
+Node count: 7583
+Node count: 6484
+Node count: 5848
+Node count: 4707
+Node count: 4729
+
+
+///////
+
+Node count: 15840
+Node count: 5435
+Node count: 7149
+Node count: 7985
+Node count: 38177
+Node count: 9939
+Node count: 4730
+Node count: 3071
+Node count: 3987
+Node count: 5623
+Node count: 5318
+
+
+//Node count: 3961
+Node count: 4806
+Node count: 22125
+Node count: 28467
+Node count: 4682
+Node count: 6422
+Node count: 2707
+Node count: 3470
+Node count: 3903
+Node count: 3565
+Node count: 4507
+Node count: 2466
+//
+Node count: 4293
+Node count: 6006
+Node count: 4943
+Node count: 12553
+Node count: 5624
+Node count: 4575
+Node count: 2884
+Node count: 3858
+Node count: 4610
+Node count: 4055
+Node count: 3747
+Node count: 2343
+Node count: 1996
+Node count: 2958
+Node count: 2457
+Node count: 2959
+Node count: 6212
+Node count: 1975
+Node count: 3521
+Node count: 3509
+Node count: 3392
+Node count: 3487
+Node count: 5059
+Node count: 4288
+Node count: 5461
+Node count: 4589
+Node count: 5348
+Node count: 4544
+Node count: 7447
+Node count: 5218
+Node count: 4709
+Node count: 4898
+Node count: 4965
+Node count: 5397
+Node count: 4033
+Node count: 8436
+Node count: 80603
+Node count: 4442
+Node count: 4296
+Node count: 27231
+Node count: 1825
+Node count: 3209
+Node count: 3479
+Node count: 17379
+Node count: 2968
+Node count: 3534
+Node count: 2956
+Node count: 2148
+Node count: 2348
+Node count: 2375
+Node count: 2148
+Node count: 3777
+Node count: 3334
+Node count: 3979
+Node count: 6021
+Node count: 26999
+Node count: 5247
+Node count: 2600
+Node count: 2689
+Node count: 2744
+Node count: 2863
+Node count: 3908
+Node count: 3446
+Node count: 4028
+Node count: 3287
+Node count: 3182
+Node count: 3299
+Node count: 3292
+Node count: 4050
+Node count: 3138
+Node count: 3752
+Node count: 4586
+Node count: 6148
+Node count: 4942
+Node count: 11288
+Node count: 5494
+Node count: 4575
+Node count: 3971
+Node count: 3813
+Node count: 4522
+Node count: 4101
+Node count: 3675
+Node count: 2271
+Node count: 1996
+Node count: 3203
+Node count: 3530
+Node count: 3186
+Node count: 4118
+Node count: 7214
+Node count: 5245
+Node count: 4820
+Node count: 4737
+Node count: 6725
+Node count: 7912
+Node count: 4455
+Node count: 4056
+Node count: 7118
+Node count: 15440
+Node count: 4266
+Node count: 3773
+Node count: 5332
+Node count: 5432
+Node count: 5354
+Node count: 4812
+Node count: 9038
+Node count: 5104
+Node count: 11531
+Node count: 9775
+Node count: 4536
+Node count: 4175
+Node count: 3722
+Node count: 4093
+Node count: 11644
+Node count: 177101
+Node count: 1515
+Node count: 3863
+Node count: 1667
+Node count: 1421
+Node count: 1926
+Node count: 1207
+Node count: 899
+Node count: 1531
+Node count: 2827
+Node count: 2097
+Node count: 1803
+Node count: 1974
+Node count: 1858
+Node count: 1246
+Node count: 1136
+Node count: 2535
+Node count: 2422
+Node count: 1716
+Node count: 1962
+Node count: 2261
+Node count: 2687
+Node count: 2233
+Node count: 1992
+Node count: 4293
+Node count: 5754
+Node count: 5034
+Node count: 7965
+Node count: 5402
+Node count: 5314
+Node count: 2792
+Node count: 3649
+Node count: 4263
+Node count: 4162
+Node count: 3387
+Node count: 2343
+Node count: 1996
+Node count: 3068
+Node count: 3437
+Node count: 3275
+Node count: 3120
+Node count: 3584
+Node count: 7400
+Node count: 4705
+Node count: 5503
+Node count: 4914
+Node count: 4903
+Node count: 3654
+Node count: 4608
+Node count: 5662
+Node count: 6102
+Node count: 4546
+Node count: 5978
+Node count: 5196
+Node count: 3993
+Node count: 5839
+Node count: 3412
+Node count: 7676
+Node count: 9945
+Node count: 198001
+Node count: 2311
+Node count: 2039
+Node count: 2312
+Node count: 2561
+Node count: 4597
+Node count: 2046
+Node count: 2947
+Node count: 1411
+Node count: 1341
+Node count: 1212
+Node count: 1967
+Node count: 1999
+Node count: 1980
+Node count: 2912
+Node count: 1991
+Node count: 1810
+Node count: 10524
+Node count: 119500
+Node count: 2205
+Node count: 1314
+Node count: 1163
+Node count: 1182
+Node count: 1695
+Node count: 1205
+Node count: 906
+Node count: 1399
+Node count: 1151
+Node count: 916
+Node count: 800
+Node count: 3158
+Node count: 4185
+Node count: 40997
+Node count: 59617
+Node count: 5451
+Node count: 6246
+Node count: 1695
+Node count: 1970
+Node count: 2609
+Node count: 4712
+Node count: 2264
+Node count: 2095
+Node count: 1705
+Node count: 2255
+Node count: 2449
+Node count: 2500
+Node count: 2687
+Node count: 2563
+Node count: 3189
+Node count: 4603
+Node count: 6609
+Node count: 1771
+Node count: 2403
+Node count: 2623
+Node count: 2735
+Node count: 2795
+Node count: 3733
+Node count: 7444
+Node count: 4052
+Node count: 3677
+Node count: 4052
+Node count: 3985
+Node count: 3463
+Node count: 3251
+Node count: 4707
+Node count: 4300
+Node count: 10144
+Node count: 5930
+Node count: 5147
+Node count: 3448
+Node count: 3912
+Node count: 7878
+Node count: 3857
+Node count: 9593
+Node count: 4363
+Node count: 4021
+Node count: 4127
+Node count: 12699
+Node count: 16182
+Node count: 22369
+Node count: 3183
+Node count: 2843
+Node count: 2731
+Node count: 2987
+Node count: 3913
+Node count: 5039
+Node count: 9209
+Node count: 8768
+Node count: 3155
+Node count: 2919
+Node count: 3765
+Node count: 2737
+Node count: 5573
+Node count: 2764
+Node count: 3117
+Node count: 3223
+Node count: 4287
+Node count: 11935
+Node count: 3662
+Node count: 3444
+Node count: 3302
+Node count: 3842
+Node count: 11045
+Node count: 5200
+Node count: 3040
+Node count: 2717
+Node count: 2933
+Node count: 13260
+Node count: 3338
+Node count: 3668
+Node count: 6619
+Node count: 3088
+Node count: 2718
+Node count: 3241
+Node count: 29727
+Node count: 22774
+Node count: 3034
+Node count: 3503
+Node count: 2697
+Node count: 3282
+Node count: 2867
+Node count: 2782
+Node count: 2371
+Node count: 4828
+Node count: 3766
+Node count: 4056
+Node count: 6216
+Node count: 3728
+Node count: 3455
+Node count: 4845
+Node count: 7752
+Node count: 4393
+Node count: 4650
+Node count: 3669
+Node count: 3986
+Node count: 4421
+Node count: 3862
+Node count: 5076
+Node count: 5486
+Node count: 4483
+Node count: 11045
+Node count: 6013
+Node count: 4583
+Node count: 3461
+Node count: 3912
+Node count: 7845
+Node count: 3348
+Node count: 3739
+Node count: 3221
+Node count: 3590
+Node count: 7797
+Node count: 6859
+Node count: 14734
+Node count: 58464
+Node count: 2022
+Node count: 3321
+Node count: 1604
+Node count: 1941
+Node count: 3078
+Node count: 2465
+Node count: 2722
+Node count: 3066
+Node count: 2626
+Node count: 2694
+Node count: 2713
+Node count: 2420
+Node count: 4618
+Node count: 2484
+Node count: 3795
+Node count: 3580
+Node count: 2457
+Node count: 3063
+Node count: 9697
+Node count: 5036
+Node count: 6340
+Node count: 4846
+Node count: 11132
+Node count: 9880
+Node count: 5767
+Node count: 3416
+Node count: 14602
+Node count: 5330
+Node count: 5002
+Node count: 7893
+Node count: 4402
+Node count: 7136
+Node count: 7274
+Node count: 3229
+Node count: 3246
+Node count: 4686
+Node count: 7191
+Node count: 7843
+Node count: 5000
+Node count: 3429
+Node count: 5306
+Node count: 5869
+Node count: 5326
+Node count: 4748
+Node count: 3947
+Node count: 2920
+Node count: 3542
+Node count: 3764
+Node count: 4055
+Node count: 4792
+Node count: 5201
+Node count: 3258
+Node count: 2597
+Node count: 10589
+Node count: 8253
+Node count: 6010
+Node count: 6975
+Node count: 8431
+Node count: 6209
+Node count: 7854
+Node count: 13071
+Node count: 7073
+Node count: 4144
+Node count: 5661
+Node count: 10130
+Node count: 4938
+Node count: 11280
+Node count: 4194
+Node count: 5430
+Node count: 10363
+Node count: 6623
+Node count: 5240
+Node count: 4885
+Node count: 5391
+Node count: 4563
+Node count: 3108
+Node count: 11728
+Node count: 8102
+Node count: 9989
+Node count: 5897
+Node count: 3945
+Node count: 6067
+Node count: 4429
+Node count: 4509
+Node count: 5145
+Node count: 5247
+Node count: 5712
+Node count: 3911
+Node count: 3555
+Node count: 4142
+Node count: 3917
+Node count: 4701
+Node count: 5347
+Node count: 4068
+Node count: 3316
+Node count: 11045
+Node count: 8021
+Node count: 8021
+Node count: 8109
+Node count: 5716
+Node count: 4557
+Node count: 6885
+Node count: 5513
+Node count: 7940
+Node count: 4476
+Node count: 14951
+Node count: 4608
+Node count: 5360
+Node count: 3736
+Node count: 3054
+Node count: 13513
+Node count: 3385
+Node count: 9893
+Node count: 4527
+Node count: 9872
+Node count: 9543
+Node count: 8367
+Node count: 2520
+Node count: 11207
+Node count: 7536
+Node count: 8016
+Node count: 8174
+Node count: 5500
+Node count: 4745
+Node count: 7496
+Node count: 3620
+Node count: 3458
+Node count: 8021
+Node count: 4298
+Node count: 4975
+Node count: 4315
+Node count: 7511
+Node count: 5513
+Node count: 7940
+Node count: 4476
+Node count: 14951
+Node count: 4368
+Node count: 5360
+Node count: 3736
+Node count: 4160
+Node count: 4952
+Node count: 4544
+Node count: 7040
+Node count: 17229
+Node count: 2908
+Node count: 5853
+Node count: 3660
+Node count: 3877
+Node count: 3946
+Node count: 2905
+Node count: 6263
+Node count: 26608
+Node count: 2095
+Node count: 1928
+Node count: 3208
+Node count: 3397
+Node count: 4193
+Node count: 4029
+Node count: 3721
+Node count: 3545
+Node count: 7603
+Node count: 5888
+Node count: 4127
+Node count: 4002
+Node count: 8709
+Node count: 4196
+Node count: 3331
+Node count: 3695
+Node count: 6744
+Node count: 4273
+Node count: 3627
+Node count: 3615
+Node count: 5061
+Node count: 4903
+Node count: 3432
+Node count: 3939
+Node count: 9024
+Node count: 3391
+Node count: 3626
+Node count: 3336
+Node count: 3593
+Node count: 3852
+Node count: 15694
+Node count: 11634
+Node count: 4196
+Node count: 3263
+Node count: 2885
+Node count: 5110
+Node count: 3828
+Node count: 7334
+Node count: 6842
+Node count: 18925
+Node count: 4928
+Node count: 2823
+Node count: 4476
+Node count: 2973
+Node count: 3453
+Node count: 3552
+Node count: 3870
+Node count: 6044
+Node count: 4359
+Node count: 7053
+Node count: 7546
+Node count: 11441
+Node count: 5357
+Node count: 7337
+Node count: 4293
+Node count: 4952
+Node count: 4667
+Node count: 8703
+Node count: 17229
+Node count: 2908
+Node count: 6357
+Node count: 3799
+Node count: 4349
+Node count: 2806
+Node count: 3239
+Node count: 15236
+Node count: 47999
+Node count: 3030
+Node count: 1898
+Node count: 1956
+Node count: 3517
+Node count: 3460
+Node count: 3474
+Node count: 8293
+Node count: 4981
+Node count: 4032
+Node count: 3629
+Node count: 3174
+Node count: 4213
+Node count: 4543
+Node count: 6195
+Node count: 4169
+Node count: 4521
+Node count: 3444
+Node count: 4643
+Node count: 4471
+Node count: 4911
+Node count: 3377
+Node count: 2237
+Node count: 2566
+Node count: 1440
+Node count: 2448
+Node count: 2507
+Node count: 11512
+Node count: 1964
+Node count: 2430
+Node count: 2366
+Node count: 3260
+Node count: 2363
+Node count: 2776
+Node count: 10684
+Node count: 1839
+Node count: 1984
+Node count: 1279
+Node count: 1696
+Node count: 2318
+Node count: 2178
+Node count: 3055
+Node count: 2963
+Node count: 5736
+Node count: 3024
+Node count: 2385
+Node count: 2861
+Node count: 3141
+Node count: 2535
+Node count: 2967
+Node count: 2934
+Node count: 2574
+Node count: 4106
+Node count: 2897
+Node count: 2085
+Node count: 1958
+Node count: 2663
+Node count: 2738
+Node count: 8099
+Node count: 3396
+Node count: 1479
+Node count: 2024
+Node count: 2037
+Node count: 2545
+Node count: 1755
+Node count: 10001
+Node count: 12399
+Node count: 1624
+Node count: 1314
+Node count: 1649
+Node count: 2363
+Node count: 1978
+Node count: 2258
+Node count: 1900
+Node count: 2293
+Node count: 2442
+Node count: 2485
+Node count: 3841
+Node count: 4960
+Node count: 2979
+Node count: 2265
+Node count: 2099
+Node count: 2191
+Node count: 2233
+Node count: 2682
+Node count: 2438
+Node count: 3030
+Node count: 3205
+Node count: 7429
+Node count: 2616
+Node count: 8597
+Node count: 2556
+Node count: 3436
+Node count: 2811
+Node count: 3553
+Node count: 2263
+Node count: 2794
+Node count: 12218
+Node count: 28868
+Node count: 1669
+Node count: 1289
+Node count: 1771
+Node count: 2199
+Node count: 2535
+Node count: 2078
+Node count: 3393
+Node count: 3245
+Node count: 2407
+Node count: 3729
+Node count: 3710
+Node count: 2155
+Node count: 1890
+Node count: 2957
+Node count: 2287
+Node count: 2946
+Node count: 2126
+Node count: 2576
+Node count: 2826
+Node count: 2238
+Node count: 2169
+Node count: 2535
+Node count: 3108
+Node count: 3155
+Node count: 3162
+Node count: 16774
+Node count: 2908
+Node count: 1428
+Node count: 2069
+Node count: 2578
+Node count: 2541
+Node count: 2321
+Node count: 2745
+Node count: 7464
+Node count: 1723
+Node count: 1323
+Node count: 1587
+Node count: 2211
+Node count: 2547
+Node count: 2633
+Node count: 3967
+Node count: 3712
+Node count: 1838
+Node count: 3040
+Node count: 2524
+Node count: 3050
+Node count: 2401
+Node count: 2929
+Node count: 3743
+Node count: 2778
+Node count: 3252
+Node count: 2691
+Node count: 2304
+Node count: 2753
+Node count: 3205
+Node count: 7222
+Node count: 3089
+Node count: 4503
+Node count: 2215
+Node count: 3224
+Node count: 2813
+Node count: 2947
+Node count: 3648
+Node count: 2443
+Node count: 4837
+Node count: 3647
+Node count: 1486
+Node count: 1524
+Node count: 2184
+Node count: 1484
+Node count: 2514
+Node count: 2498
+Node count: 2189
+Node count: 3175
+Node count: 4360
+Node count: 3144
+Node count: 2762
+Node count: 5143
+Node count: 7060
+Node count: 2464
+Node count: 2618
+Node count: 2625
+Node count: 3189
+Node count: 3421
+Node count: 3384
+Node count: 2534
+Node count: 2864
+Node count: 3007
+Node count: 2872
+Node count: 16774
+Node count: 2908
+Node count: 1428
+Node count: 1884
+Node count: 2828
+Node count: 2153
+Node count: 2112
+Node count: 1710
+Node count: 1907
+Node count: 1869
+Node count: 1368
+Node count: 2065
+Node count: 2284
+Node count: 1536
+Node count: 2052
+Node count: 2372
+Node count: 2660
+Node count: 2452
+Node count: 2897
+Node count: 3203
+Node count: 2419
+Node count: 4981
+Node count: 2463
+Node count: 3251
+Node count: 3817
+Node count: 1988
+Node count: 2351
+Node count: 2778
+Node count: 2479
+Node count: 3355
+Node count: 3536
+Node count: 2828
+Node count: 2997
+Node count: 2907
+Node count: 1809
+Node count: 3980
+Node count: 3786
+Node count: 2174
+Node count: 2343
+Node count: 4145
+Node count: 3468
+Node count: 1642
+Node count: 2117
+Node count: 1495
+Node count: 2684
+Node count: 3671
+Node count: 2715
+Node count: 10616
+Node count: 3757
+Node count: 3645
+Node count: 2778
+Node count: 48902
+Node count: 5057
+Node count: 2428
+Node count: 2338
+Node count: 2182
+Node count: 2354
+Node count: 2538
+Node count: 2414
+Node count: 3177
+Node count: 2310
+Node count: 2864
+Node count: 2892
+Node count: 2872
+Node count: 16774
+Node count: 2908
+Node count: 1428
+Node count: 1884
+Node count: 2670
+Node count: 2212
+Node count: 2112
+Node count: 1710
+Node count: 1907
+Node count: 1869
+Node count: 1368
+Node count: 1545
+Node count: 2436
+Node count: 1536
+Node count: 2052
+Node count: 2564
+Node count: 2030
+Node count: 3655
+Node count: 3724
+Node count: 2804
+Node count: 2649
+Node count: 2938
+Node count: 1789
+Node count: 2843
+Node count: 3105
+Node count: 2396
+Node count: 2885
+Node count: 3016
+Node count: 2775
+Node count: 2634
+Node count: 8573
+Node count: 2731
+Node count: 1479
+Node count: 2563
+Node count: 2803
+Node count: 2448
+Node count: 12496
+Node count: 3605
+Node count: 1963
+Node count: 2351
+Node count: 2903
+Node count: 2476
+Node count: 2432
+Node count: 3152
+Node count: 8903
+Node count: 10365
+Node count: 7064
+Node count: 4229
+Node count: 1977
+Node count: 2071
+Node count: 2460
+Node count: 3074
+Node count: 2915
+Node count: 2106
+Node count: 2435
+Node count: 2454
+Node count: 2508
+Node count: 2637
+Node count: 1827
+Node count: 3638
+Node count: 2466
+Node count: 2809
+Node count: 2591
+Node count: 3108
+Node count: 2377
+Node count: 4051
+Node count: 7615
+Node count: 4676
+Node count: 1275
+Node count: 2537
+Node count: 3210
+Node count: 4024
+Node count: 2645
+Node count: 2562
+Node count: 7750
+Node count: 10062
+Node count: 2214
+Node count: 1455
+Node count: 1672
+Node count: 2544
+Node count: 2440
+Node count: 3086
+Node count: 1656
+Node count: 2204
+Node count: 4099
+Node count: 2830
+Node count: 2385
+Node count: 2054
+Node count: 2668
+Node count: 5410
+Node count: 2606
+Node count: 2810
+Node count: 2474
+Node count: 2572
+Node count: 3094
+Node count: 3154
+Node count: 2970
+Node count: 3854
+Node count: 5188
+Node count: 2423
+Node count: 1486
+Node count: 2110
+Node count: 2731
+Node count: 2495
+Node count: 1971
+Node count: 1710
+Node count: 1862
+Node count: 1632
+Node count: 2088
+Node count: 2703
+Node count: 2730
+Node count: 2663
+Node count: 2125
+Node count: 3055
+Node count: 2469
+Node count: 2407
+Node count: 2918
+Node count: 3021
+Node count: 3051
+Node count: 3954
+Node count: 2855
+Node count: 6013
+Node count: 5529
+Node count: 4534
+Node count: 3402
+Node count: 3672
+Node count: 2591
+Node count: 2939
+Node count: 2720
+Node count: 3924
+Node count: 16858
+Node count: 2908
+Node count: 1428
+Node count: 1975
+Node count: 1881
+Node count: 2312
+Node count: 2254
+Node count: 1710
+Node count: 1907
+Node count: 1869
+Node count: 1469
+Node count: 2097
+Node count: 1725
+Node count: 2317
+Node count: 2855
+Node count: 2217
+Node count: 3299
+Node count: 4758
+Node count: 3140
+Node count: 2807
+Node count: 2370
+Node count: 2637
+Node count: 2690
+Node count: 4257
+Node count: 2825
+Node count: 2707
+Node count: 2812
+Node count: 3010
+Node count: 2968
+Node count: 3208
+Node count: 2976
+Node count: 3102
+Node count: 3059
+Node count: 3581
+Node count: 3525
+Node count: 4661
+Node count: 4542
+Node count: 4222
+Node count: 6016
+Node count: 4787
+Node count: 4772
+Node count: 4949
+Node count: 5007
+Node count: 5029
+Node count: 5117
+Node count: 4756
+Node count: 5280
+Node count: 5399
+Node count: 5582
+Node count: 5753
+Node count: 5634
+Node count: 5787
+Node count: 6194
+Node count: 6355
+Node count: 6410
+Node count: 6707
+Node count: 6828
+Node count: 7138
+Node count: 7341
+Node count: 7787
+Node count: 7841
+Node count: 7471
+Node count: 6856
+Node count: 6070
+Node count: 5028
+Node count: 3986
+Node count: 2948
+Node count: 1944
+Node count: 982
+Node count: 208
+Node count: 0
+Node count: 2572
+Node count: 2552
+Node count: 3194
+Node count: 3085
+Node count: 3438
+Node count: 3361
+Node count: 2776
+Node count: 2214
+Node count: 3184
+Node count: 2424
+Node count: 2206
+Node count: 2354
+Node count: 17697
+Node count: 75276
+Node count: 1142
+Node count: 1746
+Node count: 1647
+Node count: 1991
+Node count: 1508
+Node count: 2043
+Node count: 2889
+Node count: 1353
+Node count: 1258
+Node count: 2048
+Node count: 2143
+Node count: 1903
+Node count: 1952
+Node count: 1998
+Node count: 2460
+Node count: 4941
+Node count: 5470
+Node count: 3731
+Node count: 2161
+Node count: 1567
+Node count: 1917
+Node count: 2407
+Node count: 2186
+Node count: 2302
+Node count: 2534
+Node count: 2808
+Node count: 2836
+Node count: 2872
+Node count: 16774
+Node count: 2908
+Node count: 1428
+Node count: 1884
+Node count: 2748
+Node count: 2312
+Node count: 2159
+Node count: 1710
+Node count: 1907
+Node count: 1869
+Node count: 1368
+Node count: 2014
+Node count: 2358
+Node count: 1536
+Node count: 2052
+Node count: 2636
+Node count: 2339
+Node count: 2584
+Node count: 2981
+Node count: 2698
+Node count: 2008
+Node count: 2337
+Node count: 3387
+Node count: 2457
+Node count: 3506
+Node count: 1521
+Node count: 3071
+Node count: 3296
+Node count: 3099
+Node count: 2677
+Node count: 4340
+Node count: 1964
+Node count: 2480
+Node count: 1812
+Node count: 3260
+Node count: 1680
+Node count: 2561
+Node count: 10050
+Node count: 2242
+Node count: 2779
+Node count: 1515
+Node count: 2298
+Node count: 2778
+Node count: 2418
+Node count: 2675
+Node count: 2369
+Node count: 2430
+Node count: 2453
+Node count: 2536
+Node count: 2688
+Node count: 2670
+Node count: 2899
+Node count: 3973
+Node count: 2730
+Node count: 4498
+Node count: 2197
+Node count: 2441
+Node count: 2508
+Node count: 2698
+Node count: 5202
+Node count: 3396
+Node count: 1479
+Node count: 2024
+Node count: 2037
+Node count: 2596
+Node count: 2053
+Node count: 13158
+Node count: 1849
+Node count: 1519
+Node count: 1317
+Node count: 1611
+Node count: 2316
+Node count: 2066
+Node count: 2040
+Node count: 2415
+Node count: 2450
+Node count: 3747
+Node count: 4672
+Node count: 2320
+Node count: 2011
+Node count: 1925
+Node count: 2712
+Node count: 2414
+Node count: 2359
+Node count: 2351
+Node count: 3199
+Node count: 2494
+Node count: 2715
+Node count: 2966
+Node count: 2505
+Node count: 3030
+Node count: 3205
+Node count: 7815
+Node count: 2578
+Node count: 8681
+Node count: 2808
+Node count: 1479
+Node count: 2563
+Node count: 2511
+Node count: 2500
+Node count: 10803
+Node count: 3491
+Node count: 2191
+Node count: 2230
+Node count: 2550
+Node count: 2653
+Node count: 3031
+Node count: 3015
+Node count: 19899
+Node count: 2115
+Node count: 2326
+Node count: 2254
+Node count: 2894
+Node count: 3154
+Node count: 2724
+Node count: 2159
+Node count: 1951
+Node count: 2274
+Node count: 2185
+Node count: 2345
+Node count: 2488
+Node count: 3484
+Node count: 2366
+Node count: 2654
+Node count: 3104
+Node count: 2767
+Node count: 13774
+Node count: 2908
+Node count: 1428
+Node count: 1884
+Node count: 1823
+Node count: 2385
+Node count: 2112
+Node count: 1710
+Node count: 1907
+Node count: 1869
+Node count: 1469
+Node count: 2065
+Node count: 2249
+Node count: 1536
+Node count: 2052
+Node count: 2636
+Node count: 2462
+Node count: 2584
+Node count: 3168
+Node count: 2901
+Node count: 2108
+Node count: 2386
+Node count: 2841
+Node count: 2824
+Node count: 3508
+Node count: 2438
+Node count: 2341
+Node count: 3044
+Node count: 5701
+Node count: 2754
+Node count: 2219
+Node count: 2291
+Node count: 2382
+Node count: 2788
+Node count: 2826
+Node count: 2927
+Node count: 2612
+Node count: 2716
+Node count: 2345
+Node count: 2428
+Node count: 1646
+Node count: 1456
+Node count: 2970
+Node count: 2430
+Node count: 1626
+Node count: 1765
+Node count: 2357
+Node count: 2803
+Node count: 2424
+Node count: 2618
+Node count: 2528
+Node count: 2628
+Node count: 3436
+Node count: 3192
+Node count: 3746
+Node count: 7153
+Node count: 3557
+Node count: 3633
+Node count: 3620
+Node count: 3853
+Node count: 2591
+Node count: 3108
+Node count: 2904
+Node count: 3918
+Node count: 16774
+Node count: 2908
+Node count: 1428
+Node count: 1975
+Node count: 2752
+Node count: 2433
+Node count: 2254
+Node count: 1710
+Node count: 1907
+Node count: 1869
+Node count: 1469
+Node count: 1913
+Node count: 2436
+Node count: 1536
+Node count: 2121
+Node count: 2636
+Node count: 2732
+Node count: 2584
+Node count: 3180
+Node count: 2928
+Node count: 2607
+Node count: 5634
+Node count: 2829
+Node count: 3515
+Node count: 4059
+Node count: 2129
+Node count: 3094
+Node count: 3205
+Node count: 7728
+Node count: 2581
+Node count: 8597
+Node count: 2175
+Node count: 2540
+Node count: 2703
+Node count: 2453
+Node count: 2182
+Node count: 2375
+Node count: 14076
+Node count: 9513
+Node count: 2686
+Node count: 1886
+Node count: 2263
+Node count: 4869
+Node count: 1851
+Node count: 1369
+Node count: 2786
+Node count: 2496
+Node count: 2616
+Node count: 2947
+Node count: 3464
+Node count: 3382
+Node count: 6306
+Node count: 3176
+Node count: 2348
+Node count: 4047
+Node count: 2357
+Node count: 2587
+Node count: 2126
+Node count: 2479
+Node count: 3108
+Node count: 3093
+Node count: 4013
+Node count: 16774
+Node count: 2908
+Node count: 1428
+Node count: 1975
+Node count: 2828
+Node count: 2436
+Node count: 2302
+Node count: 1710
+Node count: 1907
+Node count: 1869
+Node count: 1469
+Node count: 2355
+Node count: 2436
+Node count: 1536
+Node count: 2121
+Node count: 2636
+Node count: 2675
+Node count: 2416
+Node count: 3924
+Node count: 2639
+Node count: 6285
+Node count: 4056
+Node count: 2716
+Node count: 3180
+Node count: 3573
+Node count: 2371
+Node count: 3258
+Node count: 6833
+Node count: 7627
+Node count: 5109
+Node count: 13996
+Node count: 2649
+Node count: 1224
+Node count: 2917
+Node count: 2464
+Node count: 1648
+Node count: 2201
+Node count: 2617
+Node count: 5315
+Node count: 1923
+Node count: 1723
+Node count: 1468
+Node count: 1627
+Node count: 2011
+Node count: 1612
+Node count: 2079
+Node count: 2215
+Node count: 2486
+Node count: 2649
+Node count: 2871
+Node count: 2520
+Node count: 1927
+Node count: 2412
+Node count: 2577
+Node count: 2815
+Node count: 2843
+Node count: 2933
+Node count: 8395
+Node count: 7420
+Node count: 3065
+Node count: 3989
+Node count: 3769
+Node count: 3292
+Node count: 3441
+Node count: 3757
+Node count: 3681
+Node count: 3298
+Node count: 4080
+Node count: 4324
+Node count: 4287
+Node count: 4625
+Node count: 4650
+Node count: 4461
+Node count: 4706
+Node count: 4788
+Node count: 4996
+Node count: 4935
+Node count: 4998
+Node count: 4896
+Node count: 5157
+Node count: 5165
+Node count: 6480
+Node count: 5466
+Node count: 5832
+Node count: 5794
+Node count: 5723
+Node count: 5748
+Node count: 5389
+Node count: 5824
+Node count: 6383
+Node count: 5688
+Node count: 6703
+Node count: 6011
+Node count: 5983
+Node count: 5544
+Node count: 4879
+Node count: 2934
+Node count: 1399
+Node count: 467
+Node count: 10
+Node count: 2591
+Node count: 3108
+Node count: 2690
+Node count: 3265
+Node count: 16858
+Node count: 2908
+Node count: 1428
+Node count: 2069
+Node count: 2330
+Node count: 2660
+Node count: 2178
+Node count: 2775
+Node count: 7464
+Node count: 1723
+Node count: 1261
+Node count: 2345
+Node count: 2286
+Node count: 3111
+Node count: 2844
+Node count: 3967
+Node count: 3786
+Node count: 1838
+Node count: 2947
+Node count: 2524
+Node count: 3050
+Node count: 2894
+Node count: 2929
+Node count: 4374
+Node count: 3031
+Node count: 3238
+Node count: 2514
+Node count: 2246
+Node count: 3030
+Node count: 3154
+Node count: 2779
+Node count: 3854
+Node count: 5188
+Node count: 2423
+Node count: 1550
+Node count: 1921
+Node count: 2731
+Node count: 2720
+Node count: 2171
+Node count: 1710
+Node count: 1862
+Node count: 1632
+Node count: 2255
+Node count: 2858
+Node count: 2730
+Node count: 2216
+Node count: 2466
+Node count: 2546
+Node count: 3466
+Node count: 3454
+Node count: 2874
+Node count: 2478
+Node count: 3085
+Node count: 2936
+Node count: 5678
+Node count: 3554
+Node count: 4116
+Node count: 2591
+Node count: 3108
+Node count: 3040
+Node count: 4195
+Node count: 16858
+Node count: 2908
+Node count: 1428
+Node count: 1884
+Node count: 2910
+Node count: 2496
+Node count: 2112
+Node count: 1710
+Node count: 1907
+Node count: 1869
+Node count: 1469
+Node count: 2355
+Node count: 2359
+Node count: 1536
+Node count: 2052
+Node count: 2564
+Node count: 2611
+Node count: 2366
+Node count: 2134
+Node count: 2889
+Node count: 9070
+Node count: 2521
+Node count: 2921
+Node count: 2786
+Node count: 3564
+Node count: 2371
+Node count: 2609
+Node count: 2971
+Node count: 2723
+Node count: 3854
+Node count: 5188
+Node count: 2423
+Node count: 1486
+Node count: 1978
+Node count: 2426
+Node count: 2544
+Node count: 2121
+Node count: 1710
+Node count: 1862
+Node count: 1632
+Node count: 2318
+Node count: 2444
+Node count: 2547
+Node count: 2438
+Node count: 2922
+Node count: 2468
+Node count: 2676
+Node count: 3127
+Node count: 10852
+Node count: 10658
+Node count: 3951
+Node count: 3053
+Node count: 3755
+Node count: 4763
+Node count: 2183
+Node count: 5213
+Node count: 2675
+Node count: 2363
+Node count: 3444
+Node count: 2591
+Node count: 3108
+Node count: 3155
+Node count: 3044
+Node count: 16858
+Node count: 2908
+Node count: 1428
+Node count: 1975
+Node count: 1656
+Node count: 2496
+Node count: 2207
+Node count: 1710
+Node count: 1907
+Node count: 1869
+Node count: 1469
+Node count: 2156
+Node count: 2436
+Node count: 1536
+Node count: 1972
+Node count: 2636
+Node count: 2660
+Node count: 2085
+Node count: 3362
+Node count: 3203
+Node count: 3341
+Node count: 3364
+Node count: 2989
+Node count: 3431
+Node count: 4202
+Node count: 1238
+Node count: 1663
+Node count: 1548
+Node count: 1955
+Node count: 141447
+Node count: 3258
+Node count: 1326
+Node count: 1391
+Node count: 1983
+Node count: 1970
+Node count: 775
+Node count: 1314
+Node count: 1700
+Node count: 2142
+Node count: 2172
+Node count: 1845
+Node count: 2111
+Node count: 1858
+Node count: 1118
+Node count: 1125
+Node count: 1464
+Node count: 1453
+Node count: 1211
+Node count: 2065
+Node count: 690
+Node count: 1209
+Node count: 1161
+Node count: 1765
+Node count: 1159
+Node count: 4041
+Node count: 5814
+Node count: 5298
+Node count: 2619
+Node count: 8267
+Node count: 4131
+Node count: 4235
+Node count: 2620
+Node count: 3898
+Node count: 5889
+Node count: 3145
+Node count: 1839
+Node count: 2977
+Node count: 6118
+Node count: 4329
+Node count: 2388
+Node count: 3488
+Node count: 5889
+Node count: 4579
+Node count: 5262
+Node count: 5728
+Node count: 6455
+Node count: 4207
+Node count: 2260
+Node count: 3040
+Node count: 5659
+Node count: 3840
+Node count: 2157
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 2988
+Node count: 4436
+Node count: 3645
+Node count: 3806
+Node count: 3011
+Node count: 5758
+Node count: 2814
+Node count: 2832
+Node count: 6972
+Node count: 4242
+Node count: 5243
+Node count: 3466
+Node count: 2448
+Node count: 2270
+Node count: 3623
+Node count: 3988
+Node count: 2160
+Node count: 2111
+Node count: 5403
+Node count: 2998
+Node count: 2414
+Node count: 1904
+Node count: 1572
+Node count: 6421
+Node count: 1804
+Node count: 1660
+Node count: 4422
+Node count: 3018
+Node count: 4295
+Node count: 4969
+Node count: 2618
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 6701
+Node count: 5400
+Node count: 3358
+Node count: 4679
+Node count: 8566
+Node count: 3411
+Node count: 10354
+Node count: 6823
+Node count: 5279
+Node count: 6067
+Node count: 4817
+Node count: 2734
+Node count: 7672
+Node count: 4991
+Node count: 2465
+Node count: 3446
+Node count: 3637
+Node count: 3412
+Node count: 4067
+Node count: 3392
+Node count: 4844
+Node count: 3808
+Node count: 2736
+Node count: 3752
+Node count: 6676
+Node count: 5111
+Node count: 3674
+Node count: 4118
+Node count: 3841
+Node count: 3038
+Node count: 3402
+Node count: 3724
+Node count: 3116
+Node count: 6303
+Node count: 4527
+Node count: 1874
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 10142
+Node count: 11046
+Node count: 5292
+Node count: 4100
+Node count: 3062
+Node count: 3098
+Node count: 21416
+Node count: 6369
+Node count: 2489
+Node count: 3261
+Node count: 8639
+Node count: 4055
+Node count: 9712
+Node count: 3323
+Node count: 13258
+Node count: 2829
+Node count: 2091
+Node count: 8845
+Node count: 7688
+Node count: 2369
+Node count: 2411
+Node count: 8594
+Node count: 7772
+Node count: 2709
+Node count: 3544
+Node count: 10473
+Node count: 6968
+Node count: 5142
+Node count: 3622
+Node count: 3922
+Node count: 2178
+Node count: 4449
+Node count: 3130
+Node count: 3774
+Node count: 4235
+Node count: 2543
+Node count: 2568
+Node count: 3224
+Node count: 1685
+Node count: 8022
+Node count: 5406
+Node count: 3400
+Node count: 4494
+Node count: 3011
+Node count: 6668
+Node count: 2814
+Node count: 2832
+Node count: 9852
+Node count: 4442
+Node count: 3642
+Node count: 3768
+Node count: 7572
+Node count: 9519
+Node count: 3359
+Node count: 2759
+Node count: 3050
+Node count: 6430
+Node count: 4923
+Node count: 6757
+Node count: 2441
+Node count: 2275
+Node count: 5808
+Node count: 7979
+Node count: 5866
+Node count: 2919
+Node count: 8998
+Node count: 5903
+Node count: 5922
+Node count: 4983
+Node count: 4880
+Node count: 2296
+Node count: 2595
+Node count: 10589
+Node count: 9886
+Node count: 5746
+Node count: 3974
+Node count: 2383
+Node count: 6378
+Node count: 6926
+Node count: 3248
+Node count: 3471
+Node count: 2636
+Node count: 5575
+Node count: 8585
+Node count: 4989
+Node count: 3129
+Node count: 3754
+Node count: 3461
+Node count: 2697
+Node count: 2239
+Node count: 10654
+Node count: 14507
+Node count: 7126
+Node count: 4484
+Node count: 2323
+Node count: 4039
+Node count: 3272
+Node count: 4522
+Node count: 3726
+Node count: 3270
+Node count: 3035
+Node count: 2553
+Node count: 2458
+Node count: 3258
+Node count: 2371
+Node count: 3112
+Node count: 3836
+Node count: 2564
+Node count: 3626
+Node count: 8022
+Node count: 5406
+Node count: 3400
+Node count: 2575
+Node count: 3326
+Node count: 7907
+Node count: 3374
+Node count: 3423
+Node count: 4647
+Node count: 7244
+Node count: 9439
+Node count: 4316
+Node count: 3047
+Node count: 3168
+Node count: 3333
+Node count: 2698
+Node count: 9894
+Node count: 11219
+Node count: 7982
+Node count: 10614
+Node count: 5624
+Node count: 4357
+Node count: 5824
+Node count: 6901
+Node count: 4957
+Node count: 6220
+Node count: 6184
+Node count: 5973
+Node count: 6816
+Node count: 3942
+Node count: 4187
+Node count: 3867
+Node count: 3002
+Node count: 1174
+Node count: 9697
+Node count: 6024
+Node count: 4365
+Node count: 7781
+Node count: 3687
+Node count: 8520
+Node count: 5307
+Node count: 8517
+Node count: 4594
+Node count: 6028
+Node count: 8392
+Node count: 3322
+Node count: 3241
+Node count: 2593
+Node count: 3081
+Node count: 8584
+Node count: 4279
+Node count: 7476
+Node count: 6400
+Node count: 5310
+Node count: 9669
+Node count: 9317
+Node count: 4901
+Node count: 3855
+Node count: 3884
+Node count: 4453
+Node count: 5849
+Node count: 4659
+Node count: 4610
+Node count: 3269
+Node count: 1289
+Node count: 5813
+Node count: 3917
+Node count: 2964
+Node count: 3949
+Node count: 1604
+Node count: 3526
+Node count: 2880
+Node count: 3371
+Node count: 5237
+Node count: 5858
+Node count: 4459
+Node count: 5415
+Node count: 6428
+Node count: 2925
+Node count: 4404
+Node count: 2091
+Node count: 4818
+Node count: 4662
+Node count: 4939
+Node count: 3517
+Node count: 2829
+Node count: 4187
+Node count: 3373
+Node count: 10254
+Node count: 3653
+Node count: 6567
+Node count: 6527
+Node count: 4466
+Node count: 3385
+Node count: 3582
+Node count: 2560
+Node count: 3653
+Node count: 5082
+Node count: 3152
+Node count: 7466
+Node count: 7048
+Node count: 4100
+Node count: 3062
+Node count: 3098
+Node count: 21416
+Node count: 6106
+Node count: 2489
+Node count: 3261
+Node count: 8194
+Node count: 4171
+Node count: 10792
+Node count: 3414
+Node count: 12060
+Node count: 2829
+Node count: 2579
+Node count: 9642
+Node count: 4043
+Node count: 6421
+Node count: 5979
+Node count: 8553
+Node count: 9047
+Node count: 2894
+Node count: 4187
+Node count: 3474
+Node count: 4542
+Node count: 5095
+Node count: 5081
+Node count: 2967
+Node count: 2402
+Node count: 2164
+Node count: 1811
+Node count: 4077
+Node count: 3461
+Node count: 1976
+Node count: 909
+Node count: 5829
+Node count: 5169
+Node count: 3621
+Node count: 3793
+Node count: 3011
+Node count: 6668
+Node count: 2814
+Node count: 2832
+Node count: 4344
+Node count: 4503
+Node count: 3438
+Node count: 5502
+Node count: 3299
+Node count: 3984
+Node count: 2816
+Node count: 2882
+Node count: 2369
+Node count: 2883
+Node count: 5014
+Node count: 7920
+Node count: 2974
+Node count: 7788
+Node count: 9873
+Node count: 3194
+Node count: 8123
+Node count: 4992
+Node count: 4104
+Node count: 2309
+Node count: 874
+Node count: 3020
+Node count: 6456
+Node count: 4100
+Node count: 2829
+Node count: 6061
+Node count: 8823
+Node count: 4227
+Node count: 6400
+Node count: 13095
+Node count: 3917
+Node count: 4455
+Node count: 7846
+Node count: 2625
+Node count: 11940
+Node count: 7413
+Node count: 2821
+Node count: 2068
+Node count: 4368
+Node count: 6397
+Node count: 3182
+Node count: 2075
+Node count: 2457
+Node count: 2293
+Node count: 5213
+Node count: 7365
+Node count: 5051
+Node count: 4956
+Node count: 4059
+Node count: 4876
+Node count: 4224
+Node count: 3446
+Node count: 4758
+Node count: 3777
+Node count: 2896
+Node count: 8395
+Node count: 2746
+Node count: 5195
+Node count: 5400
+Node count: 3358
+Node count: 4679
+Node count: 8566
+Node count: 3411
+Node count: 14372
+Node count: 9201
+Node count: 5058
+Node count: 3227
+Node count: 4372
+Node count: 2896
+Node count: 4415
+Node count: 2952
+Node count: 5215
+Node count: 7007
+Node count: 4303
+Node count: 4809
+Node count: 5089
+Node count: 6022
+Node count: 5733
+Node count: 4643
+Node count: 2275
+Node count: 10547
+Node count: 1673
+Node count: 9661
+Node count: 4295
+Node count: 6496
+Node count: 4547
+Node count: 4083
+Node count: 2864
+Node count: 4104
+Node count: 10589
+Node count: 5248
+Node count: 5850
+Node count: 5624
+Node count: 4247
+Node count: 4485
+Node count: 14489
+Node count: 6897
+Node count: 4572
+Node count: 2689
+Node count: 6561
+Node count: 3349
+Node count: 2039
+Node count: 5601
+Node count: 5902
+Node count: 3784
+Node count: 4303
+Node count: 2436
+Node count: 2742
+Node count: 3965
+Node count: 4044
+Node count: 6764
+Node count: 2361
+Node count: 3126
+Node count: 2942
+Node count: 3247
+Node count: 2861
+Node count: 6179
+Node count: 4878
+Node count: 6110
+Node count: 5652
+Node count: 3501
+Node count: 3124
+Node count: 3573
+Node count: 6354
+Node count: 3962
+Node count: 6758
+Node count: 5063
+Node count: 3400
+Node count: 4079
+Node count: 3479
+Node count: 7907
+Node count: 3374
+Node count: 3423
+Node count: 7224
+Node count: 3904
+Node count: 2389
+Node count: 3976
+Node count: 1945
+Node count: 1664
+Node count: 4825
+Node count: 7931
+Node count: 8701
+Node count: 6891
+Node count: 6341
+Node count: 5588
+Node count: 7378
+Node count: 7281
+Node count: 5909
+Node count: 4108
+Node count: 3071
+Node count: 8825
+Node count: 5188
+Node count: 3569
+Node count: 3629
+Node count: 5980
+Node count: 7428
+Node count: 6617
+Node count: 5437
+Node count: 3805
+Node count: 3743
+Node count: 2225
+Node count: 1932
+Node count: 2329
+Node count: 9695
+Node count: 7530
+Node count: 4064
+Node count: 3062
+Node count: 3098
+Node count: 21416
+Node count: 6369
+Node count: 2489
+Node count: 3261
+Node count: 5292
+Node count: 3506
+Node count: 3823
+Node count: 3860
+Node count: 9128
+Node count: 3062
+Node count: 2625
+Node count: 8572
+Node count: 2231
+Node count: 8438
+Node count: 5998
+Node count: 7169
+Node count: 6252
+Node count: 2682
+Node count: 8363
+Node count: 5394
+Node count: 4841
+Node count: 2579
+Node count: 5272
+Node count: 4236
+Node count: 2403
+Node count: 6968
+Node count: 5717
+Node count: 4106
+Node count: 2911
+Node count: 2175
+Node count: 3743
+Node count: 3063
+Node count: 2339
+Node count: 2486
+Node count: 2334
+Node count: 2480
+Node count: 2300
+Node count: 2480
+Node count: 2480
+Node count: 2480
+Node count: 1977
+Node count: 1944
+Node count: 2153
+Node count: 2333
+Node count: 2333
+Node count: 2480
+Node count: 2480
+Node count: 2480
+Node count: 2480
+Node count: 2480
+Node count: 2480
+Node count: 2480
+Node count: 2480
+Node count: 2480
+Node count: 2480
+Node count: 2630
+Node count: 2722
+Node count: 2480
+Node count: 2722
+Node count: 3071
+Node count: 3313
+Node count: 3611
+Node count: 2746
+Node count: 3313
+Node count: 3989
+Node count: 2722
+Node count: 4617
+Node count: 4459
+Node count: 763
+Node count: 32
+Node count: 7709
+Node count: 5169
+Node count: 3636
+Node count: 3430
+Node count: 3306
+Node count: 7907
+Node count: 3374
+Node count: 3423
+Node count: 7070
+Node count: 7871
+Node count: 9752
+Node count: 4948
+Node count: 3109
+Node count: 3698
+Node count: 3482
+Node count: 2666
+Node count: 2269
+Node count: 7766
+Node count: 8517
+Node count: 6736
+Node count: 5238
+Node count: 3932
+Node count: 2600
+Node count: 2601
+Node count: 5330
+Node count: 4758
+Node count: 2974
+Node count: 2822
+Node count: 4969
+Node count: 3947
+Node count: 3890
+Node count: 3605
+Node count: 3010
+Node count: 4447
+Node count: 2378
+Node count: 5698
+Node count: 6747
+Node count: 6135
+Node count: 7809
+Node count: 4569
+Node count: 3223
+Node count: 12966
+Node count: 3423
+Node count: 3756
+Node count: 2638
+Node count: 5138
+Node count: 2130
+Node count: 3807
+Node count: 3999
+Node count: 4477
+Node count: 2070
+Node count: 2088
+Node count: 8082
+Node count: 6859
+Node count: 7370
+Node count: 5556
+Node count: 3362
+Node count: 3089
+Node count: 3712
+Node count: 2179
+Node count: 6608
+Node count: 4630
+Node count: 4812
+Node count: 4052
+Node count: 2957
+Node count: 4204
+Node count: 3155
+Node count: 1646
+Node count: 8022
+Node count: 5406
+Node count: 3400
+Node count: 4728
+Node count: 3326
+Node count: 7907
+Node count: 3374
+Node count: 3423
+Node count: 4143
+Node count: 7871
+Node count: 9306
+Node count: 4948
+Node count: 3109
+Node count: 3594
+Node count: 3482
+Node count: 2646
+Node count: 2269
+Node count: 7707
+Node count: 5522
+Node count: 6995
+Node count: 6520
+Node count: 1601
+Node count: 2934
+Node count: 2851
+Node count: 3645
+Node count: 2868
+Node count: 5187
+Node count: 3905
+Node count: 2880
+Node count: 2560
+Node count: 2736
+Node count: 9258
+Node count: 6138
+Node count: 3866
+Node count: 3062
+Node count: 3098
+Node count: 21416
+Node count: 6369
+Node count: 2402
+Node count: 3261
+Node count: 2138
+Node count: 3041
+Node count: 3151
+Node count: 3697
+Node count: 3964
+Node count: 3077
+Node count: 2099
+Node count: 6156
+Node count: 6452
+Node count: 4550
+Node count: 5021
+Node count: 4514
+Node count: 5099
+Node count: 4040
+Node count: 4077
+Node count: 3267
+Node count: 4123
+Node count: 4494
+Node count: 3111
+Node count: 3134
+Node count: 3149
+Node count: 2735
+Node count: 2229
+Node count: 3071
+Node count: 3286
+Node count: 3036
+Node count: 2836
+Node count: 3261
+Node count: 3248
+Node count: 4155
+Node count: 4421
+Node count: 4421
+Node count: 4126
+Node count: 1470
+Node count: 1404
+Node count: 2132
+Node count: 2278
+Node count: 2278
+Node count: 2278
+Node count: 2278
+Node count: 2278
+Node count: 2278
+Node count: 2278
+Node count: 2136
+Node count: 1836
+Node count: 2717
+Node count: 2469
+Node count: 2953
+Node count: 2484
+Node count: 2418
+Node count: 2969
+Node count: 2429
+Node count: 2778
+Node count: 2807
+Node count: 2953
+Node count: 3217
+Node count: 3291
+Node count: 1894
+Node count: 3217
+Node count: 3612
+Node count: 3612
+Node count: 4090
+Node count: 5207
+Node count: 3531
+Node count: 609
+Node count: 45
+Node count: 8022
+Node count: 5406
+Node count: 3400
+Node count: 4728
+Node count: 3326
+Node count: 7907
+Node count: 3374
+Node count: 3423
+Node count: 11292
+Node count: 7328
+Node count: 9375
+Node count: 3910
+Node count: 3230
+Node count: 2872
+Node count: 2380
+Node count: 4914
+Node count: 5415
+Node count: 3010
+Node count: 2983
+Node count: 1669
+Node count: 11475
+Node count: 10294
+Node count: 4772
+Node count: 3180
+Node count: 4943
+Node count: 2845
+Node count: 3161
+Node count: 4091
+Node count: 3907
+Node count: 4835
+Node count: 4413
+Node count: 5743
+Node count: 6151
+Node count: 5383
+Node count: 2173
+Node count: 7466
+Node count: 6678
+Node count: 8317
+Node count: 7361
+Node count: 2919
+Node count: 4308
+Node count: 16635
+Node count: 3858
+Node count: 4305
+Node count: 2402
+Node count: 5739
+Node count: 3701
+Node count: 2074
+Node count: 7632
+Node count: 5811
+Node count: 2099
+Node count: 7768
+Node count: 3872
+Node count: 2838
+Node count: 3428
+Node count: 3877
+Node count: 7502
+Node count: 8368
+Node count: 3601
+Node count: 4664
+Node count: 6908
+Node count: 4545
+Node count: 3282
+Node count: 5025
+Node count: 2540
+Node count: 5185
+Node count: 4748
+Node count: 6076
+Node count: 3008
+Node count: 3455
+Node count: 2061
+Node count: 1645
+Node count: 8022
+Node count: 5406
+Node count: 3400
+Node count: 4728
+Node count: 3326
+Node count: 7907
+Node count: 3374
+Node count: 3423
+Node count: 16962
+Node count: 9324
+Node count: 10445
+Node count: 5087
+Node count: 7126
+Node count: 3514
+Node count: 4055
+Node count: 13121
+Node count: 9363
+Node count: 8549
+Node count: 8833
+Node count: 9417
+Node count: 5641
+Node count: 3510
+Node count: 2581
+Node count: 1843
+Node count: 8737
+Node count: 6573
+Node count: 2612
+Node count: 3436
+Node count: 3767
+Node count: 2862
+Node count: 2086
+Node count: 3366
+Node count: 3948
+Node count: 3107
+Node count: 1990
+Node count: 1673
+Node count: 6678
+Node count: 6624
+Node count: 6768
+Node count: 3567
+Node count: 2890
+Node count: 10859
+Node count: 3270
+Node count: 3670
+Node count: 7087
+Node count: 5387
+Node count: 4083
+Node count: 2337
+Node count: 4263
+Node count: 5317
+Node count: 9546
+Node count: 7395
+Node count: 7194
+Node count: 7571
+Node count: 7112
+Node count: 5073
+Node count: 5154
+Node count: 2910
+Node count: 2254
+Node count: 10166
+Node count: 8243
+Node count: 6676
+Node count: 6418
+Node count: 4681
+Node count: 6997
+Node count: 7683
+Node count: 4503
+Node count: 4440
+Node count: 2732
+Node count: 8022
+Node count: 5406
+Node count: 3400
+Node count: 4728
+Node count: 3326
+Node count: 7907
+Node count: 3374
+Node count: 3423
+Node count: 3850
+Node count: 5622
+Node count: 10178
+Node count: 3002
+Node count: 2351
+Node count: 2348
+Node count: 3086
+Node count: 5845
+Node count: 7059
+Node count: 5615
+Node count: 4217
+Node count: 4365
+Node count: 6227
+Node count: 3447
+Node count: 1948
+Node count: 2525
+Node count: 5466
+Node count: 3043
+Node count: 4755
+Node count: 4363
+Node count: 3917
+Node count: 4803
+Node count: 4888
+Node count: 3643
+Node count: 3395
+Node count: 2846
+Node count: 1723
+Node count: 893
+Node count: 1589
+Node count: 1715
+Node count: 1572
+Node count: 1329
+Node count: 1989
+Node count: 1602
+Node count: 1715
+Node count: 1865
+Node count: 2151
+Node count: 2008
+Node count: 2151
+Node count: 2349
+Node count: 2349
+Node count: 2399
+Node count: 2201
+Node count: 2151
+Node count: 2201
+Node count: 2561
+Node count: 2561
+Node count: 2399
+Node count: 2561
+Node count: 2349
+Node count: 2561
+Node count: 1715
+Node count: 638
+Node count: 1473
+Node count: 1768
+Node count: 1761
+Node count: 2418
+Node count: 2561
+Node count: 2201
+Node count: 2349
+Node count: 1989
+Node count: 2836
+Node count: 3496
+Node count: 2822
+Node count: 1572
+Node count: 310
+Node count: 0
+Node count: 8817
+Node count: 2902
+Node count: 3590
+Node count: 1426
+Node count: 2535
+Node count: 19956
+Node count: 5859
+Node count: 2265
+Node count: 2754
+Node count: 6282
+Node count: 3693
+Node count: 3207
+Node count: 2888
+Node count: 10232
+Node count: 2635
+Node count: 2239
+Node count: 1812
+Node count: 6224
+Node count: 3102
+Node count: 2205
+Node count: 2733
+Node count: 3451
+Node count: 2019
+Node count: 2170
+Node count: 2856
+Node count: 6074
+Node count: 6926
+Node count: 6805
+Node count: 895
+Node count: 870
+Node count: 1964
+Node count: 2776
+Node count: 3877
+Node count: 2815
+Node count: 2339
+Node count: 2563
+Node count: 2617
+Node count: 1829
+Node count: 2221
+Node count: 3320
+Node count: 1856
+Node count: 1543
+Node count: 1856
+Node count: 1856
+Node count: 1856
+Node count: 1856
+Node count: 1856
+Node count: 1856
+Node count: 1856
+Node count: 2913
+Node count: 1856
+Node count: 2913
+Node count: 1543
+Node count: 1856
+Node count: 3838
+Node count: 2781
+Node count: 3838
+Node count: 2913
+Node count: 3838
+Node count: 2913
+Node count: 3838
+Node count: 1549
+Node count: 1856
+Node count: 3838
+Node count: 2781
+Node count: 5180
+Node count: 2781
+Node count: 3838
+Node count: 3838
+Node count: 3838
+Node count: 5180
+Node count: 1856
+Node count: 4255
+Node count: 770
+Node count: 52
+Node count: 5498
+Node count: 5400
+Node count: 3358
+Node count: 3683
+Node count: 2438
+Node count: 6781
+Node count: 3316
+Node count: 3174
+Node count: 10198
+Node count: 3220
+Node count: 4183
+Node count: 3283
+Node count: 3673
+Node count: 2093
+Node count: 3586
+Node count: 2546
+Node count: 8449
+Node count: 2362
+Node count: 2100
+Node count: 6613
+Node count: 6908
+Node count: 2939
+Node count: 5566
+Node count: 5905
+Node count: 2767
+Node count: 7127
+Node count: 7262
+Node count: 5381
+Node count: 3104
+Node count: 2258
+Node count: 3157
+Node count: 2344
+Node count: 3223
+Node count: 3906
+Node count: 3433
+Node count: 3665
+Node count: 1219
+Node count: 2446
+Node count: 9264
+Node count: 5243
+Node count: 4380
+Node count: 3083
+Node count: 3727
+Node count: 8088
+Node count: 3462
+Node count: 3641
+Node count: 10686
+Node count: 4606
+Node count: 2451
+Node count: 7207
+Node count: 2410
+Node count: 2976
+Node count: 2654
+Node count: 8033
+Node count: 6265
+Node count: 3807
+Node count: 5081
+Node count: 4376
+Node count: 3276
+Node count: 6829
+Node count: 3072
+Node count: 2558
+Node count: 5398
+Node count: 2051
+Node count: 2446
+Node count: 2666
+Node count: 1844
+Node count: 5028
+Node count: 2538
+Node count: 3482
+Node count: 3130
+Node count: 3458
+Node count: 3601
+Node count: 3608
+Node count: 4179
+Node count: 5270
+Node count: 3808
+Node count: 3827
+Node count: 2345
+Node count: 1029
+Node count: 1084
+Node count: 7394
+Node count: 4927
+Node count: 3621
+Node count: 3793
+Node count: 3011
+Node count: 9756
+Node count: 2814
+Node count: 2832
+Node count: 9852
+Node count: 4374
+Node count: 3083
+Node count: 3950
+Node count: 6408
+Node count: 9995
+Node count: 3040
+Node count: 3489
+Node count: 3029
+Node count: 2548
+Node count: 6684
+Node count: 3312
+Node count: 7054
+Node count: 9827
+Node count: 2343
+Node count: 2404
+Node count: 2147
+Node count: 5427
+Node count: 4896
+Node count: 6157
+Node count: 6766
+Node count: 7183
+Node count: 5387
+Node count: 3561
+Node count: 3371
+Node count: 3502
+Node count: 2939
+Node count: 2483
+Node count: 1668
+Node count: 2237
+Node count: 1825
+Node count: 1379
+Node count: 374
+Node count: 2211
+Node count: 2237
+Node count: 2237
+Node count: 2010
+Node count: 1799
+Node count: 1053
+Node count: 1180
+Node count: 2018
+Node count: 2263
+Node count: 2263
+Node count: 1877
+Node count: 1978
+Node count: 2070
+Node count: 2289
+Node count: 2289
+Node count: 2263
+Node count: 2263
+Node count: 2570
+Node count: 1413
+Node count: 979
+Node count: 2263
+Node count: 2070
+Node count: 2596
+Node count: 2596
+Node count: 2570
+Node count: 3595
+Node count: 2289
+Node count: 2289
+Node count: 2211
+Node count: 3595
+Node count: 3288
+Node count: 3910
+Node count: 400
+Node count: 9264
+Node count: 6828
+Node count: 2282
+Node count: 2635
+Node count: 4013
+Node count: 9882
+Node count: 5620
+Node count: 2321
+Node count: 2256
+Node count: 6868
+Node count: 3755
+Node count: 4676
+Node count: 3381
+Node count: 3558
+Node count: 2989
+Node count: 2241
+Node count: 6999
+Node count: 4439
+Node count: 2735
+Node count: 2296
+Node count: 2262
+Node count: 1727
+Node count: 2333
+Node count: 6810
+Node count: 4173
+Node count: 3160
+Node count: 2375
+Node count: 2698
+Node count: 3385
+Node count: 1555
+Node count: 3648
+Node count: 3319
+Node count: 3610
+Node count: 2669
+Node count: 2927
+Node count: 7083
+Node count: 5060
+Node count: 3615
+Node count: 2874
+Node count: 4273
+Node count: 4611
+Node count: 2599
+Node count: 2567
+Node count: 2408
+Node count: 2847
+Node count: 1907
+Node count: 2884
+Node count: 4055
+Node count: 4027
+Node count: 2718
+Node count: 2688
+Node count: 2010
+Node count: 3823
+Node count: 1923
+Node count: 2393
+Node count: 1542
+Node count: 3592
+Node count: 3495
+Node count: 2904
+Node count: 2123
+Node count: 2227
+Node count: 2383
+Node count: 2907
+Node count: 2909
+Node count: 3594
+Node count: 2628
+Node count: 3342
+Node count: 3192
+Node count: 2138
+Node count: 2389
+Node count: 3851
+Node count: 2470
+Node count: 2494
+Node count: 1900
+Node count: 1900
+Node count: 1900
+Node count: 1900
+Node count: 1900
+Node count: 1900
+Node count: 1900
+Node count: 1900
+Node count: 1900
+Node count: 1900
+Node count: 1900
+Node count: 1900
+Node count: 1900
+Node count: 1679
+Node count: 1900
+Node count: 1900
+Node count: 1677
+Node count: 1900
+Node count: 1679
+Node count: 1900
+Node count: 1900
+Node count: 1900
+Node count: 1900
+Node count: 1900
+Node count: 1456
+Node count: 1014
+Node count: 1900
+Node count: 2803
+Node count: 2803
+Node count: 6741
+Node count: 5838
+Node count: 4759
+Node count: 3852
+Node count: 4759
+Node count: 1900
+Node count: 160
+Node count: 4246
+Node count: 4588
+Node count: 2873
+Node count: 5503
+Node count: 6603
+Node count: 3540
+Node count: 10374
+Node count: 10530
+Node count: 3580
+Node count: 4268
+Node count: 4114
+Node count: 2198
+Node count: 6168
+Node count: 4674
+Node count: 2621
+Node count: 2797
+Node count: 2035
+Node count: 5035
+Node count: 7874
+Node count: 4999
+Node count: 4746
+Node count: 3602
+Node count: 3459
+Node count: 4474
+Node count: 2758
+Node count: 3899
+Node count: 8491
+Node count: 6363
+Node count: 6747
+Node count: 2120
+Node count: 3952
+Node count: 4617
+Node count: 3257
+Node count: 2532
+Node count: 883
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 0
+Node count: 2118
+Node count: 5873
+Node count: 3341
+Node count: 3113
+Node count: 2952
+Node count: 7895
+Node count: 48278
+Node count: 2162
+Node count: 2040
+Node count: 5427
+Node count: 5140
+Node count: 2191
+Node count: 2832
+Node count: 2324
+Node count: 4819
+Node count: 2441
+Node count: 1347
+Node count: 2018
+Node count: 1864
+Node count: 4436
+Node count: 3650
+Node count: 10201
+Node count: 10201
+Node count: 2118
+Node count: 5538
+Node count: 3923
+Node count: 2955
+Node count: 2545
+Node count: 4850
+Node count: 25791
+Node count: 2488
+Node count: 2363
+Node count: 2007
+Node count: 7470
+Node count: 5620
+Node count: 2025
+Node count: 2641
+Node count: 3829
+Node count: 11051
+Node count: 4281
+Node count: 2052
+Node count: 4569
+Node count: 3055
+Node count: 4095
+Node count: 3578
+Node count: 4213
+Node count: 5939
+Node count: 4071
+Node count: 5081
+Node count: 2966
+Node count: 2145
+Node count: 4664
+Node count: 2602
+Node count: 7073
+Node count: 2837
+Node count: 11305
+Node count: 8946
+Node count: 5718
+Node count: 6631
+Node count: 5089
+Node count: 2940
+Node count: 2497
+Node count: 3419
+Node count: 1947
+Node count: 2144
+Node count: 11339
+Node count: 14379
+Node count: 6739
+Node count: 6059
+Node count: 8058
+Node count: 5355
+Node count: 2747
+Node count: 3115
+Node count: 6932
+Node count: 10414
+Node count: 5369
+Node count: 3496
+Node count: 3916
+Node count: 14198
+Node count: 5461
+Node count: 6014
+Node count: 6568
+Node count: 5100
+Node count: 4597
+Node count: 3675
+Node count: 13878
+Node count: 13505
+Node count: 32583
+Node count: 24102
+Node count: 14831
+Node count: 10756
+Node count: 34056
+Node count: 19685
+Node count: 9721
+Node count: 14243
+Node count: 27641
+Node count: 12504
+Node count: 8107
+Node count: 25905
+Node count: 21909
+Node count: 26550
+Node count: 15500
+Node count: 13117
+Node count: 10042
+Node count: 5645
+Node count: 7048
+Node count: 18456
+Node count: 12170
+Node count: 28881
+Node count: 29579
+Node count: 18887
+Node count: 13152
+Node count: 10240
+Node count: 10083
+Node count: 9796
+Node count: 12747
+Node count: 7605
+Node count: 7844
+Node count: 5478
+Node count: 8284
+Node count: 6808
+Node count: 17126
+Node count: 19607
+Node count: 14944
+Node count: 11405
+Node count: 8003
+Node count: 8001
+Node count: 43963
+Node count: 10105
+Node count: 6316
+Node count: 5020
+Node count: 24314
+Node count: 7534
+Node count: 6727
+Node count: 8505
+Node count: 6663
+Node count: 10962
+Node count: 21743
+Node count: 14914
+Node count: 16862
+Node count: 14866
+Node count: 4838
+Node count: 5816
+Node count: 6096
+Node count: 6293
+Node count: 15410
+Node count: 14345
+Node count: 17299
+Node count: 6077
+Node count: 7354
+Node count: 5893
+Node count: 5654
+Node count: 10221
+Node count: 10887
+Node count: 10255
+Node count: 12535
+Node count: 9479
+Node count: 7757
+Node count: 13040
+Node count: 3755
+Node count: 3755
+Node count: 3725
+Node count: 3725
+Node count: 3725
+Node count: 3365
+Node count: 3725
+Node count: 3725
+Node count: 3725
+Node count: 3725
+Node count: 5952
+Node count: 3725
+Node count: 3725
+Node count: 4902
+Node count: 5785
+Node count: 3725
+Node count: 5458
+Node count: 3725
+Node count: 3725
+Node count: 6635
+Node count: 3442
+Node count: 3725
+Node count: 4902
+Node count: 5752
+Node count: 6635
+Node count: 3725
+Node count: 5785
+Node count: 3725
+Node count: 6635
+Node count: 3725
+Node count: 4902
+Node count: 5752
+Node count: 3725
+Node count: 6635
+Node count: 3725
+Node count: 3725
+Node count: 4202
+Node count: 264
+Node count: 19607
+Node count: 14944
+Node count: 17851
+Node count: 15916
+Node count: 11318
+Node count: 7098
+Node count: 6908
+Node count: 43963
+Node count: 10105
+Node count: 6316
+Node count: 5020
+Node count: 27851
+Node count: 7534
+Node count: 7995
+Node count: 8505
+Node count: 6663
+Node count: 13573
+Node count: 17487
+Node count: 20925
+Node count: 3782
+Node count: 6760
+Node count: 5154
+Node count: 4598
+Node count: 13432
+Node count: 20268
+Node count: 16973
+Node count: 3619
+Node count: 8686
+Node count: 16958
+Node count: 5714
+Node count: 12975
+Node count: 16262
+Node count: 11400
+Node count: 10088
+Node count: 5021
+Node count: 18758
+Node count: 21175
+Node count: 15201
+Node count: 11459
+Node count: 7205
+Node count: 13036
+Node count: 22251
+Node count: 8617
+Node count: 5765
+Node count: 9730
+Node count: 16179
+Node count: 15535
+Node count: 13138
+Node count: 8126
+Node count: 8584
+Node count: 7833
+Node count: 6385
+Node count: 6519
+Node count: 28125
+Node count: 24894
+Node count: 17818
+Node count: 17562
+Node count: 7924
+Node count: 11755
+Node count: 8320
+Node count: 18598
+Node count: 13300
+Node count: 9580
+Node count: 8206
+Node count: 10627
+Node count: 9390
+Node count: 8165
+Node count: 3703
+Node count: 8871
+Node count: 5639
+Node count: 5107
+Node count: 6467
+Node count: 17514
+Node count: 12024
+Node count: 10206
+Node count: 11465
+Node count: 5762
+Node count: 27675
+Node count: 7911
+Node count: 5394
+Node count: 22577
+Node count: 21082
+Node count: 18347
+Node count: 12069
+Node count: 9038
+Node count: 11219
+Node count: 7918
+Node count: 7114
+Node count: 7239
+Node count: 24081
+Node count: 20303
+Node count: 22074
+Node count: 21929
+Node count: 17489
+Node count: 11120
+Node count: 6913
+Node count: 6991
+Node count: 18957
+Node count: 8244
+Node count: 14446
+Node count: 8877
+Node count: 8588
+Node count: 9804
+Node count: 5545
+Node count: 7188
+Node count: 14848
+Node count: 8740
+Node count: 19607
+Node count: 14944
+Node count: 11405
+Node count: 8003
+Node count: 8001
+Node count: 43963
+Node count: 10105
+Node count: 6316
+Node count: 5020
+Node count: 26399
+Node count: 7534
+Node count: 6727
+Node count: 8505
+Node count: 6663
+Node count: 13573
+Node count: 21743
+Node count: 28222
+Node count: 20616
+Node count: 3997
+Node count: 5187
+Node count: 13080
+Node count: 13608
+Node count: 11975
+Node count: 10189
+Node count: 16362
+Node count: 17952
+Node count: 11173
+Node count: 15973
+Node count: 13594
+Node count: 7581
+Node count: 12287
+Node count: 10509
+Node count: 4420
+Node count: 17514
+Node count: 12024
+Node count: 10206
+Node count: 11465
+Node count: 5762
+Node count: 27675
+Node count: 7911
+Node count: 6556
+Node count: 24568
+Node count: 18526
+Node count: 18347
+Node count: 12069
+Node count: 9038
+Node count: 11219
+Node count: 7918
+Node count: 7114
+Node count: 7239
+Node count: 24081
+Node count: 14295
+Node count: 21186
+Node count: 19334
+Node count: 17489
+Node count: 11120
+Node count: 6913
+Node count: 6991
+Node count: 20906
+Node count: 8244
+Node count: 14446
+Node count: 8877
+Node count: 8588
+Node count: 9151
+Node count: 5545
+Node count: 7188
+Node count: 15739
+Node count: 8740

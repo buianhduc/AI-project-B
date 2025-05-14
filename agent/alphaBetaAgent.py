@@ -3,6 +3,8 @@
 from typing import Any
 import numpy as np
 
+from agent.utils import BOARD_WEIGHT_BLUE, BOARD_WEIGHT_RED
+
 from .game.board import Board, BoardMutation, BoardState, CellState, \
     ILLEGAL_RED_DIRECTIONS, ILLEGAL_BLUE_DIRECTIONS
 from referee.game import (PlayerColor, Coord, Direction, Action, MoveAction,
@@ -39,18 +41,17 @@ class ABAgent:
         to take an action. It must always return an action object. 
         """
 
-        copy = Board(self.board._state, initial_player=self._color)
         best_action = None
         best_score = -float("inf")
-        for action in copy.get_next_possible_configurations():
-            copy.apply_action(action)
-            score  = self.minimax(current_state=copy,
+        for action in self.board.get_next_possible_configurations():
+            self.board.apply_action(action)
+            score  = self.minimax(current_state=self.board,
                         curDepth=0,
                         maxTurn=False,
                         targetDepth=3,
                         alpha=-float("inf"),
                         beta=float("inf"))
-            copy.undo_action()
+            self.board.undo_action()
             if best_score < score:
                 best_action = action
                 best_score = score
@@ -246,8 +247,8 @@ class ABAgent:
             coord for coord, cell in board._state.items()
             if cell.state == player_color
         )
-        count = 0
+        score = 0
+        weight_score_matrix = BOARD_WEIGHT_RED if player_color == PlayerColor.RED else BOARD_WEIGHT_BLUE
         for cell in position_of_frogs:
-                from_cell = 7 if player_color == PlayerColor.RED else 0
-                count -= abs(from_cell - cell.r)
-        return count
+            score += weight_score_matrix[cell.r][cell.c]
+        return score

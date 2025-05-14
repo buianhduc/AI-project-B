@@ -1,2 +1,2 @@
 #!/bin/sh
-python -m referee -d -l "log.txt" agent:MinimaxAgent agent:ABAgentWithCacheV2
+python -m referee -d -l "log2.txt" agent:ABAgentWithCacheV2 agent:GreedyAgent

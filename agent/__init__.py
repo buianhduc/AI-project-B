@@ -2,11 +2,13 @@
 # Project Part B: Game Playing Agent
 
 # from .program import Agent as Agent
-# from .minimaxAgent import MinimaxAgent
-# from .mctsAgent import MCTSAgent as MCTSAgent
-# from .alphaBetaAgent import ABAgent
-# from .alphaBetaAgentWithCache import ABAgentWithCache
-from .alphaBetaAgentWithCacheV2 import ABAgentWithCache as Agent
-# from .randomAgent import RandomAgent
-# from .greedyAgent import GreedyAgent
-# from .combinedAgent import CombinedAgent as Agent
+submission = True
+if not submission:
+    from .minimaxAgent import MinimaxAgent
+    from .mctsAgent import MCTSAgent as MCTSAgent
+    from .alphaBetaAgent import ABAgent
+    from .alphaBetaAgentWithCacheV2 import ABAgentWithCache as ABAgentWithCacheV2
+    from .randomAgent import RandomAgent
+    from .greedyAgent import GreedyAgent
+else:
+    from .alphaBetaAgentWithCacheV2 import ABAgentWithCache as Agent

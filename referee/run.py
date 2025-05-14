@@ -13,9 +13,9 @@ from time import time
 from typing import AsyncGenerator
 
 from .log import LogStream
-from .game import Player, game, \
+from .game import GameEndBothPlayers, Player, game, \
     GameUpdate, PlayerInitialising, GameBegin, TurnBegin, TurnEnd, \
-    BoardUpdate, PlayerError, GameEnd, UnhandledError, PlayerColor
+    BoardUpdate, PlayerError, GameEnd, UnhandledError, PlayerColor, gameBothPlayers
 
 
 async def run_game(
@@ -230,3 +230,35 @@ async def output_board_updates(
                     ])
                 )
                 stream.info(f"\n{''.center(width, '=')}\n\n")
+
+
+async def run_game_returns_both_players(
+    players: list[Player], 
+    event_handlers: list[AsyncGenerator|None]=[]
+) -> dict |None:
+    """
+    Run a game, yielding event handler generators over the game updates.
+    Return the winning player (interface) or 'None' if draw.
+    """
+    async def _update_handlers(
+        handlers: list[AsyncGenerator|None], 
+        update: GameUpdate|None
+    ):
+        for handler in handlers:
+            try:
+                if handler is not None:
+                    await handler.asend(update)
+            except StopAsyncIteration:
+                handlers.remove(handler)
+
+    await _update_handlers(event_handlers, None)
+    async for update in gameBothPlayers(*players):
+        await _update_handlers(event_handlers, update)
+        match update:
+            case GameEndBothPlayers(player1, player2, result):
+                return {
+                    "player1": player1,
+                    "player2": player2,
+                    "result": result
+                }
+            

@@ -1,0 +1,283 @@
+
+[
+    {
+        "round": 0,
+        "red_agent": {
+            "name": "player 1 [agent:ABAgentWithCacheV2]",
+            "time_elapsed": 100.18224799999997,
+            "memory_peak": -1
+        },
+        "blue_agent": {
+            "name": "player 2 [agent:ABAgent]",
+            "time_elapsed": 72.95639200000001,
+            "memory_peak": -1
+        },
+        "result": "Red"
+    },
+    {
+        "round": 1,
+        "red_agent": {
+            "name": "player 1 [agent:ABAgent]",
+            "time_elapsed": 90.02263399999998,
+            "memory_peak": -1
+        },
+        "blue_agent": {
+            "name": "player 2 [agent:ABAgentWithCacheV2]",
+            "time_elapsed": 89.7754930000001,
+            "memory_peak": -1
+        },
+        "result": "BLUE"
+    },
+    {
+        "round": 2,
+        "red_agent": {
+            "name": "player 1 [agent:ABAgentWithCacheV2]",
+            "time_elapsed": 100.21960800000008,
+            "memory_peak": -1
+        },
+        "blue_agent": {
+            "name": "player 2 [agent:ABAgent]",
+            "time_elapsed": 73.33467300000001,
+            "memory_peak": -1
+        },
+        "result": "Red"
+    },
+    {
+        "round": 3,
+        "red_agent": {
+            "name": "player 1 [agent:ABAgent]",
+            "time_elapsed": 56.901818000000034,
+            "memory_peak": -1
+        },
+        "blue_agent": {
+            "name": "player 2 [agent:ABAgentWithCacheV2]",
+            "time_elapsed": 162.92701099999994,
+            "memory_peak": -1
+        },
+        "result": "Draw"
+    },
+    {
+        "round": 4,
+        "red_agent": {
+            "name": "player 1 [agent:ABAgentWithCacheV2]",
+            "time_elapsed": 100.107875,
+            "memory_peak": -1
+        },
+        "blue_agent": {
+            "name": "player 2 [agent:ABAgent]",
+            "time_elapsed": 73.17431699999993,
+            "memory_peak": -1
+        },
+        "result": "Red"
+    },
+    {
+        "round": 5,
+        "red_agent": {
+            "name": "player 1 [agent:ABAgent]",
+            "time_elapsed": 89.77382399999998,
+            "memory_peak": -1
+        },
+        "blue_agent": {
+            "name": "player 2 [agent:ABAgentWithCacheV2]",
+            "time_elapsed": 90.59411000000004,
+            "memory_peak": -1
+        },
+        "result": "BLUE"
+    },
+    {
+        "round": 6,
+        "red_agent": {
+            "name": "player 1 [agent:ABAgentWithCacheV2]",
+            "time_elapsed": 100.25918700000005,
+            "memory_peak": -1
+        },
+        "blue_agent": {
+            "name": "player 2 [agent:ABAgent]",
+            "time_elapsed": 73.542137,
+            "memory_peak": -1
+        },
+        "result": "Red"
+    },
+    {
+        "round": 7,
+        "red_agent": {
+            "name": "player 1 [agent:ABAgent]",
+            "time_elapsed": 56.564485,
+            "memory_peak": -1
+        },
+        "blue_agent": {
+            "name": "player 2 [agent:ABAgentWithCacheV2]",
+            "time_elapsed": 105.520048,
+            "memory_peak": -1
+        },
+        "result": "BLUE"
+    },
+    {
+        "round": 8,
+        "red_agent": {
+            "name": "player 1 [agent:ABAgentWithCacheV2]",
+            "time_elapsed": 100.76299999999998,
+            "memory_peak": -1
+        },
+        "blue_agent": {
+            "name": "player 2 [agent:ABAgent]",
+            "time_elapsed": 73.09444499999996,
+            "memory_peak": -1
+        },
+        "result": "Red"
+    },
+    {
+        "round": 9,
+        "red_agent": {
+            "name": "player 1 [agent:ABAgent]",
+            "time_elapsed": 92.42580600000001,
+            "memory_peak": -1
+        },
+        "blue_agent": {
+            "name": "player 2 [agent:ABAgentWithCacheV2]",
+            "time_elapsed": 150.05817099999993,
+            "memory_peak": -1
+        },
+        "result": "BLUE"
+    },
+    {
+        "round": 10,
+        "red_agent": {
+            "name": "player 1 [agent:ABAgentWithCacheV2]",
+            "time_elapsed": 99.64845199999999,
+            "memory_peak": -1
+        },
+        "blue_agent": {
+            "name": "player 2 [agent:ABAgent]",
+            "time_elapsed": 73.23139000000002,
+            "memory_peak": -1
+        },
+        "result": "Red"
+    },
+    {
+        "round": 11,
+        "red_agent": {
+            "name": "player 1 [agent:ABAgent]",
+            "time_elapsed": 60.91837100000002,
+            "memory_peak": -1
+        },
+        "blue_agent": {
+            "name": "player 2 [agent:ABAgentWithCacheV2]",
+            "time_elapsed": 82.61909099999998,
+            "memory_peak": -1
+        },
+        "result": "Red"
+    },
+    {
+        "round": 12,
+        "red_agent": {
+            "name": "player 1 [agent:ABAgentWithCacheV2]",
+            "time_elapsed": 100.21240299999994,
+            "memory_peak": -1
+        },
+        "blue_agent": {
+            "name": "player 2 [agent:ABAgent]",
+            "time_elapsed": 73.18049400000001,
+            "memory_peak": -1
+        },
+        "result": "Red"
+    },
+    {
+        "round": 13,
+        "red_agent": {
+            "name": "player 1 [agent:ABAgent]",
+            "time_elapsed": 56.987576999999995,
+            "memory_peak": -1
+        },
+        "blue_agent": {
+            "name": "player 2 [agent:ABAgentWithCacheV2]",
+            "time_elapsed": 162.8162480000001,
+            "memory_peak": -1
+        },
+        "result": "Draw"
+    },
+    {
+        "round": 14,
+        "red_agent": {
+            "name": "player 1 [agent:ABAgentWithCacheV2]",
+            "time_elapsed": 99.53089800000004,
+            "memory_peak": -1
+        },
+        "blue_agent": {
+            "name": "player 2 [agent:ABAgent]",
+            "time_elapsed": 73.14457,
+            "memory_peak": -1
+        },
+        "result": "Red"
+    },
+    {
+        "round": 15,
+        "red_agent": {
+            "name": "player 1 [agent:ABAgent]",
+            "time_elapsed": 53.01854200000002,
+            "memory_peak": -1
+        },
+        "blue_agent": {
+            "name": "player 2 [agent:ABAgentWithCacheV2]",
+            "time_elapsed": 96.15315500000008,
+            "memory_peak": -1
+        },
+        "result": "BLUE"
+    },
+    {
+        "round": 16,
+        "red_agent": {
+            "name": "player 1 [agent:ABAgentWithCacheV2]",
+            "time_elapsed": 85.833136,
+            "memory_peak": -1
+        },
+        "blue_agent": {
+            "name": "player 2 [agent:ABAgent]",
+            "time_elapsed": 83.43814900000004,
+            "memory_peak": -1
+        },
+        "result": "Red"
+    },
+    {
+        "round": 17,
+        "red_agent": {
+            "name": "player 1 [agent:ABAgent]",
+            "time_elapsed": 89.97709300000002,
+            "memory_peak": -1
+        },
+        "blue_agent": {
+            "name": "player 2 [agent:ABAgentWithCacheV2]",
+            "time_elapsed": 90.161519,
+            "memory_peak": -1
+        },
+        "result": "BLUE"
+    },
+    {
+        "round": 18,
+        "red_agent": {
+            "name": "player 1 [agent:ABAgentWithCacheV2]",
+            "time_elapsed": 100.32874399999996,
+            "memory_peak": -1
+        },
+        "blue_agent": {
+            "name": "player 2 [agent:ABAgent]",
+            "time_elapsed": 73.51342599999998,
+            "memory_peak": -1
+        },
+        "result": "Red"
+    },
+    {
+        "round": 19,
+        "red_agent": {
+            "name": "player 1 [agent:ABAgent]",
+            "time_elapsed": 50.899444000000024,
+            "memory_peak": -1
+        },
+        "blue_agent": {
+            "name": "player 2 [agent:ABAgentWithCacheV2]",
+            "time_elapsed": 94.51403699999993,
+            "memory_peak": -1
+        },
+        "result": "Red"
+    }
+]

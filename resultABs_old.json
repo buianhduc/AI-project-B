@@ -1,0 +1,394 @@
+[
+    {
+        "round": 0,
+        "red_agent": {
+            "name": "ABAgentWithCacheV2",
+            "time_elapsed": 109.81150940899995,
+            "memory_peak": 30.28515625
+        },
+        "blue_agent": {
+            "name": "ABAgent",
+            "time_elapsed": 112.23615078299997,
+            "memory_peak": 1.0390625
+        },
+        "result": "Red"
+    },
+    {
+        "round": 1,
+        "red_agent": {
+            "name": "ABAgent",
+            "time_elapsed": 117.42187743699995,
+            "memory_peak": 1.0390625
+        },
+        "blue_agent": {
+            "name": "ABAgentWithCacheV2",
+            "time_elapsed": 94.13180129200008,
+            "memory_peak": 26.7890625
+        },
+        "result": "Red"
+    },
+    {
+        "round": 2,
+        "red_agent": {
+            "name": "ABAgentWithCacheV2",
+            "time_elapsed": 95.17229892699997,
+            "memory_peak": 26.79296875
+        },
+        "blue_agent": {
+            "name": "ABAgent",
+            "time_elapsed": 137.30250196099993,
+            "memory_peak": 1.0390625
+        },
+        "result": "BLUE"
+    },
+    {
+        "round": 3,
+        "red_agent": {
+            "name": "ABAgent",
+            "time_elapsed": 128.82477881399993,
+            "memory_peak": 1.0390625
+        },
+        "blue_agent": {
+            "name": "ABAgentWithCacheV2",
+            "time_elapsed": 89.575277097,
+            "memory_peak": 28.7890625
+        },
+        "result": "BLUE"
+    },
+    {
+        "round": 4,
+        "red_agent": {
+            "name": "ABAgentWithCacheV2",
+            "time_elapsed": 91.69714717399995,
+            "memory_peak": 26.7890625
+        },
+        "blue_agent": {
+            "name": "ABAgent",
+            "time_elapsed": 98.83118174099994,
+            "memory_peak": 1.0390625
+        },
+        "result": "Red"
+    },
+    {
+        "round": 5,
+        "red_agent": {
+            "name": "ABAgent",
+            "time_elapsed": 103.678330622,
+            "memory_peak": 1.0390625
+        },
+        "blue_agent": {
+            "name": "ABAgentWithCacheV2",
+            "time_elapsed": 90.20248265900005,
+            "memory_peak": 21.78515625
+        },
+        "result": "BLUE"
+    },
+    {
+        "round": 6,
+        "red_agent": {
+            "name": "ABAgentWithCacheV2",
+            "time_elapsed": 102.82028976300005,
+            "memory_peak": 28.28125
+        },
+        "blue_agent": {
+            "name": "ABAgent",
+            "time_elapsed": 93.81384967600003,
+            "memory_peak": 1.03125
+        },
+        "result": "Red"
+    },
+    {
+        "round": 7,
+        "red_agent": {
+            "name": "ABAgent",
+            "time_elapsed": 98.09932817299995,
+            "memory_peak": 1.0390625
+        },
+        "blue_agent": {
+            "name": "ABAgentWithCacheV2",
+            "time_elapsed": 82.00395601500001,
+            "memory_peak": 19.78515625
+        },
+        "result": "BLUE"
+    },
+    {
+        "round": 8,
+        "red_agent": {
+            "name": "ABAgentWithCacheV2",
+            "time_elapsed": 100.76373007000004,
+            "memory_peak": 27.28125
+        },
+        "blue_agent": {
+            "name": "ABAgent",
+            "time_elapsed": 109.293348671,
+            "memory_peak": 1.04296875
+        },
+        "result": "Red"
+    },
+    {
+        "round": 9,
+        "red_agent": {
+            "name": "ABAgent",
+            "time_elapsed": 113.884077062,
+            "memory_peak": 1.0390625
+        },
+        "blue_agent": {
+            "name": "ABAgentWithCacheV2",
+            "time_elapsed": 93.94536488800003,
+            "memory_peak": 27.7890625
+        },
+        "result": "Red"
+    },
+    {
+        "round": 10,
+        "red_agent": {
+            "name": "ABAgentWithCacheV2",
+            "time_elapsed": 94.70159992100001,
+            "memory_peak": 26.7890625
+        },
+        "blue_agent": {
+            "name": "ABAgent",
+            "time_elapsed": 93.51413951600004,
+            "memory_peak": 1.0390625
+        },
+        "result": "Red"
+    },
+    {
+        "round": 11,
+        "red_agent": {
+            "name": "ABAgent",
+            "time_elapsed": 145.06514820199996,
+            "memory_peak": 1.0390625
+        },
+        "blue_agent": {
+            "name": "ABAgentWithCacheV2",
+            "time_elapsed": 113.37764047100005,
+            "memory_peak": 29.28515625
+        },
+        "result": "Red"
+    },
+    {
+        "round": 12,
+        "red_agent": {
+            "name": "ABAgentWithCacheV2",
+            "time_elapsed": 171.8891498279998,
+            "memory_peak": 29.2890625
+        },
+        "blue_agent": {
+            "name": "ABAgent",
+            "time_elapsed": 120.97957092199998,
+            "memory_peak": 1.0390625
+        },
+        "result": "Red"
+    },
+    {
+        "round": 13,
+        "red_agent": {
+            "name": "ABAgent",
+            "time_elapsed": 141.9681274490001,
+            "memory_peak": 1.0390625
+        },
+        "blue_agent": {
+            "name": "ABAgentWithCacheV2",
+            "time_elapsed": 100.53118664800003,
+            "memory_peak": 27.78125
+        },
+        "result": "Red"
+    },
+    {
+        "round": 14,
+        "red_agent": {
+            "name": "ABAgentWithCacheV2",
+            "time_elapsed": 89.20899668399996,
+            "memory_peak": 20.77734375
+        },
+        "blue_agent": {
+            "name": "ABAgent",
+            "time_elapsed": 88.25707428700005,
+            "memory_peak": 1.0390625
+        },
+        "result": "Red"
+    },
+    {
+        "round": 15,
+        "red_agent": {
+            "name": "ABAgent",
+            "time_elapsed": 158.0818444419999,
+            "memory_peak": 1.0390625
+        },
+        "blue_agent": {
+            "name": "ABAgentWithCacheV2",
+            "time_elapsed": 92.35812674699997,
+            "memory_peak": 21.77734375
+        },
+        "result": "Red"
+    },
+    {
+        "round": 16,
+        "red_agent": {
+            "name": "ABAgentWithCacheV2",
+            "time_elapsed": 168.476291362,
+            "memory_peak": 26.79296875
+        },
+        "blue_agent": {
+            "name": "ABAgent",
+            "time_elapsed": 111.90341263199988,
+            "memory_peak": 1.04296875
+        },
+        "result": "Red"
+    },
+    {
+        "round": 17,
+        "red_agent": {
+            "name": "ABAgent",
+            "time_elapsed": 159.730728193,
+            "memory_peak": 1.0390625
+        },
+        "blue_agent": {
+            "name": "ABAgentWithCacheV2",
+            "time_elapsed": 99.92263764799999,
+            "memory_peak": 28.7890625
+        },
+        "result": "BLUE"
+    },
+    {
+        "round": 18,
+        "red_agent": {
+            "name": "ABAgentWithCacheV2",
+            "time_elapsed": 96.13817092500007,
+            "memory_peak": 27.78515625
+        },
+        "blue_agent": {
+            "name": "ABAgent",
+            "time_elapsed": 144.052855203,
+            "memory_peak": 1.0390625
+        },
+        "result": "Red"
+    },
+    {
+        "round": 19,
+        "red_agent": {
+            "name": "ABAgent",
+            "time_elapsed": 120.62469341999994,
+            "memory_peak": 1.04296875
+        },
+        "blue_agent": {
+            "name": "ABAgentWithCacheV2",
+            "time_elapsed": 95.87982801600003,
+            "memory_peak": 30.28515625
+        },
+        "result": "Red"
+    },
+    {
+        "round": 20,
+        "red_agent": {
+            "name": "ABAgentWithCacheV2",
+            "time_elapsed": 98.839582958,
+            "memory_peak": 27.27734375
+        },
+        "blue_agent": {
+            "name": "ABAgent",
+            "time_elapsed": 93.23039814200004,
+            "memory_peak": 1.03125
+        },
+        "result": "Red"
+    },
+    {
+        "round": 21,
+        "red_agent": {
+            "name": "ABAgent",
+            "time_elapsed": 154.0318059470001,
+            "memory_peak": 1.0390625
+        },
+        "blue_agent": {
+            "name": "ABAgentWithCacheV2",
+            "time_elapsed": 164.7672809960001,
+            "memory_peak": 27.78515625
+        },
+        "result": "BLUE"
+    },
+    {
+        "round": 22,
+        "red_agent": {
+            "name": "ABAgentWithCacheV2",
+            "time_elapsed": 175.2493319830001,
+            "memory_peak": 26.796875
+        },
+        "blue_agent": {
+            "name": "ABAgent",
+            "time_elapsed": 150.08358268200018,
+            "memory_peak": 1.03125
+        },
+        "result": "BLUE"
+    },
+    {
+        "round": 23,
+        "red_agent": {
+            "name": "ABAgent",
+            "time_elapsed": 127.90516025999995,
+            "memory_peak": 1.93359375
+        },
+        "blue_agent": {
+            "name": "ABAgentWithCacheV2",
+            "time_elapsed": 101.41788722899994,
+            "memory_peak": 26.7890625
+        },
+        "result": "Red"
+    },
+    {
+        "round": 24,
+        "red_agent": {
+            "name": "ABAgentWithCacheV2",
+            "time_elapsed": 110.49752786599993,
+            "memory_peak": 26.79296875
+        },
+        "blue_agent": {
+            "name": "ABAgent",
+            "time_elapsed": 95.98461730700001,
+            "memory_peak": 1.0390625
+        },
+        "result": "Red"
+    },
+    {
+        "round": 25,
+        "red_agent": {
+            "name": "ABAgent",
+            "time_elapsed": 126.3745699000001,
+            "memory_peak": 1.0390625
+        },
+        "blue_agent": {
+            "name": "ABAgentWithCacheV2",
+            "time_elapsed": 176.51485728899988,
+            "memory_peak": 26.7890625
+        },
+        "result": "Red"
+    },
+    {
+        "round": 26,
+        "red_agent": {
+            "name": "ABAgentWithCacheV2",
+            "time_elapsed": 98.52393532500002,
+            "memory_peak": 20.77734375
+        },
+        "blue_agent": {
+            "name": "ABAgent",
+            "time_elapsed": 155.10266890900004,
+            "memory_peak": 1.0390625
+        },
+        "result": "BLUE"
+    },
+    {
+        "round": 27,
+        "red_agent": {
+            "name": "ABAgent",
+            "time_elapsed": 152.40560415500008,
+            "memory_peak": 1.0390625
+        },
+        "blue_agent": {
+            "name": "ABAgentWithCacheV2",
+            "time_elapsed": 174.52883957900028,
+            "memory_peak": 18.77734375
+        },
+        "result": "Red"
+    }
+]

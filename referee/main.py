@@ -21,7 +21,7 @@ from referee.server.game import RemoteGame
 from .game import Player, PlayerColor
 from .log import LogStream, LogColor, LogLevel
 from .run import game_user_wait, run_game, \
-    game_commentator, game_event_logger, game_delay, output_board_updates
+    game_commentator, game_event_logger, game_delay, output_board_updates, run_game_returns_both_players
 from .agent import AgentProxyPlayer
 from .options import get_options, PlayerLoc
 from .server import RemoteServer, InvalidAckError
@@ -238,11 +238,11 @@ def main_modified(players: str, **options):
             ]
 
 
-            result = await run_game(
+            result = await run_game_returns_both_players(
                 players=[p for p in agents.keys()],
                 event_handlers=event_handlers,
             )
-
+            
             return result
         
         async def _run_all():

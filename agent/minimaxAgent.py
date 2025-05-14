@@ -48,7 +48,7 @@ class MinimaxAgent:
             score  = self.minimax(current_state=copy,
                         curDepth=0,
                         maxTurn=False,
-                        targetDepth=2)
+                        targetDepth=3)
             copy.undo_action()
             if best_score < score:
                 best_action = action

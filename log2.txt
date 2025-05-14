@@ -1,0 +1,1126 @@
+T0000.000	referee	game_begin
+T0000.000	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status: unknown
+)	initialising
+T0000.144	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status: unknown
+)	initialising
+T0000.360	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.028s  (just elapsed)       0.028s  (game total)
+  space: unknown (check platform)
+)	turn_begin	1
+T0003.913	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 3.493s  (just elapsed)       3.522s  (game total)
+  space: unknown (check platform)
+)	turn_end	1	MOVE(0-1, [[↓]])
+T0003.913	referee	board_update
+T0003.924	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)       0.054s  (game total)
+  space: unknown (check platform)
+)	turn_begin	2
+T0003.929	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.001s  (just elapsed)       0.055s  (game total)
+  space: unknown (check platform)
+)	turn_end	2	MOVE(7-4, [[↑]])
+T0003.930	referee	board_update
+T0003.938	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)       3.522s  (game total)
+  space: unknown (check platform)
+)	turn_begin	3
+T0006.136	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 2.190s  (just elapsed)       5.712s  (game total)
+  space: unknown (check platform)
+)	turn_end	3	MOVE(0-4, [[↓]])
+T0006.136	referee	board_update
+T0006.146	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)       0.055s  (game total)
+  space: unknown (check platform)
+)	turn_begin	4
+T0006.151	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.001s  (just elapsed)       0.056s  (game total)
+  space: unknown (check platform)
+)	turn_end	4	MOVE(7-1, [[↑]])
+T0006.152	referee	board_update
+T0006.161	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)       5.712s  (game total)
+  space: unknown (check platform)
+)	turn_begin	5
+T0008.137	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 1.799s  (just elapsed)       7.511s  (game total)
+  space: unknown (check platform)
+)	turn_end	5	MOVE(0-6, [[↓]])
+T0008.137	referee	board_update
+T0008.145	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)       0.056s  (game total)
+  space: unknown (check platform)
+)	turn_begin	6
+T0008.150	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.001s  (just elapsed)       0.058s  (game total)
+  space: unknown (check platform)
+)	turn_end	6	MOVE(7-3, [[↑]])
+T0008.151	referee	board_update
+T0008.159	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)       7.511s  (game total)
+  space: unknown (check platform)
+)	turn_begin	7
+T0010.921	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 2.748s  (just elapsed)      10.259s  (game total)
+  space: unknown (check platform)
+)	turn_end	7	MOVE(0-3, [[↓]])
+T0010.922	referee	board_update
+T0010.930	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)       0.058s  (game total)
+  space: unknown (check platform)
+)	turn_begin	8
+T0010.934	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.001s  (just elapsed)       0.059s  (game total)
+  space: unknown (check platform)
+)	turn_end	8	MOVE(7-6, [[↑]])
+T0010.935	referee	board_update
+T0010.943	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)      10.259s  (game total)
+  space: unknown (check platform)
+)	turn_begin	9
+T0012.551	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 1.591s  (just elapsed)      11.850s  (game total)
+  space: unknown (check platform)
+)	turn_end	9	MOVE(0-2, [[↓]])
+T0012.551	referee	board_update
+T0012.560	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)       0.059s  (game total)
+  space: unknown (check platform)
+)	turn_begin	10
+T0012.564	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.001s  (just elapsed)       0.060s  (game total)
+  space: unknown (check platform)
+)	turn_end	10	MOVE(7-2, [[↑]])
+T0012.564	referee	board_update
+T0012.573	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)      11.850s  (game total)
+  space: unknown (check platform)
+)	turn_begin	11
+T0019.443	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 6.853s  (just elapsed)      18.703s  (game total)
+  space: unknown (check platform)
+)	turn_end	11	GROW
+T0019.444	referee	board_update
+T0019.453	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)       0.060s  (game total)
+  space: unknown (check platform)
+)	turn_begin	12
+T0019.458	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.001s  (just elapsed)       0.061s  (game total)
+  space: unknown (check platform)
+)	turn_end	12	MOVE(7-5, [[↑]])
+T0019.459	referee	board_update
+T0019.467	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)      18.703s  (game total)
+  space: unknown (check platform)
+)	turn_begin	13
+T0020.966	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 1.489s  (just elapsed)      20.192s  (game total)
+  space: unknown (check platform)
+)	turn_end	13	MOVE(1-2, [[↓]])
+T0020.967	referee	board_update
+T0020.976	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)       0.062s  (game total)
+  space: unknown (check platform)
+)	turn_begin	14
+T0020.981	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.001s  (just elapsed)       0.062s  (game total)
+  space: unknown (check platform)
+)	turn_end	14	GROW
+T0020.981	referee	board_update
+T0020.990	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)      20.193s  (game total)
+  space: unknown (check platform)
+)	turn_begin	15
+T0024.079	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 3.075s  (just elapsed)      23.268s  (game total)
+  space: unknown (check platform)
+)	turn_end	15	MOVE(1-1, [[↓]])
+T0024.080	referee	board_update
+T0024.088	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)       0.062s  (game total)
+  space: unknown (check platform)
+)	turn_begin	16
+T0024.093	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.001s  (just elapsed)       0.064s  (game total)
+  space: unknown (check platform)
+)	turn_end	16	MOVE(6-2, [[↑]])
+T0024.094	referee	board_update
+T0024.101	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)      23.268s  (game total)
+  space: unknown (check platform)
+)	turn_begin	17
+T0027.364	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 3.253s  (just elapsed)      26.521s  (game total)
+  space: unknown (check platform)
+)	turn_end	17	MOVE(1-6, [[↓]])
+T0027.365	referee	board_update
+T0027.374	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)       0.064s  (game total)
+  space: unknown (check platform)
+)	turn_begin	18
+T0027.379	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.001s  (just elapsed)       0.065s  (game total)
+  space: unknown (check platform)
+)	turn_end	18	MOVE(6-5, [[↑]])
+T0027.380	referee	board_update
+T0027.390	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)      26.521s  (game total)
+  space: unknown (check platform)
+)	turn_begin	19
+T0030.552	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 3.154s  (just elapsed)      29.674s  (game total)
+  space: unknown (check platform)
+)	turn_end	19	GROW
+T0030.553	referee	board_update
+T0030.561	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)       0.065s  (game total)
+  space: unknown (check platform)
+)	turn_begin	20
+T0030.565	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.001s  (just elapsed)       0.066s  (game total)
+  space: unknown (check platform)
+)	turn_end	20	MOVE(6-1, [[↑]])
+T0030.566	referee	board_update
+T0030.574	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)      29.674s  (game total)
+  space: unknown (check platform)
+)	turn_begin	21
+T0032.521	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 1.939s  (just elapsed)      31.614s  (game total)
+  space: unknown (check platform)
+)	turn_end	21	MOVE(0-5, [[↙]])
+T0032.522	referee	board_update
+T0032.530	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)       0.067s  (game total)
+  space: unknown (check platform)
+)	turn_begin	22
+T0032.534	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.001s  (just elapsed)       0.068s  (game total)
+  space: unknown (check platform)
+)	turn_end	22	MOVE(6-4, [[↑]])
+T0032.535	referee	board_update
+T0032.543	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)      31.614s  (game total)
+  space: unknown (check platform)
+)	turn_begin	23
+T0036.550	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 3.995s  (just elapsed)      35.609s  (game total)
+  space: unknown (check platform)
+)	turn_end	23	MOVE(1-4, [[↓]])
+T0036.551	referee	board_update
+T0036.559	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)       0.068s  (game total)
+  space: unknown (check platform)
+)	turn_begin	24
+T0036.565	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.001s  (just elapsed)       0.069s  (game total)
+  space: unknown (check platform)
+)	turn_end	24	MOVE(6-6, [[↑]])
+T0036.565	referee	board_update
+T0036.574	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)      35.609s  (game total)
+  space: unknown (check platform)
+)	turn_begin	25
+T0040.885	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 4.238s  (just elapsed)      39.847s  (game total)
+  space: unknown (check platform)
+)	turn_end	25	MOVE(2-4, [[↙]])
+T0040.886	referee	board_update
+T0040.897	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)       0.069s  (game total)
+  space: unknown (check platform)
+)	turn_begin	26
+T0040.901	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.001s  (just elapsed)       0.070s  (game total)
+  space: unknown (check platform)
+)	turn_end	26	MOVE(6-3, [[↑]])
+T0040.902	referee	board_update
+T0040.910	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)      39.847s  (game total)
+  space: unknown (check platform)
+)	turn_begin	27
+T0043.063	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 2.143s  (just elapsed)      41.990s  (game total)
+  space: unknown (check platform)
+)	turn_end	27	MOVE(2-1, [[↘]])
+T0043.064	referee	board_update
+T0043.072	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)       0.070s  (game total)
+  space: unknown (check platform)
+)	turn_begin	28
+T0043.076	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.001s  (just elapsed)       0.071s  (game total)
+  space: unknown (check platform)
+)	turn_end	28	GROW
+T0043.076	referee	board_update
+T0043.084	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)      41.990s  (game total)
+  space: unknown (check platform)
+)	turn_begin	29
+T0044.785	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 1.694s  (just elapsed)      43.684s  (game total)
+  space: unknown (check platform)
+)	turn_end	29	MOVE(2-3, [[↓], [↓]])
+T0044.786	referee	board_update
+T0044.794	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)       0.072s  (game total)
+  space: unknown (check platform)
+)	turn_begin	30
+T0044.798	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.001s  (just elapsed)       0.073s  (game total)
+  space: unknown (check platform)
+)	turn_end	30	MOVE(5-5, [[↑]])
+T0044.799	referee	board_update
+T0044.806	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)      43.685s  (game total)
+  space: unknown (check platform)
+)	turn_begin	31
+T0046.532	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 1.719s  (just elapsed)      45.404s  (game total)
+  space: unknown (check platform)
+)	turn_end	31	MOVE(2-6, [[↓]])
+T0046.533	referee	board_update
+T0046.541	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)       0.073s  (game total)
+  space: unknown (check platform)
+)	turn_begin	32
+T0046.546	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.001s  (just elapsed)       0.074s  (game total)
+  space: unknown (check platform)
+)	turn_end	32	MOVE(4-5, [[↗]])
+T0046.546	referee	board_update
+T0046.554	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)      45.404s  (game total)
+  space: unknown (check platform)
+)	turn_begin	33
+T0048.254	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 1.694s  (just elapsed)      47.098s  (game total)
+  space: unknown (check platform)
+)	turn_end	33	MOVE(1-3, [[↙]])
+T0048.255	referee	board_update
+T0048.263	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)       0.074s  (game total)
+  space: unknown (check platform)
+)	turn_begin	34
+T0048.267	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.001s  (just elapsed)       0.076s  (game total)
+  space: unknown (check platform)
+)	turn_end	34	MOVE(2-7, [[↑]])
+T0048.268	referee	board_update
+T0048.276	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)      47.098s  (game total)
+  space: unknown (check platform)
+)	turn_begin	35
+T0049.736	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 1.454s  (just elapsed)      48.552s  (game total)
+  space: unknown (check platform)
+)	turn_end	35	MOVE(2-2, [[↓], [↓]])
+T0049.737	referee	board_update
+T0049.744	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)       0.076s  (game total)
+  space: unknown (check platform)
+)	turn_begin	36
+T0049.749	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.001s  (just elapsed)       0.077s  (game total)
+  space: unknown (check platform)
+)	turn_end	36	MOVE(5-4, [[↑]])
+T0049.749	referee	board_update
+T0049.757	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)      48.552s  (game total)
+  space: unknown (check platform)
+)	turn_begin	37
+T0053.959	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 4.174s  (just elapsed)      52.726s  (game total)
+  space: unknown (check platform)
+)	turn_end	37	MOVE(3-1, [[↓]])
+T0053.959	referee	board_update
+T0053.968	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)       0.077s  (game total)
+  space: unknown (check platform)
+)	turn_begin	38
+T0053.972	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.001s  (just elapsed)       0.078s  (game total)
+  space: unknown (check platform)
+)	turn_end	38	MOVE(5-3, [[↗]])
+T0053.973	referee	board_update
+T0053.981	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)      52.726s  (game total)
+  space: unknown (check platform)
+)	turn_begin	39
+T0057.369	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 3.378s  (just elapsed)      56.105s  (game total)
+  space: unknown (check platform)
+)	turn_end	39	MOVE(6-2, [[↙]])
+T0057.370	referee	board_update
+T0057.378	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)       0.079s  (game total)
+  space: unknown (check platform)
+)	turn_begin	40
+T0057.383	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.001s  (just elapsed)       0.080s  (game total)
+  space: unknown (check platform)
+)	turn_end	40	MOVE(5-2, [[↖]])
+T0057.383	referee	board_update
+T0057.391	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)      56.105s  (game total)
+  space: unknown (check platform)
+)	turn_begin	41
+T0060.389	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 2.988s  (just elapsed)      59.092s  (game total)
+  space: unknown (check platform)
+)	turn_end	41	GROW
+T0060.390	referee	board_update
+T0060.398	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)       0.080s  (game total)
+  space: unknown (check platform)
+)	turn_begin	42
+T0060.403	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.001s  (just elapsed)       0.082s  (game total)
+  space: unknown (check platform)
+)	turn_end	42	MOVE(4-4, [[↖]])
+T0060.403	referee	board_update
+T0060.412	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)      59.093s  (game total)
+  space: unknown (check platform)
+)	turn_begin	43
+T0062.131	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 1.708s  (just elapsed)      60.800s  (game total)
+  space: unknown (check platform)
+)	turn_end	43	MOVE(3-2, [[↙], [→], [↘]])
+T0062.132	referee	board_update
+T0062.140	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)       0.082s  (game total)
+  space: unknown (check platform)
+)	turn_begin	44
+T0062.145	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.001s  (just elapsed)       0.083s  (game total)
+  space: unknown (check platform)
+)	turn_end	44	MOVE(5-1, [[↑]])
+T0062.145	referee	board_update
+T0062.153	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)      60.800s  (game total)
+  space: unknown (check platform)
+)	turn_begin	45
+T0066.717	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 4.554s  (just elapsed)      65.354s  (game total)
+  space: unknown (check platform)
+)	turn_end	45	MOVE(3-3, [[↓]])
+T0066.718	referee	board_update
+T0066.727	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)       0.083s  (game total)
+  space: unknown (check platform)
+)	turn_begin	46
+T0066.732	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.001s  (just elapsed)       0.085s  (game total)
+  space: unknown (check platform)
+)	turn_end	46	MOVE(3-1, [[↑]])
+T0066.733	referee	board_update
+T0066.742	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)      65.354s  (game total)
+  space: unknown (check platform)
+)	turn_begin	47
+T0068.252	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 1.496s  (just elapsed)      66.850s  (game total)
+  space: unknown (check platform)
+)	turn_end	47	MOVE(3-6, [[←], [↙]])
+T0068.253	referee	board_update
+T0068.261	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)       0.085s  (game total)
+  space: unknown (check platform)
+)	turn_begin	48
+T0068.265	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.001s  (just elapsed)       0.086s  (game total)
+  space: unknown (check platform)
+)	turn_end	48	MOVE(3-0, [[↗]])
+T0068.266	referee	board_update
+T0068.274	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)      66.850s  (game total)
+  space: unknown (check platform)
+)	turn_begin	49
+T0071.300	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 3.008s  (just elapsed)      69.859s  (game total)
+  space: unknown (check platform)
+)	turn_end	49	MOVE(4-3, [[↙]])
+T0071.301	referee	board_update
+T0071.309	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)       0.086s  (game total)
+  space: unknown (check platform)
+)	turn_begin	50
+T0071.314	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.001s  (just elapsed)       0.088s  (game total)
+  space: unknown (check platform)
+)	turn_end	50	MOVE(2-1, [[↗]])
+T0071.315	referee	board_update
+T0071.324	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)      69.859s  (game total)
+  space: unknown (check platform)
+)	turn_begin	51
+T0075.562	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 4.214s  (just elapsed)      74.072s  (game total)
+  space: unknown (check platform)
+)	turn_end	51	MOVE(6-3, [[↓]])
+T0075.563	referee	board_update
+T0075.571	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)       0.088s  (game total)
+  space: unknown (check platform)
+)	turn_begin	52
+T0075.576	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.001s  (just elapsed)       0.089s  (game total)
+  space: unknown (check platform)
+)	turn_end	52	MOVE(2-2, [[↑]])
+T0075.576	referee	board_update
+T0075.584	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)      74.073s  (game total)
+  space: unknown (check platform)
+)	turn_begin	53
+T0079.024	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 3.429s  (just elapsed)      77.502s  (game total)
+  space: unknown (check platform)
+)	turn_end	53	MOVE(4-1, [[↙]])
+T0079.025	referee	board_update
+T0079.033	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)       0.089s  (game total)
+  space: unknown (check platform)
+)	turn_begin	54
+T0079.037	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.001s  (just elapsed)       0.090s  (game total)
+  space: unknown (check platform)
+)	turn_end	54	MOVE(1-2, [[↖]])
+T0079.038	referee	board_update
+T0079.046	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)      77.502s  (game total)
+  space: unknown (check platform)
+)	turn_begin	55
+T0082.021	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 2.966s  (just elapsed)      80.468s  (game total)
+  space: unknown (check platform)
+)	turn_end	55	MOVE(5-0, [[↘]])
+T0082.022	referee	board_update
+T0082.030	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)       0.090s  (game total)
+  space: unknown (check platform)
+)	turn_begin	56
+T0082.035	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.001s  (just elapsed)       0.091s  (game total)
+  space: unknown (check platform)
+)	turn_end	56	MOVE(1-7, [[↑]])
+T0082.036	referee	board_update
+T0082.044	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)      80.468s  (game total)
+  space: unknown (check platform)
+)	turn_begin	57
+T0084.278	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 2.226s  (just elapsed)      82.694s  (game total)
+  space: unknown (check platform)
+)	turn_end	57	MOVE(7-4, [[→]])
+T0084.279	referee	board_update
+T0084.287	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)       0.091s  (game total)
+  space: unknown (check platform)
+)	turn_begin	58
+T0084.293	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.001s  (just elapsed)       0.092s  (game total)
+  space: unknown (check platform)
+)	turn_end	58	MOVE(5-6, [[↑]])
+T0084.293	referee	board_update
+T0084.301	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)      82.694s  (game total)
+  space: unknown (check platform)
+)	turn_begin	59
+T0087.749	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 3.422s  (just elapsed)      86.116s  (game total)
+  space: unknown (check platform)
+)	turn_end	59	GROW
+T0087.750	referee	board_update
+T0087.758	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)       0.092s  (game total)
+  space: unknown (check platform)
+)	turn_begin	60
+T0087.762	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.001s  (just elapsed)       0.093s  (game total)
+  space: unknown (check platform)
+)	turn_end	60	MOVE(4-6, [[↖]])
+T0087.763	referee	board_update
+T0087.771	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)      86.116s  (game total)
+  space: unknown (check platform)
+)	turn_begin	61
+T0089.291	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 1.503s  (just elapsed)      87.618s  (game total)
+  space: unknown (check platform)
+)	turn_end	61	MOVE(6-1, [[↙]])
+T0089.291	referee	board_update
+T0089.299	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)       0.093s  (game total)
+  space: unknown (check platform)
+)	turn_begin	62
+T0089.303	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)       0.093s  (game total)
+  space: unknown (check platform)
+)	turn_end	62	MOVE(2-4, [[↗]])
+T0089.303	referee	board_update
+T0089.311	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)      87.618s  (game total)
+  space: unknown (check platform)
+)	turn_begin	63
+T0093.154	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 3.834s  (just elapsed)      91.452s  (game total)
+  space: unknown (check platform)
+)	turn_end	63	MOVE(5-2, [[↘]])
+T0093.155	referee	board_update
+T0093.163	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)       0.094s  (game total)
+  space: unknown (check platform)
+)	turn_begin	64
+T0093.167	AgentProxyPlayer(
+  name: player 2 [agent:GreedyAgent]
+  color: BLUE
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.001s  (just elapsed)       0.094s  (game total)
+  space: unknown (check platform)
+)	turn_end	64	MOVE(1-5, [[↖]])
+T0093.167	referee	board_update
+T0093.175	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 0.000s  (just elapsed)      91.452s  (game total)
+  space: unknown (check platform)
+)	turn_begin	65
+T0094.511	AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 1.329s  (just elapsed)      92.781s  (game total)
+  space: unknown (check platform)
+)	turn_end	65	MOVE(6-3, [[↘]])
+T0094.512	referee	board_update
+T0094.547	referee	game_end	winner:AgentProxyPlayer(
+  name: player 1 [agent:ABAgentWithCacheV2]
+  color: RED
+  resource limit tolerance: 1.0
+  agent status: resources usage status:
+  time:  + 1.329s  (just elapsed)      92.781s  (game total)
+  space: unknown (check platform)
+)

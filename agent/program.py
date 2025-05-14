@@ -132,8 +132,9 @@ class Agent:
         board.apply_action(grow_action)
         # Check if grow done anything
         check_change = False
-        for cell in board._state:
-            if board[cell] != init_board[cell]:
+        for cell in board._state.keys():
+            if board._state[cell] != init_board._state[cell]:
+                
                 check_change = True
                 break
         if check_change:
