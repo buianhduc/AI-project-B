@@ -2,7 +2,7 @@
 # Project Part B: Game Playing Agent
 
 # from .program import Agent as Agent
-submission = True
+submission = False
 if not submission:
     from .minimaxAgent import MinimaxAgent
     from .mctsAgent import MCTSAgent as MCTSAgent

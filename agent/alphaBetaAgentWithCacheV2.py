@@ -270,7 +270,7 @@ class ABAgentWithCache:
                 beta = min(beta, lookup_result.evalutation_score+1)
 
         # If the node is the leaf (at terminal state) or the maximum lookahead depth
-        if curDepth == targetDepth or current_state.has_game_ended(): 
+        if curDepth >= targetDepth or current_state.has_game_ended(): 
             eval_score = self.eval(current_state)
             self.transposition_table.insert(current_state, targetDepth - curDepth, eval_score, None, Flag.EXACT)
             return eval_score

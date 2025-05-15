@@ -43,7 +43,7 @@ class ABAgent:
 
         best_action = None
         best_score = -float("inf")
-        for action in self.board.get_next_possible_configurations():
+        for action in self.get_next_possible_configurations():
             self.board.apply_action(action)
             score  = self.minimax(current_state=self.board,
                         curDepth=0,
